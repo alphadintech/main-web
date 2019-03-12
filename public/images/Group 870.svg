@@ -1,0 +1,25 @@
+<svg id="Group_870" data-name="Group 870" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="223.002" height="135.09" viewBox="0 0 223.002 135.09">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.095" y1="-0.155" x2="0.97" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ae8ed4"/>
+      <stop offset="1" stop-color="#340371"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x2="1" y2="0.963" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffca6e"/>
+      <stop offset="0.485" stop-color="#fe7470"/>
+      <stop offset="1" stop-color="#f5317f"/>
+    </linearGradient>
+    <filter id="CardFi" x="16.947" y="24.437" width="151" height="66" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.188"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Rectangle_1022" data-name="Rectangle 1022" width="201.047" height="114.632" rx="7" transform="translate(21.955 20.458)" fill="url(#linear-gradient)"/>
+  <rect id="Rectangle_1024" data-name="Rectangle 1024" width="201.047" height="114.632" rx="7" transform="translate(0)" fill="url(#linear-gradient-2)"/>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#CardFi)">
+    <text id="CardFi-2" data-name="CardFi" transform="translate(25.95 68.44)" fill="#fff" font-size="39" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">CardFi</tspan></text>
+  </g>
+</svg>
