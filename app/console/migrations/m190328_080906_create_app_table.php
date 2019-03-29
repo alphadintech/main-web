@@ -38,12 +38,12 @@ class m190328_080906_create_app_table extends Migration
             'project_id'
         );
 
-        // add foreign key for table `{{%projrct}}`
+        // add foreign key for table `{{%project}}`
         $this->addForeignKey(
             '{{%fk-app-project_id}}',
             '{{%app}}',
             'project_id',
-            '{{%projrct}}',
+            '{{%project}}',
             'id',
             'CASCADE'
         );
@@ -54,7 +54,7 @@ class m190328_080906_create_app_table extends Migration
      */
     public function safeDown()
     {
-        // drops foreign key for table `{{%projrct}}`
+        // drops foreign key for table `{{%project}}`
         $this->dropForeignKey(
             '{{%fk-app-project_id}}',
             '{{%app}}'
