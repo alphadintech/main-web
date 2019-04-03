@@ -14,20 +14,51 @@ class m130524_201442_init extends Migration
 
         $this->createTable('{{%user}}', [
             'id' => $this->primaryKey(),
-            'username' => $this->string()->notNull()->unique(),
+            'username' => $this->string()->unique(),
             'auth_key' => $this->string(32)->notNull(),
             'password_hash' => $this->string()->notNull(),
             'password_reset_token' => $this->string()->unique(),
             'email' => $this->string()->notNull()->unique(),
+            'avatar_id'=>$this->integer()->notNull(),
 
             'status' => $this->smallInteger()->notNull()->defaultValue(10),
             'created_at' => $this->integer()->notNull(),
             'updated_at' => $this->integer()->notNull(),
         ], $tableOptions);
+
+
+        // creates index for column `avatar_id`
+        $this->createIndex(
+            '{{%idx-user-avatar_id}}',
+            '{{%user}}',
+            'avatar_id'
+        );
+
+        // add foreign key for table `{{%media}}`
+        $this->addForeignKey(
+            '{{%fk-user-avatar_id}}',
+            '{{%user}}',
+            'avatar_id',
+            '{{%media}}',
+            'id',
+            'RESTRICT'
+        );
     }
 
     public function down()
     {
+        // drops foreign key for table `{{%media}}`
+        $this->dropForeignKey(
+            '{{%fk-user-avatar_id}}',
+            '{{%media}}'
+        );
+
+        // drops index for column `avatar_id`
+        $this->dropIndex(
+            '{{%idx-user-avatar_id}}',
+            '{{%user}}'
+        );
+
         $this->dropTable('{{%user}}');
     }
 }
