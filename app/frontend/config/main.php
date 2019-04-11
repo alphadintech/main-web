@@ -43,7 +43,7 @@ return [
             'rules' => [
                 'login'=>'site/login',
                 'logout'=>'site/logout',
-                'login'=>'site/login',
+                'register'=>'site/signup'
             ],
         ],
 

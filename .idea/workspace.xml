@@ -1,7 +1,286 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9752ea29-58d2-4c9a-879a-59073fa40ea4" name="Default Changelist" comment="" />
+    <list default="true" id="f9b297f2-99ab-4904-8657-87cb70290442" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/backend/assets/PanelAsset.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/assets/LoginAsset.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/assets/RegisterAsset.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/layouts/login.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/layouts/register.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/backend/.htaccess" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/css/components-md-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/css/plugins-md-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/img/social/facebook.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/img/social/googleplus.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/img/social/linkedin.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/img/social/twitter.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/backstretch/LICENSE-MIT" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/backstretch/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/backstretch/jquery.backstretch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/backstretch/jquery.backstretch.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap-hover-dropdown/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap-hover-dropdown/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap-switch/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap-switch/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap-switch/css/bootstrap-switch-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap/css/bootstrap-rtl.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap/css/bootstrap-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap/css/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap/js/bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/bootstrap/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/excanvas.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/font-awesome/css/font-awesome.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/font-awesome/css/font-awesome.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/font-awesome/fonts/FontAwesome.otf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-slimscroll/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-slimscroll/slimScroll.jquery.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/additional-methods.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/additional-methods.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/jquery.validate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/jquery.validate.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ar.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_bg.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_bn_BD.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_bn_BD.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ca.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_cs.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_da.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_de.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_el.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_es.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_es_AR.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_es_AR.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_es_PE.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_es_PE.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_et.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_eu.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_fa.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_fi.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_fr.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ge.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ge.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_gl.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_he.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_hr.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_hu.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_hy_AM.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_hy_AM.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_id.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_is.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_is.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_it.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ja.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ka.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ka.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_kk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_kk.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ko.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_lt.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_lv.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_my.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_my.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_nl.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_no.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_pl.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_pt_BR.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_pt_BR.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_pt_PT.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_pt_PT.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ro.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_ru.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_si.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_si.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_sk.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_sl.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_sr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_sr.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_sr_lat.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_sr_lat.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_sv.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_th.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_tj.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_tj.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_tr.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_uk.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_vi.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_zh.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_zh_TW.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/messages_zh_TW.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/methods_de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/methods_de.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/methods_es_CL.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/methods_es_CL.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/methods_fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/methods_fi.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/methods_nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/methods_nl.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/methods_pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery-validation/js/localization/methods_pt.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery.blockui.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/js.cookie.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/respond.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/LICENSE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/css/select2-bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/css/select2.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/css/select2.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/az.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/hi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/is.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/mk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/pt-BR.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/sr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/zh-CN.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/i18n/zh-TW.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/select2.full.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/select2.full.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/select2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/js/select2.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/select2/sass/select2-bootstrap.min.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/simple-line-icons/License.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/simple-line-icons/Readme.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.dev.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/simple-line-icons/icons-lte-ie7.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/simple-line-icons/simple-line-icons.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/global/scripts/app.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/global/scripts/quick-sidebar.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/css/custom-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/css/layout-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/css/themes/darkblue-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/img/avatar1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/img/avatar10.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/img/avatar11.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/img/avatar2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/img/avatar3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/img/avatar3_small.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/img/avatar4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/img/avatar6.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/img/avatar7.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/img/avatar8.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/img/avatar9.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/img/icon-color-close.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/img/icon-color.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/img/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/scripts/demo.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/layouts/layout/scripts/layout.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/pages/css/login-5-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/pages/css/login-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/pages/img/login/bg1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/pages/img/login/bg2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/pages/img/login/bg3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/pages/img/login/bg4.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/pages/img/login/login-invert.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/pages/img/logo-big.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/pages/scripts/login-5.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/panel/assets/pages/scripts/login.min.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/backend/config/main.php" afterPath="$PROJECT_DIR$/app/backend/config/main.php" />
+      <change beforePath="$PROJECT_DIR$/app/backend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/app/backend/controllers/SiteController.php" />
+      <change beforePath="$PROJECT_DIR$/app/backend/views/layouts/main.php" afterPath="$PROJECT_DIR$/app/backend/views/layouts/main.php" />
+      <change beforePath="$PROJECT_DIR$/app/backend/views/site/index.php" afterPath="$PROJECT_DIR$/app/backend/views/site/index.php" />
+      <change beforePath="$PROJECT_DIR$/app/backend/views/site/login.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/config/main.php" afterPath="$PROJECT_DIR$/app/frontend/config/main.php" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/app/frontend/controllers/SiteController.php" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/views/site/login.php" afterPath="$PROJECT_DIR$/app/frontend/views/site/login.php" />
+      <change beforePath="$PROJECT_DIR$/app/frontend/views/site/signup.php" afterPath="$PROJECT_DIR$/app/frontend/views/site/signup.php" />
+      <change beforePath="$PROJECT_DIR$/theme/adminPanel/login.html" afterPath="$PROJECT_DIR$/theme/adminPanel/login.html" />
+      <change beforePath="$PROJECT_DIR$/theme/assets/pages/scripts/login-5.min.js" afterPath="$PROJECT_DIR$/theme/assets/pages/scripts/login-5.min.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/app/vendor/behat/gherkin/" />
     <ignored path="$PROJECT_DIR$/app/vendor/bower-asset/bootstrap/" />
     <ignored path="$PROJECT_DIR$/app/vendor/bower-asset/inputmask/" />
@@ -73,113 +352,61 @@
     <ignored path="$PROJECT_DIR$/app/vendor/yiisoft/yii2-imagine/" />
     <ignored path="$PROJECT_DIR$/app/vendor/yiisoft/yii2-swiftmailer/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings">
     <pharConfigPath>$PROJECT_DIR$/app/composer.json</pharConfigPath>
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/theme/assets/pages/scripts/login-5.min.js">
+    <leaf>
+      <file leaf-file-name="layout_blank_page.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/theme/adminPanel/layout_blank_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/theme/adminPanel/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="69" column="50" lean-forward="true" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13914" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/theme/assets/pages/css/login-5-rtl.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/frontend/views/site/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8432">
-              <caret line="496" column="65" selection-start-line="496" selection-start-column="65" selection-end-line="496" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/frontend/views/site/signup.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/frontend/controllers/SiteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="90" column="67" selection-start-line="90" selection-start-column="67" selection-end-line="90" selection-end-column="67" />
+            <state relative-caret-position="359">
+              <caret line="1047" column="14" lean-forward="true" selection-start-line="1047" selection-start-column="14" selection-end-line="1055" selection-end-column="14" />
               <folding>
-                <element signature="e#39#47#0#PHP" expanded="true" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/frontend/messages/fa/main.php">
+      <file leaf-file-name="PanelAsset.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/backend/assets/PanelAsset.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+            <state relative-caret-position="474">
+              <caret line="51" column="25" lean-forward="false" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/frontend/views/layouts/main.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/backend/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+            <state relative-caret-position="260">
+              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/frontend/views/layouts/site.php">
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/backend/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="42" selection-start-line="42" selection-end-line="42" selection-end-column="15" />
+            <state relative-caret-position="498">
+              <caret line="1012" column="6" lean-forward="false" selection-start-line="1012" selection-start-column="6" selection-end-line="1012" selection-end-column="6" />
+              <folding>
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -188,64 +415,62 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>behaviors</find>
-      <find>actions</find>
-      <find>/login</find>
-      <find>site/login</find>
-      <find>requestPasswordResetToken</find>
-      <find>actionRequestPasswordReset</find>
-      <find>actionResetPassword</find>
-      <find>navbar-fixed-top</find>
-      <find>en-US</find>
-      <find>=&quot;en&quot;</find>
-      <find>basepath</find>
-      <find>components</find>
-      <find>en</find>
-      <find>Eng</find>
-      <find>brea</find>
-      <find>cyrillic</find>
-      <find>Playfair</find>
-      <find>logo</find>
-      <find>invert</find>
-      <find>bg2</find>
+      <find>app</find>
+      <find>bg4.png</find>
+      <find>login-bg</find>
+      <find>src</find>
+      <find>assets</find>
+      <find>assets/</find>
     </findStrings>
+    <replaceStrings>
+      <replace>panel/assets/</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\wamp64\www\Yii2\alphadin\theme\assets</dir>
+      <dir>C:\wamp64\www\Yii2\alphadin\public\backend\panel</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="amir ashrafi" />
-      </list>
-    </option>
-    <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
-    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/common/models/User.php" />
-        <option value="$PROJECT_DIR$/app/frontend/views/site/amir.php" />
-        <option value="$PROJECT_DIR$/app/frontend/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/app/frontend/views/layouts/site.php" />
-        <option value="$PROJECT_DIR$/app/frontend/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/app/backend/config/test.php" />
-        <option value="$PROJECT_DIR$/app/messages/fa_IR/main.php" />
-        <option value="$PROJECT_DIR$/app/messages/fa/main.php" />
-        <option value="$PROJECT_DIR$/app/common/config/main.php" />
-        <option value="$PROJECT_DIR$/app/frontend/messages/fa/main.php" />
-        <option value="$PROJECT_DIR$/app/frontend/views/site/about.php" />
-        <option value="$PROJECT_DIR$/app/frontend/views/site/index.php" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/theme/adminPanel/layout_blank_page.html" />
-        <option value="$PROJECT_DIR$/theme/assets/pages/css/login-5-rtl.min.css" />
-        <option value="$PROJECT_DIR$/theme/adminPanel/register_tester.html" />
-        <option value="$PROJECT_DIR$/theme/assets/pages/scripts/login-5.min.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/backend/views/site/login.php" />
+        <option value="$PROJECT_DIR$/app/backend/assets/AuthAsset.php" />
         <option value="$PROJECT_DIR$/theme/adminPanel/login.html" />
+        <option value="$PROJECT_DIR$/app/backend/views/layouts/auth.php" />
+        <option value="$PROJECT_DIR$/app/backend/assets/RegisterAsset.php" />
+        <option value="$PROJECT_DIR$/theme/adminPanel/register_tester.html" />
+        <option value="$PROJECT_DIR$/app/backend/views/layouts/register.php" />
+        <option value="$PROJECT_DIR$/app/backend/views/site/register.php" />
+        <option value="$PROJECT_DIR$/theme/assets/pages/scripts/login-5.min.js" />
+        <option value="$PROJECT_DIR$/public/backend/panel/assets/pages/scripts/login-5.min.js" />
+        <option value="$PROJECT_DIR$/public/panel/assets/pages/scripts/login-5.min.js" />
+        <option value="$PROJECT_DIR$/app/frontend/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/app/backend/config/main.php" />
+        <option value="$PROJECT_DIR$/app/frontend/config/main.php" />
+        <option value="$PROJECT_DIR$/app/frontend/assets/LoginAsset.php" />
+        <option value="$PROJECT_DIR$/app/frontend/views/layouts/login.php" />
+        <option value="$PROJECT_DIR$/app/frontend/assets/RegisterAsset.php" />
+        <option value="$PROJECT_DIR$/app/frontend/views/layouts/register.php" />
+        <option value="$PROJECT_DIR$/app/frontend/views/site/signup.php" />
+        <option value="$PROJECT_DIR$/theme/adminPanel/layout_blank_page.html" />
+        <option value="$PROJECT_DIR$/app/backend/views/site/index.php" />
+        <option value="$PROJECT_DIR$/app/backend/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/app/backend/assets/PanelAsset.php" />
+        <option value="$PROJECT_DIR$/app/backend/views/layouts/main.php" />
       </list>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
     <include_path>
       <path value="$PROJECT_DIR$/app/vendor/yiisoft/yii2-composer" />
       <path value="$PROJECT_DIR$/app/vendor/yiisoft/yii2-faker" />
@@ -320,109 +545,169 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1876" />
-    <option name="y" value="-178" />
-    <option name="width" value="1438" />
-    <option name="height" value="877" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>UndefinedPHP</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PhpUndefinedClassInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope">
-          <expand>
-            <path>
-              <item name="main-web" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="main-web" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="main-web" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="main-web" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="main-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main-web" type="462c0819:PsiDirectoryNode" />
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="main-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main-web" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="main-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main-web" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="main-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main-web" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="main-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main-web" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="main-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main-web" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-              <item name="adminPanel" type="462c0819:PsiDirectoryNode" />
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="main-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main-web" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="site" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="main-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main-web" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="main-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main-web" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="main-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main-web" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="site" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="panel" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="panel" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theme" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adminPanel" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -432,15 +717,322 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\main-web\app\frontend" />
+      <recent name="C:\wamp64\www\Yii2\alphadin\public" />
+      <recent name="C:\wamp64\www\Yii2\alphadin\app\frontend\assets" />
+      <recent name="C:\wamp64\www\Yii2\alphadin\app\frontend\views\layouts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\main-web\app\frontend\views\site" />
+      <recent name="C:\wamp64\www\Yii2\alphadin\app\backend\assets" />
+      <recent name="C:\wamp64\www\Yii2\alphadin\app\frontend\views\site" />
+      <recent name="C:\wamp64\www\Yii2\alphadin\public\backend" />
+      <recent name="C:\wamp64\www\Yii2\alphadin\app\backend\views\site" />
+      <recent name="C:\wamp64\www\Yii2\alphadin\app\backend\views\layouts" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/adminPanel/layout_blank_page.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/layouts/layout/img/logo.png</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/adminPanel/login.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/adminPanel/register_tester.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/img/social/facebook.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/img/social/googleplus.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/img/social/linkedin.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/img/social/twitter.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/backstretch/LICENSE-MIT</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/backstretch/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/backstretch/jquery.backstretch.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/backstretch/jquery.backstretch.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/additional-methods.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/additional-methods.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/jquery.validate.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/jquery.validate.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ar.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ar.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_bg.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_bg.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_bn_BD.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_bn_BD.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ca.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ca.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_cs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_cs.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_da.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_da.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_de.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_de.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_el.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_el.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_es.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_es.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_es_AR.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_es_AR.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_es_PE.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_es_PE.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_et.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_et.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_eu.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_eu.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_fa.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_fa.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_fi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_fi.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_fr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_fr.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ge.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ge.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_gl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_gl.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_he.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_he.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_hr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_hr.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_hu.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_hu.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_hy_AM.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_hy_AM.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_id.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_id.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_is.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_is.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_it.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_it.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ja.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ja.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ka.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ka.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_kk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_kk.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ko.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ko.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_lt.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_lt.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_lv.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_lv.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_my.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_my.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_nl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_nl.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_no.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_no.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_pl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_pl.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_pt_BR.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_pt_BR.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_pt_PT.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_pt_PT.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ro.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ro.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ru.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_ru.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_si.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_si.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_sk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_sk.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_sl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_sl.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_sr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_sr.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_sr_lat.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_sr_lat.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_sv.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_sv.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_th.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_th.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_tj.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_tj.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_tr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_tr.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_uk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_uk.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_vi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_vi.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_zh.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_zh.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_zh_TW.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/messages_zh_TW.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/methods_de.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/methods_de.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/methods_es_CL.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/methods_es_CL.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/methods_fi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/methods_fi.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/methods_nl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/methods_nl.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/methods_pt.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/jquery-validation/js/localization/methods_pt.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/LICENSE.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/css/select2-bootstrap.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/css/select2.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/css/select2.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/az.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/bg.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/ca.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/cs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/da.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/de.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/en.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/es.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/et.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/eu.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/fa.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/fi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/fr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/gl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/he.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/hi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/hr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/hu.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/id.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/is.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/it.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/ko.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/lt.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/lv.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/mk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/nb.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/nl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/pl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/pt-BR.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/pt.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/ro.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/ru.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/sk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/sr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/sv.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/th.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/tr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/uk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/vi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/zh-CN.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/i18n/zh-TW.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/select2.full.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/select2.full.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/select2.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/js/select2.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/global/plugins/select2/sass/select2-bootstrap.min.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/pages/css/login-5-rtl.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/pages/css/login-rtl.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/pages/img/login/bg1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/pages/img/login/bg2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/pages/img/login/bg3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/pages/img/login/bg4.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/pages/img/login/login-invert.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/pages/img/logo-big.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/pages/scripts/login-5.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/theme/assets/pages/scripts/login.min.js</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -454,363 +1046,319 @@
       </list>
     </option>
   </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9752ea29-58d2-4c9a-879a-59073fa40ea4" name="Default Changelist" comment="" />
-      <created>1552482821536</created>
+      <changelist id="f9b297f2-99ab-4904-8657-87cb70290442" name="Default" comment="" />
+      <created>1554976207504</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1552482821536</updated>
-      <workItem from="1552482824224" duration="1524000" />
-      <workItem from="1552495882373" duration="452000" />
-      <workItem from="1552554481250" duration="11549000" />
-      <workItem from="1553098669954" duration="2013000" />
-      <workItem from="1553690972166" duration="17505000" />
-      <workItem from="1554298115593" duration="8054000" />
-      <workItem from="1554822014426" duration="94000" />
-      <workItem from="1554822142859" duration="2428000" />
+      <updated>1554976207504</updated>
+      <workItem from="1554976208710" duration="11349000" />
     </task>
-    <task id="LOCAL-00001" summary="add theme">
-      <created>1552496329520</created>
+    <task id="LOCAL-00001" summary="r">
+      <created>1554976269932</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1552496329520</updated>
+      <updated>1554976269932</updated>
     </task>
-    <task id="LOCAL-00002" summary="delete extra images&#10;add language configuration">
-      <created>1552578589666</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1552578589666</updated>
-    </task>
-    <task id="LOCAL-00003" summary="teranslate site to persian">
-      <created>1554298269637</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1554298269637</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add tester register page in theme">
-      <created>1554821813776</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1554821813776</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add tester register page in theme">
-      <created>1554822224757</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1554822224757</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43619000" />
+    <option name="totallyTimeSpent" value="11349000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1688" y="-178" width="1696" height="1036" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27139366" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.11184939" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32890365" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.1913203" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24650913" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add theme" />
-    <MESSAGE value="delete extra images&#10;add language configuration" />
-    <MESSAGE value="teranslate site to persian" />
-    <MESSAGE value="add tester register page in theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tester register page in theme" />
+    <MESSAGE value="r" />
+    <option name="LAST_COMMIT_MESSAGE" value="r" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/common/config/main-local.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/backend/views/site/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/panel/assets/pages/css/login-rtl.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/backend/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/apple-touch-icon-114x114.png" />
-    <entry file="file://$PROJECT_DIR$/public/backend/robots.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/backend/index-test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/models/SignupForm.php">
+    <entry file="file://$PROJECT_DIR$/theme/adminPanel/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views/site/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views/site/requestPasswordResetToken.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views/site/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="14" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views/site/amir.php" />
-    <entry file="file://$PROJECT_DIR$/app/vendor/yiisoft/yii2/base/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="375" column="20" selection-start-line="375" selection-start-column="20" selection-end-line="375" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/vendor/yiisoft/yii2/web/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="359" column="20" selection-start-line="359" selection-start-column="20" selection-end-line="359" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/backend/config/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/vendor/yiisoft/yii2/helpers/BaseFileHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/vendor/yiisoft/yii2/base/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/config/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="65" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/vendor/yiisoft/yii2/BaseYii.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="531" column="9" lean-forward="true" selection-start-line="531" selection-start-column="9" selection-end-line="531" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/apple-touch-icon.png" />
-    <entry file="file://$PROJECT_DIR$/public/favicon.png" />
-    <entry file="file://$PROJECT_DIR$/public/robots.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views/site/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/bg/bg2-6.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/bg/bg2-5.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/bg/bg2-3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/bg/bg2-2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/bg/bg2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/bg/bg1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/1-470x490.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/browserconfig.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index-test.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views/site/index33.php" />
-    <entry file="file://$PROJECT_DIR$/app/backend/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/common/models/LoginForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="127" />
-          <caret line="150" column="6" selection-start-line="150" selection-start-column="6" selection-end-line="150" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/theme/adminPanel/layout_blank_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="71" />
+        <state relative-caret-position="428">
+          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
           <folding>
-            <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/theme/adminPanel/register_tester.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        <state relative-caret-position="779">
+          <caret line="143" column="7" lean-forward="true" selection-start-line="143" selection-start-column="7" selection-end-line="143" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theme/assets/pages/css/login-5-rtl.min.css">
+    <entry file="file://$PROJECT_DIR$/app/frontend/models/Media.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views/site/index.php">
+    <entry file="file://$PROJECT_DIR$/theme/assets/global/plugins/backstretch/jquery.backstretch.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8432">
-          <caret line="496" column="65" selection-start-line="496" selection-start-column="65" selection-end-line="496" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views/site/signup.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="90" column="67" selection-start-line="90" selection-start-column="67" selection-end-line="90" selection-end-column="67" />
+        <state relative-caret-position="63">
+          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
           <folding>
-            <element signature="e#39#47#0#PHP" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/messages/fa/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/frontend/views/layouts/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="42" selection-start-line="42" selection-end-line="42" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13914" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/theme/assets/pages/scripts/login-5.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="370">
+          <caret line="36" column="47" lean-forward="false" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theme/adminPanel/login.html">
+    <entry file="file://$PROJECT_DIR$/app/backend/views/site/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="69" column="50" lean-forward="true" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
+        <state relative-caret-position="614">
+          <caret line="81" column="28" lean-forward="false" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/panel/assets/pages/scripts/login.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/backend/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/panel/assets/pages/scripts/login-5.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/backend/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="44" column="16" lean-forward="false" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="45" column="40" lean-forward="false" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/assets/SiteAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/assets/RegisterAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/assets/AppAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/views/layouts/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="83" column="33" lean-forward="true" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/views/site/signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="15" column="68" lean-forward="true" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/views/layouts/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="e#67#98#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/assets/LoginAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/backend/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/backend/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/backend/assets/PanelAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="51" column="25" lean-forward="false" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/backend/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="1012" column="6" lean-forward="false" selection-start-line="1012" selection-start-column="6" selection-end-line="1012" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/adminPanel/layout_blank_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="1047" column="14" lean-forward="true" selection-start-line="1047" selection-start-column="14" selection-end-line="1055" selection-end-column="14" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
