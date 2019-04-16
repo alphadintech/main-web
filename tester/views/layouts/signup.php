@@ -4,14 +4,14 @@
 
 /* @var $content string */
 
-use app\assets\RegisterAsset;
+use app\assets\SignupAsset;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
 
-RegisterAsset::register($this);
+SignupAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

@@ -7,7 +7,7 @@ use yii\web\AssetBundle;
 /**
  * Main backend application asset bundle.
  */
-class RegisterAsset extends AssetBundle
+class SignupAsset extends AssetBundle
 {
 
     public $basePath = '@webroot';

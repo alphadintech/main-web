@@ -19,22 +19,26 @@ $this->title = 'Login';
             <p> در سامانه آلفادین ما به دوستان و همراهانمان مهارت آزمونگری یا تست می آموزیم ، باآموزش های دریافت شده وبسایت ها و اپلیکیشن ها را تست کرده و درآمد کسب میکنیم .  </p>
             <p> با کسب درآمد از اوقات بیکاری خود یک قدم فاصله دارید. </p>
             <p> کافیست هم اکنون ثبت نام کنید. </p>
-            <form action="javascript:;" class="login-form" method="post">
+            <?php $form = ActiveForm::begin([
+                'id' => 'login-form',
+                'layout' => 'horizontal'
+            ]); ?>
+
                 <div class="alert alert-danger display-hide">
                     <button class="close" data-close="alert"></button>
                     <span>اطلاعات فرم را با دقت پرکنید </span>
                 </div>
                 <div class="row">
                     <div class="col-xs-6">
-                        <input class="form-control form-control-solid placeholder-no-fix form-group" type="text" autocomplete="off" placeholder="نام و نام خانوادگی" name="username" required/> </div>
+                        <input class="form-control form-control-solid placeholder-no-fix form-group" type="text" autocomplete="off" placeholder="نام و نام خانوادگی" name="signup[username]" required/> </div>
                     <div class="col-xs-6">
-                        <input class="form-control form-control-solid placeholder-no-fix form-group" type="password" autocomplete="off" placeholder="ایمیل" name="password" required/> </div>
+                        <input class="form-control form-control-solid placeholder-no-fix form-group" type="email" autocomplete="off" placeholder="ایمیل" name="signup[email]" required/> </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-6">
-                        <input class="form-control form-control-solid placeholder-no-fix form-group" type="text" autocomplete="off" placeholder="گذرواژه" name="username" required/> </div>
+                        <input class="form-control form-control-solid placeholder-no-fix form-group" type="text" autocomplete="off" placeholder="گذرواژه" name="signup[password]" required/> </div>
                     <div class="col-xs-6">
-                        <input class="form-control form-control-solid placeholder-no-fix form-group" type="password" autocomplete="off" placeholder="تکرار گذرواژه" name="password" required/> </div>
+                        <input class="form-control form-control-solid placeholder-no-fix form-group" type="password" autocomplete="off" placeholder="تکرار گذرواژه" name="signup[password_repeat]" required/> </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
@@ -44,10 +48,11 @@ $this->title = 'Login';
                         </label>
                     </div>
                     <div class="col-sm-8 text-right">
-                        <button class="btn blue" type="submit">ثبت نام</button>
+                        <?= Html::submitButton('ثبت نام', ['class' => 'btn blue', 'name' => 'login-button']) ?>
                     </div>
                 </div>
-            </form>
+
+            <?php ActiveForm::end(); ?>
         </div>
         <div class="login-footer">
             <div class="row bs-reset">

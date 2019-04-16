@@ -1,34 +1,32 @@
 <?php
-
 namespace app\models;
 
 use Yii;
+use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
 
 /**
- * This is the model class for table "user".
+ * User model
  *
- * @property int $id
+ * @property integer $id
  * @property string $username
- * @property string $auth_key
  * @property string $password_hash
  * @property string $password_reset_token
  * @property string $email
- * @property int $avatar_id
- * @property int $status
- * @property int $created_at
- * @property int $updated_at
- *
- * @property Tester $tester
- * @property TesterType[] $testerTypes
- * @property Media $avatar
+ * @property string $auth_key
+ * @property integer $status
+ * @property integer $created_at
+ * @property integer $updated_at
+ * @property string $password write-only password
  */
 class User extends ActiveRecord implements IdentityInterface
 {
     const STATUS_DELETED = 0;
     const STATUS_ACTIVE = 10;
+
+
     /**
      * {@inheritdoc}
      */
@@ -36,19 +34,14 @@ class User extends ActiveRecord implements IdentityInterface
     {
         return '{{%user}}';
     }
+
     /**
      * {@inheritdoc}
      */
     public function behaviors()
     {
         return [
-            [
-                'class' => TimestampBehavior::className(),
-                'attributes' => [
-                    ActiveRecord::EVENT_BEFORE_INSERT => ['created_at', 'updated_at'],
-                    ActiveRecord::EVENT_BEFORE_UPDATE => ['updated_at'],
-                ]
-            ],
+            TimestampBehavior::className(),
         ];
     }
 
@@ -60,33 +53,6 @@ class User extends ActiveRecord implements IdentityInterface
         return [
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
-            [['auth_key', 'password_hash', 'email'], 'required'],
-            [['avatar_id', 'status', 'created_at', 'updated_at'], 'integer'],
-            [['username', 'password_hash', 'password_reset_token', 'email'], 'string', 'max' => 255],
-            [['auth_key'], 'string', 'max' => 32],
-            [['email'], 'unique'],
-            [['username'], 'unique'],
-            [['password_reset_token'], 'unique'],
-//            [['avatar_id'], 'exist', 'skipOnError' => true, 'targetClass' => Media::className(), 'targetAttribute' => ['avatar_id' => 'id']],
-        ];
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function attributeLabels()
-    {
-        return [
-            'id' => 'ID',
-            'username' => 'Username',
-            'auth_key' => 'Auth Key',
-            'password_hash' => 'Password Hash',
-            'password_reset_token' => 'Password Reset Token',
-            'email' => 'Email',
-            'avatar_id' => 'Avatar ID',
-            'status' => 'Status',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
         ];
     }
 
@@ -219,28 +185,5 @@ class User extends ActiveRecord implements IdentityInterface
     public function removePasswordResetToken()
     {
         $this->password_reset_token = null;
-    }
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getTester()
-    {
-        return $this->hasOne(Tester::className(), ['user_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getTesterTypes()
-    {
-        return $this->hasMany(TesterType::className(), ['user_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getAvatar()
-    {
-        return $this->hasOne(Media::className(), ['id' => 'avatar_id']);
     }
 }
