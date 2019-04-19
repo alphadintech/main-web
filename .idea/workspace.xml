@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9b297f2-99ab-4904-8657-87cb70290442" name="Default" comment="gitignor edited">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="f9b297f2-99ab-4904-8657-87cb70290442" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/tester/.gitignore" afterPath="$PROJECT_DIR$/public/tester/.gitignore" />
       <change beforePath="$PROJECT_DIR$/public/tester/index.php" afterPath="$PROJECT_DIR$/public/tester/index.php" />
     </list>
     <ignored path="$PROJECT_DIR$/app/vendor/behat/gherkin/" />
@@ -175,7 +173,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/tester/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
@@ -185,7 +183,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/tester/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
@@ -306,9 +304,9 @@
         <option value="$PROJECT_DIR$/tester/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/tester/views/layouts/login.php" />
         <option value="$PROJECT_DIR$/tester/assets/LoginAsset.php" />
-        <option value="$PROJECT_DIR$/public/tester/index.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/public/tester/.gitignore" />
+        <option value="$PROJECT_DIR$/public/tester/index.php" />
       </list>
     </option>
   </component>
@@ -456,21 +454,6 @@
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tester" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tester" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="panel" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tester" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="panel" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -548,7 +531,7 @@
       <workItem from="1555392589804" duration="11340000" />
       <workItem from="1555437992239" duration="1943000" />
       <workItem from="1555514667922" duration="596000" />
-      <workItem from="1555652208843" duration="4385000" />
+      <workItem from="1555652208843" duration="4491000" />
     </task>
     <task id="LOCAL-00001" summary="r">
       <created>1554976269932</created>
@@ -620,11 +603,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555657181351</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="gitignor edited">
+      <created>1555657356041</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1555657356041</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57995000" />
+    <option name="totallyTimeSpent" value="58101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1038" extended-state="0" />
@@ -1046,14 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/tester/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tester/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1074,6 +1056,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/tester/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
