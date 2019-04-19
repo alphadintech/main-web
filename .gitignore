@@ -1,2 +1,4 @@
-.idea/
-old/
+# phpstorm project files
+.idea
+
+old
