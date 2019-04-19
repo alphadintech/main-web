@@ -26,14 +26,14 @@ class SiteController extends Controller
                     [
                         'actions' => ['logout'],
                         'allow' => true,
-                        'roles' => ['@'],
+                        'roles' => ['tester'],
                     ],
                 ],
             ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'logout' => ['post'],
+//                    'logout' => ['post'],
                 ],
             ],
         ];
@@ -62,6 +62,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $this->layout = "panel";
         if (!Yii::$app->user->can('canBeTester')) {
             return $this->redirect("login");
         }
@@ -76,12 +77,13 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+        $this->layout = "login";
         if (Yii::$app->user->can('canBeTester')) {
             return $this->goHome();
         }
 
         $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+        if ($model->load(Yii::$app->request->post(),'login') && $model->login()) {
             return $this->goBack();
         }
 

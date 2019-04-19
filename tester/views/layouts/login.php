@@ -28,7 +28,7 @@ LoginAsset::register($this);
 <?php $this->beginBody() ?>
 <div class="logo">
     <a href="index.html">
-        <img src="<?=Yii::$app->homeUrl?>/panel/assets/pages/img/logo-big.png" alt=""/> </a>
+        <img src="<?=Yii::$app->urlManager->getBaseUrl()?>/panel/assets/pages/img/logo-big.png" alt=""/> </a>
 </div>
 <div class="content">
     <?= $content ?>
