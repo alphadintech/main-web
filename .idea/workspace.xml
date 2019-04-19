@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9b297f2-99ab-4904-8657-87cb70290442" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/tester/assets/PanelAsset.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tester/views/layouts/panel.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/tester/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/tester/index.php" afterPath="$PROJECT_DIR$/public/tester/index.php" />
-      <change beforePath="$PROJECT_DIR$/tester/assets/LoginAsset.php" afterPath="$PROJECT_DIR$/tester/assets/LoginAsset.php" />
-      <change beforePath="$PROJECT_DIR$/tester/config/console.php" afterPath="$PROJECT_DIR$/tester/config/console.php" />
-      <change beforePath="$PROJECT_DIR$/tester/config/web.php" afterPath="$PROJECT_DIR$/tester/config/web.php" />
-      <change beforePath="$PROJECT_DIR$/tester/controllers/SiteController.php" afterPath="$PROJECT_DIR$/tester/controllers/SiteController.php" />
-      <change beforePath="$PROJECT_DIR$/tester/models/LoginForm.php" afterPath="$PROJECT_DIR$/tester/models/LoginForm.php" />
-      <change beforePath="$PROJECT_DIR$/tester/views/layouts/login.php" afterPath="$PROJECT_DIR$/tester/views/layouts/login.php" />
-      <change beforePath="$PROJECT_DIR$/tester/views/site/index.php" afterPath="$PROJECT_DIR$/tester/views/site/index.php" />
-      <change beforePath="$PROJECT_DIR$/tester/views/site/login.php" afterPath="$PROJECT_DIR$/tester/views/site/login.php" />
-      <change beforePath="$PROJECT_DIR$/tester/yii" afterPath="$PROJECT_DIR$/tester/yii" />
     </list>
     <ignored path="$PROJECT_DIR$/app/vendor/behat/gherkin/" />
     <ignored path="$PROJECT_DIR$/app/vendor/bower-asset/bootstrap/" />
@@ -156,11 +143,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginAsset.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginAsset.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tester/assets/LoginAsset.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+            <state relative-caret-position="551">
+              <caret line="31" column="77" lean-forward="false" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/tester/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -229,7 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/theme/adminPanel/login.html" />
         <option value="$PROJECT_DIR$/app/backend/views/layouts/auth.php" />
         <option value="$PROJECT_DIR$/app/backend/assets/RegisterAsset.php" />
         <option value="$PROJECT_DIR$/theme/adminPanel/register_tester.html" />
@@ -280,6 +286,7 @@
         <option value="$PROJECT_DIR$/tester/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/tester/views/layouts/login.php" />
         <option value="$PROJECT_DIR$/tester/assets/LoginAsset.php" />
+        <option value="$PROJECT_DIR$/public/tester/.gitignore" />
       </list>
     </option>
   </component>
@@ -419,39 +426,13 @@
             <path>
               <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
               <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tester" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
               <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tester" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tester" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tester" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tester" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tester" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="site" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
@@ -487,11 +468,11 @@
       <recent name="C:\wamp64\www\Yii2\alphadin\app\frontend\views\layouts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Yii2\alphadin\public\tester" />
       <recent name="C:\wamp64\www\Yii2\alphadin\tester\views\layouts" />
       <recent name="C:\wamp64\www\Yii2\alphadin\tester\assets" />
       <recent name="C:\wamp64\www\Yii2\alphadin\tester\commands" />
       <recent name="C:\wamp64\www\Yii2\alphadin\tester\migrations" />
-      <recent name="C:\wamp64\www\Yii2\alphadin\tester\models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -541,7 +522,7 @@
       <workItem from="1555392589804" duration="11340000" />
       <workItem from="1555437992239" duration="1943000" />
       <workItem from="1555514667922" duration="596000" />
-      <workItem from="1555652208843" duration="4056000" />
+      <workItem from="1555652208843" duration="4208000" />
     </task>
     <task id="LOCAL-00001" summary="r">
       <created>1554976269932</created>
@@ -599,11 +580,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555438205676</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="signup and login as tester">
+      <created>1555657047071</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1555657047071</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57666000" />
+    <option name="totallyTimeSpent" value="57818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="1038" extended-state="0" />
@@ -678,13 +666,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tester/vendor/yiisoft/yii2/rbac/migrations/m140506_102106_rbac_init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tester/migrations/m140506_102106_rbac_init.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -767,13 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1047,8 +1021,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tester/assets/LoginAsset.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="551">
+          <caret line="31" column="77" lean-forward="false" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/tester/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
