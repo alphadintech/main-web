@@ -124,9 +124,9 @@ class SiteController extends Controller
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+                Yii::$app->session->setFlash('success', 'از اینکه با ما در ارتباط هستید متشکریم. ما به شما در اسرع وقت پاسخ خواهیم داد.');
             } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending your message.');
+                Yii::$app->session->setFlash('error', 'خطایی در ارسال پیش آمده.');
             }
 
             return $this->refresh();
@@ -156,7 +156,7 @@ class SiteController extends Controller
     {
         $model = new SupervisorSignupForm();
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
-            Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
+            Yii::$app->session->setFlash('success', 'با تشکر از ثبت نام شما . لطفا ایمیل خودرا برای تایید چک کنید.');
             return $this->goHome();
         }
 
@@ -176,7 +176,7 @@ class SiteController extends Controller
         $this->layout = 'signup_as_tester';
         $model = new TesterSignupForm();
         if ($model->load(Yii::$app->request->post(), 'signup') && $model->signup()) {
-            Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
+            Yii::$app->session->setFlash('success', 'با تشکر از ثبت نام شما . لطفا ایمیل خودرا برای تایید چک کنید.');
             return $this->goHome();
         }
 
@@ -194,7 +194,7 @@ class SiteController extends Controller
     {
         $model = new CustomerSignupForm();
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
-            Yii::$app->session->setFlash('success', 'Thank you for registration. Please check your inbox for verification email.');
+            Yii::$app->session->setFlash('success', 'با تشکر از ثبت نام شما . لطفا ایمیل خودرا برای تایید چک کنید.');
             return $this->goHome();
         }
 
@@ -213,11 +213,11 @@ class SiteController extends Controller
         $model = new PasswordResetRequestForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail()) {
-                Yii::$app->session->setFlash('success', 'Check your email for further instructions.');
+                Yii::$app->session->setFlash('success', 'ایمیل خود را برای تصحیح گذرواژه بررسی کنید');
 
                 return $this->goHome();
             } else {
-                Yii::$app->session->setFlash('error', 'Sorry, we are unable to reset password for the provided email address.');
+                Yii::$app->session->setFlash('error', 'با عرض پوزش، ما نمیتوانیم برای آدرس ایمیل ارائه شده تنظیم مجدد رمزعبور انجام دهیم.');
             }
         }
 
@@ -242,7 +242,7 @@ class SiteController extends Controller
         }
 
         if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
-            Yii::$app->session->setFlash('success', 'New password saved.');
+            Yii::$app->session->setFlash('success', 'گذرواژه با موفقیت ذخیره شد');
 
             return $this->goHome();
         }
@@ -268,12 +268,12 @@ class SiteController extends Controller
         }
         if ($user = $model->verifyEmail()) {
             if (Yii::$app->user->login($user)) {
-                Yii::$app->session->setFlash('success', 'Your email has been confirmed!');
+                Yii::$app->session->setFlash('success', 'ایمیل شما با موفقیت تایید شد');
                 return $this->goHome();
             }
         }
 
-        Yii::$app->session->setFlash('error', 'Sorry, we are unable to verify your account with provided token.');
+        Yii::$app->session->setFlash('error', 'امکان تایید ایمیل به دلایل امنیتی وجود ندارد');
         return $this->goHome();
     }
 
@@ -287,10 +287,10 @@ class SiteController extends Controller
         $model = new ResendVerificationEmailForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail()) {
-                Yii::$app->session->setFlash('success', 'Check your email for further instructions.');
+                Yii::$app->session->setFlash('success', 'ایمیل خود را برای تایید چک کنید');
                 return $this->goHome();
             }
-            Yii::$app->session->setFlash('error', 'Sorry, we are unable to resend verification email for the provided email address.');
+            Yii::$app->session->setFlash('error', 'برای این ایمیل امکان ارسال مجدد وجود ندارد');
         }
 
         return $this->render('resendVerificationEmail', [
