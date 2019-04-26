@@ -27,7 +27,7 @@ class ResendVerificationEmailForm extends Model
             ['email', 'exist',
                 'targetClass' => '\common\models\User',
                 'filter' => ['status' => User::STATUS_INACTIVE],
-                'message' => 'There is no user with this email address.'
+                'message' => 'کاربری با این ایمیل یافت نشد'
             ],
         ];
     }
@@ -56,7 +56,7 @@ class ResendVerificationEmailForm extends Model
             )
             ->setFrom([Yii::$app->params['supportEmail'] => Yii::$app->name . ' robot'])
             ->setTo($this->email)
-            ->setSubject('Account registration at ' . Yii::$app->name)
+            ->setSubject('ثبت کاربری برای ' . Yii::$app->name)
             ->send();
     }
 }

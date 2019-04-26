@@ -30,12 +30,12 @@ class TesterSignupForm extends Model
             ['email', 'required'],
             ['email', 'email'],
             ['email', 'string', 'max' => 255],
-            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
+            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'این ایمیل قبلا در سامانه ثبت شده'],
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
             ['password_repeat', 'required'],
-            ['password_repeat', 'compare', 'compareAttribute' => 'password', 'message' => "Passwords don't match"],
+            ['password_repeat', 'compare', 'compareAttribute' => 'password', 'message' => "عدم هماهنگی گذرواژه"],
 
         ];
     }
@@ -83,7 +83,7 @@ class TesterSignupForm extends Model
             )
             ->setFrom([Yii::$app->params['supportEmail'] => Yii::$app->name . ' robot'])
             ->setTo($this->email)
-            ->setSubject('Account registration at ' . Yii::$app->name)
+            ->setSubject('ثبت کاربری برای ' . Yii::$app->name)
             ->send();
     }
 }
