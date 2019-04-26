@@ -37,7 +37,10 @@ class PanelAsset extends AssetBundle
         "../theme/assets/global/scripts/app.min.js",
         "../theme/assets//layouts/layout/scripts/layout.min.js",
         "../theme/assets//layouts/layout/scripts/demo.min.js",
-        "../theme/assets//layouts/global/scripts/quick-sidebar.min.js"
+        "../theme/assets//layouts/global/scripts/quick-sidebar.min.js",
+
+        "../tester/js/jquery-ui.min.js",
+        "../tester/js/form-builder.min.js"
     ];
     public $depends = [
         'yii\web\YiiAsset',
