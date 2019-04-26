@@ -30,6 +30,13 @@ return [
                 ],
             ],
         ],
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=yii_alphadin',
+            'username' => 'root',
+            'password' => 'root',
+            'charset' => 'utf8',
+        ],
         'authManager' => [
             'class' => 'yii\rbac\DbManager',
             // uncomment if you want to cache RBAC items hierarchy
