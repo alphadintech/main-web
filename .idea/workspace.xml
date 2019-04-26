@@ -2,9 +2,993 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9b297f2-99ab-4904-8657-87cb70290442" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/.bowerrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/LICENSE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/Vagrantfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/codeception.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/codeception.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/config/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/config/bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/config/main.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/config/params.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/config/test.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/fixtures/UserFixture.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/mail/emailVerify-html.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/mail/emailVerify-text.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/mail/layouts/html.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/mail/layouts/text.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/mail/passwordResetToken-html.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/mail/passwordResetToken-text.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/models/LoginForm.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/models/User.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/tests/_bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/tests/_data/user.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/tests/_support/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/tests/_support/UnitTester.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/tests/unit.suite.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/tests/unit/models/LoginFormTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/common/widgets/Alert.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/composer.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/composer.lock" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/config/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/config/bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/config/main.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/config/params.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/config/test.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/controllers/RbacController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/migrations/m100310_062328_create_media_table.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/migrations/m130524_201442_init.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/migrations/m140506_102106_rbac_init.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/migrations/m170907_052038_rbac_add_index_on_auth_assignment_user_id.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/migrations/m190124_110200_add_verification_token_column_to_user_table.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/migrations/m190316_063939_create_customer_table.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/migrations/m190327_134545_create_phone_table.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/migrations/m190327_134821_create_supervisor_table.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/migrations/m190327_134822_create_tester_table.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/migrations/m190328_074650_create_type_table.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/migrations/m190328_074921_create_tester_type_table.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/models/.gitkeep" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/console/runtime/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/Dockerfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/assets/AppAsset.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/codeception.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/config/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/config/bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/config/main.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/config/params.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/config/test.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/controllers/SiteController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/models/.gitkeep" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/runtime/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/tests/_bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/tests/_data/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/tests/_data/login_data.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/tests/_output/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/tests/_support/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/tests/_support/FunctionalTester.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/tests/_support/UnitTester.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/tests/functional.suite.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/tests/functional/LoginCest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/tests/functional/_bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/tests/unit.suite.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/tests/unit/_bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/views/layouts/main.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/views/site/error.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/views/site/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/customer/views/site/login.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/docker-compose.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/backend/config/codeception-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/backend/config/main-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/backend/config/params-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/backend/config/test-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/backend/web/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/common/config/codeception-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/common/config/main-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/common/config/params-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/common/config/test-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/console/config/main-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/console/config/params-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/console/config/test-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/frontend/config/codeception-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/frontend/config/main-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/frontend/config/params-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/frontend/config/test-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/frontend/web/index-test.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/frontend/web/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/frontend/web/robots.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/yii" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/yii_test" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/dev/yii_test.bat" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/prod/backend/config/main-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/prod/backend/config/params-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/prod/backend/web/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/prod/backend/web/robots.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/prod/common/config/main-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/prod/common/config/params-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/prod/console/config/main-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/prod/console/config/params-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/prod/frontend/config/main-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/prod/frontend/config/params-local.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/prod/frontend/web/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/prod/frontend/web/robots.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/environments/prod/yii" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/Dockerfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/assets/AppAsset.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/assets/LoginAsset.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/assets/SignupTesterAsset.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/codeception.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/config/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/config/bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/config/main.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/config/params.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/config/test.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/controllers/SiteController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/models/ContactForm.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/models/PasswordResetRequestForm.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/models/ResendVerificationEmailForm.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/models/ResetPasswordForm.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/models/SignupForm.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/models/TesterSignupForm.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/models/VerifyEmailForm.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/runtime/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/_bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/_data/login_data.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/_data/user.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/_output/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/_support/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/_support/FunctionalTester.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/_support/UnitTester.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/acceptance.suite.yml.example" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/acceptance/HomeCest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/acceptance/_bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/functional.suite.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/functional/AboutCest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/functional/ContactCest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/functional/HomeCest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/functional/LoginCest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/functional/ResendVerificationEmailCest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/functional/SignupCest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/functional/VerifyEmailCest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/functional/_bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/unit.suite.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/unit/_bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/unit/models/ContactFormTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/unit/models/PasswordResetRequestFormTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/unit/models/ResendVerificationEmailFormTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/unit/models/ResetPasswordFormTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/unit/models/SignupFormTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/tests/unit/models/VerifyEmailFormTest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/layouts/login.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/layouts/main.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/layouts/signup_as_tester.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/site/about.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/site/contact.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/site/error.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/site/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/site/login.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/site/requestPasswordResetToken.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/site/resendVerificationEmail.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/site/resetPassword.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/site/signup.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/views/site/signup_as_tester.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/web/assets/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/frontend/web/css/site.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/init" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/init.bat" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/requirements.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/Dockerfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/assets/AppAsset.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/codeception.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/config/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/config/bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/config/main.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/config/params.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/config/test.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/controllers/SiteController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/models/.gitkeep" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/runtime/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/tests/_bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/tests/_data/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/tests/_data/login_data.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/tests/_output/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/tests/_support/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/tests/_support/FunctionalTester.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/tests/_support/UnitTester.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/tests/functional.suite.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/tests/functional/LoginCest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/tests/functional/_bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/tests/unit.suite.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/tests/unit/_bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/views/layouts/main.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/views/site/error.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/views/site/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/supervisor/views/site/login.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/Dockerfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/assets/AppAsset.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/assets/PanelAsset.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/codeception.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/config/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/config/bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/config/main.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/config/params.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/config/test.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/controllers/SiteController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/models/.gitkeep" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/runtime/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/tests/_bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/tests/_data/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/tests/_data/login_data.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/tests/_output/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/tests/_support/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/tests/_support/FunctionalTester.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/tests/_support/UnitTester.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/tests/functional.suite.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/tests/functional/LoginCest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/tests/functional/_bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/tests/unit.suite.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/tests/unit/_bootstrap.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/views/layouts/main.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/views/layouts/panel.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/views/site/dashboard.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/views/site/error.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/views/site/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/tester/views/site/login.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/vagrant/config/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/vagrant/config/vagrant-local.example.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/vagrant/nginx/app.conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/vagrant/nginx/log/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/vagrant/provision/always-as-root.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/vagrant/provision/common.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/vagrant/provision/once-as-root.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/vagrant/provision/once-as-vagrant.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/yii.bat" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/.htaccess" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/site.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/customer/assets/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/customer/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/customer/index-test.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/customer/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/customer/robots.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/supervisor/assets/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/supervisor/css/site.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/supervisor/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/supervisor/index-test.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/supervisor/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/supervisor/robots.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/css/components-md-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/css/plugins-md-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/img/social/facebook.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/img/social/googleplus.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/img/social/linkedin.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/img/social/twitter.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/backstretch/LICENSE-MIT" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/backstretch/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/backstretch/jquery.backstretch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/backstretch/jquery.backstretch.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap-hover-dropdown/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap-hover-dropdown/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap-switch/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap-switch/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap-switch/css/bootstrap-switch-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap/css/bootstrap-rtl.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap/css/bootstrap-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap/css/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap/js/bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/bootstrap/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/excanvas.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/font-awesome/css/font-awesome.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/font-awesome/css/font-awesome.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/font-awesome/fonts/FontAwesome.otf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-slimscroll/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-slimscroll/slimScroll.jquery.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/additional-methods.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/additional-methods.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/jquery.validate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/jquery.validate.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ar.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_bg.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_bn_BD.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_bn_BD.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ca.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_cs.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_da.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_de.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_el.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_es.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_es_AR.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_es_AR.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_es_PE.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_es_PE.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_et.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_eu.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_fa.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_fi.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_fr.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ge.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ge.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_gl.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_he.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_hr.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_hu.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_hy_AM.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_hy_AM.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_id.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_is.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_is.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_it.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ja.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ka.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ka.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_kk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_kk.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ko.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_lt.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_lv.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_my.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_my.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_nl.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_no.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_pl.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_pt_BR.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_pt_BR.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_pt_PT.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_pt_PT.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ro.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_ru.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_si.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_si.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_sk.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_sl.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_sr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_sr.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_sr_lat.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_sr_lat.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_sv.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_th.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_tj.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_tj.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_tr.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_uk.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_vi.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_zh.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_zh_TW.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/messages_zh_TW.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/methods_de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/methods_de.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/methods_es_CL.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/methods_es_CL.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/methods_fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/methods_fi.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/methods_nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/methods_nl.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/methods_pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery-validation/js/localization/methods_pt.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery.blockui.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/js.cookie.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/respond.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/LICENSE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/css/select2-bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/css/select2.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/css/select2.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/az.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/hi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/is.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/mk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/pt-BR.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/sr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/zh-CN.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/i18n/zh-TW.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/select2.full.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/select2.full.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/select2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/js/select2.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/select2/sass/select2-bootstrap.min.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/simple-line-icons/License.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/simple-line-icons/Readme.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.dev.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/simple-line-icons/icons-lte-ie7.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/simple-line-icons/simple-line-icons.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/global/scripts/app.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/global/scripts/quick-sidebar.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/css/custom-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/css/layout-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/css/themes/darkblue-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/img/avatar1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/img/avatar10.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/img/avatar11.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/img/avatar2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/img/avatar3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/img/avatar3_small.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/img/avatar4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/img/avatar6.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/img/avatar7.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/img/avatar8.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/img/avatar9.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/img/icon-color-close.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/img/icon-color.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/img/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/scripts/demo.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/layouts/layout/scripts/layout.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/pages/css/login-5-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/pages/css/login-rtl.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/pages/img/login/bg1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/pages/img/login/bg2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/pages/img/login/bg3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/pages/img/login/bg4.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/pages/img/login/login-invert.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/pages/img/logo-big.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/pages/scripts/login-5.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/theme/assets/pages/scripts/login.min.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/tester/.gitignore" afterPath="$PROJECT_DIR$/public/tester/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/public/backend/assets/.gitignore" afterPath="$PROJECT_DIR$/app/common/tests/_output/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/public/backend/css/site.css" afterPath="$PROJECT_DIR$/public/customer/css/site.css" />
+      <change beforePath="$PROJECT_DIR$/public/backend/favicon.ico" afterPath="$PROJECT_DIR$/app/frontend/web/favicon.ico" />
+      <change beforePath="$PROJECT_DIR$/public/backend/index-test.php" afterPath="$PROJECT_DIR$/app/environments/dev/backend/web/index-test.php" />
+      <change beforePath="$PROJECT_DIR$/public/backend/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/backend/robots.txt" afterPath="$PROJECT_DIR$/app/environments/dev/backend/web/robots.txt" />
+      <change beforePath="$PROJECT_DIR$/public/browserconfig.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/css/ajax-loader.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/css/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/css/grabbing.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/css/ionicons.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/css/jquery.fullPage.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/css/jquery.pagepiling.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/css/linearicons.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/css/owl.carousel.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/css/owl.theme.default.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/css/owl.video.play.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/favicon_tmp3368" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Linearicons.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-Black.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-BlackItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-BoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-ExtraBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-ExtraBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-ExtraLight.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-ExtraLightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-Italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-LightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-Medium.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-MediumItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-SemiBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-SemiBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-Thin.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Montserrat-ThinItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/OFL.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/ionicons.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/ionicons.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/ionicons.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/ionicons.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/poppins-regular-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/poppins-regular-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/1-470x490.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/CsrdFi-1.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/Group 870.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/Thumbs.db" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/Thumbs.db" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/bg1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/bg2-1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/bg2-2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/bg2-3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/bg2-4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/bg2-5.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/bg2-6.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/bg2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/bg2_tmp14611" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/bg2_tmp23138" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/bg3-5_tmp28566" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/bg3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/bg4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/dots.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/dots2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg/dots_tmp1317" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/_3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/_4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/_5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/_5_tmp11040" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/_6.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/akhbarerasmi.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/blogad.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/mehrnews.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/shanbemag.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/techera.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/images/partners/webna.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/commingSoonJs.js" afterPath="$PROJECT_DIR$/app/console/controllers/.gitkeep" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.pagepiling.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.pagepiling.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.validate.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/owl.carousel.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/rev-slider/jquery.themepunch.enablelog.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/rev-slider/jquery.themepunch.revolution.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/rev-slider/jquery.themepunch.tools.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/rev-slider/revolution.extension.actions.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/rev-slider/revolution.extension.carousel.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/rev-slider/revolution.extension.kenburn.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/rev-slider/revolution.extension.layeranimation.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/rev-slider/revolution.extension.migration.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/rev-slider/revolution.extension.navigation.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/rev-slider/revolution.extension.parallax.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/rev-slider/revolution.extension.slideanims.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/rev-slider/revolution.extension.video.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/scripts.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/smoothscroll.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/supervisor/.htaccess" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/.htaccess" afterPath="$PROJECT_DIR$/public/tester/.htaccess" />
+      <change beforePath="$PROJECT_DIR$/public/tester/css/site.css" afterPath="$PROJECT_DIR$/public/tester/css/site.css" />
+      <change beforePath="$PROJECT_DIR$/public/tester/index-test.php" afterPath="$PROJECT_DIR$/public/tester/index-test.php" />
       <change beforePath="$PROJECT_DIR$/public/tester/index.php" afterPath="$PROJECT_DIR$/public/tester/index.php" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/css/components-md-rtl.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/css/plugins-md-rtl.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/img/social/facebook.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/img/social/googleplus.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/img/social/linkedin.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/img/social/twitter.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/backstretch/LICENSE-MIT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/backstretch/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/backstretch/jquery.backstretch.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/backstretch/jquery.backstretch.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap-hover-dropdown/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap-hover-dropdown/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap-switch/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap-switch/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap-switch/css/bootstrap-switch-rtl.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap/css/bootstrap-rtl.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap/css/bootstrap-rtl.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/excanvas.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/font-awesome/css/font-awesome.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/font-awesome/css/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/font-awesome/fonts/FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-slimscroll/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-slimscroll/slimScroll.jquery.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/additional-methods.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/additional-methods.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/jquery.validate.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/jquery.validate.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ar.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ar.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_bg.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_bg.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_bn_BD.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_bn_BD.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ca.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ca.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_cs.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_cs.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_da.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_da.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_de.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_de.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_el.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_el.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_es.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_es.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_es_AR.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_es_AR.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_es_PE.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_es_PE.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_et.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_et.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_eu.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_eu.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_fa.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_fa.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_fi.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_fi.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_fr.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_fr.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ge.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ge.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_gl.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_gl.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_he.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_he.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_hr.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_hr.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_hu.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_hu.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_hy_AM.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_hy_AM.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_id.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_id.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_is.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_is.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_it.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_it.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ja.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ja.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ka.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ka.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_kk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_kk.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ko.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ko.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_lt.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_lt.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_lv.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_lv.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_my.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_my.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_nl.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_nl.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_no.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_no.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_pl.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_pl.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_pt_BR.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_pt_BR.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_pt_PT.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_pt_PT.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ro.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ro.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ru.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_ru.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_si.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_si.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_sk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_sk.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_sl.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_sl.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_sr.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_sr.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_sr_lat.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_sr_lat.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_sv.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_sv.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_th.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_th.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_tj.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_tj.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_tr.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_tr.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_uk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_uk.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_vi.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_vi.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_zh.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_zh.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_zh_TW.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/messages_zh_TW.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/methods_de.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/methods_de.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/methods_es_CL.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/methods_es_CL.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/methods_fi.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/methods_fi.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/methods_nl.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/methods_nl.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/methods_pt.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery-validation/js/localization/methods_pt.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery.blockui.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/jquery.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/js.cookie.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/respond.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/LICENSE.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/css/select2-bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/css/select2.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/css/select2.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/az.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/bg.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/ca.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/cs.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/da.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/de.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/en.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/es.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/et.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/eu.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/fa.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/fi.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/fr.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/gl.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/he.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/hi.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/hr.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/hu.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/id.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/is.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/it.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/ko.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/lt.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/lv.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/mk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/nb.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/nl.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/pl.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/pt-BR.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/pt.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/ro.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/ru.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/sk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/sr.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/sv.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/th.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/tr.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/uk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/vi.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/zh-CN.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/i18n/zh-TW.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/select2.full.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/select2.full.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/select2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/js/select2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/select2/sass/select2-bootstrap.min.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/simple-line-icons/License.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/simple-line-icons/Readme.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.dev.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/simple-line-icons/icons-lte-ie7.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/simple-line-icons/simple-line-icons.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/global/scripts/app.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/global/scripts/quick-sidebar.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/css/custom-rtl.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/css/layout-rtl.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/css/themes/darkblue-rtl.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/img/avatar1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/img/avatar10.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/img/avatar11.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/img/avatar2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/img/avatar3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/img/avatar3_small.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/img/avatar4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/img/avatar6.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/img/avatar7.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/img/avatar8.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/img/avatar9.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/img/icon-color-close.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/img/icon-color.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/img/logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/scripts/demo.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/layouts/layout/scripts/layout.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/pages/css/login-5-rtl.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/pages/css/login-rtl.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/pages/img/login/bg1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/pages/img/login/bg2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/pages/img/login/bg3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/pages/img/login/bg4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/pages/img/login/login-invert.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/pages/img/logo-big.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/pages/scripts/login-5.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/panel/assets/pages/scripts/login.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/tester/robots.txt" afterPath="$PROJECT_DIR$/public/tester/robots.txt" />
+      <change beforePath="$PROJECT_DIR$/tester/.bowerrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/LICENSE.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/Vagrantfile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/assets/AppAsset.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/assets/LoginAsset.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/assets/PanelAsset.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/assets/SignupAsset.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/codeception.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/commands/HelloController.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/commands/RbacController.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/composer.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/composer.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/config/console.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/config/db.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/config/params.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/config/test.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/config/test_db.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/config/web.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/controllers/SiteController.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/docker-compose.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/mail/layouts/html.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/migrations/m100310_062328_create_media_table.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/migrations/m130524_201442_init.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/migrations/m140506_102106_rbac_init.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/migrations/m170907_052038_rbac_add_index_on_auth_assignment_user_id.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/migrations/m180523_151638_rbac_updates_indexes_without_prefix.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/migrations/m190327_134822_create_tester_table.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/migrations/m190328_074650_create_type_table.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/migrations/m190328_074921_create_tester_type_table.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/models/ContactForm.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/models/LoginForm.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/models/PasswordResetRequestForm.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/models/ResetPasswordForm.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/models/SignupForm.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/models/Tester.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/models/TesterType.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/models/Type.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/models/User.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/models/UserOrgin.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/requirements.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/runtime/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/_bootstrap.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/_data/.gitkeep" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/_output/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/_support/AcceptanceTester.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/_support/FunctionalTester.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/_support/UnitTester.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/acceptance.suite.yml.example" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/acceptance/AboutCest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/acceptance/ContactCest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/acceptance/HomeCest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/acceptance/LoginCest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/acceptance/_bootstrap.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/bin/yii" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/bin/yii.bat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/functional.suite.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/functional/ContactFormCest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/functional/LoginFormCest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/functional/_bootstrap.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/unit.suite.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/unit/_bootstrap.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/unit/models/ContactFormTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/unit/models/LoginFormTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/tests/unit/models/UserTest.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/vagrant/config/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/vagrant/config/vagrant-local.example.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/vagrant/nginx/app.conf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/vagrant/nginx/log/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/vagrant/provision/always-as-root.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/vagrant/provision/once-as-root.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/vagrant/provision/once-as-vagrant.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/views/layouts/login.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/views/layouts/main.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/views/layouts/panel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/views/layouts/signup.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/views/site/about.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/views/site/contact.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/views/site/error.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/views/site/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/views/site/login.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/views/site/requestPasswordResetToken.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/views/site/resetPassword.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/views/site/signup.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/widgets/Alert.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/yii" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tester/yii.bat" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/app/vendor/behat/gherkin/" />
     <ignored path="$PROJECT_DIR$/app/vendor/bower-asset/bootstrap/" />
@@ -102,31 +1086,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tester/config/web.php">
+      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/frontend/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="56" column="42" lean-forward="true" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/tester/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-3780">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/tester/index.php">
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/frontend/config/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="519">
+              <caret line="56" column="27" lean-forward="false" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/tester/config/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -147,12 +1131,14 @@
       <find>status</find>
       <find>\common\</find>
       <find>deb</find>
+      <find>tester</find>
     </findStrings>
     <replaceStrings>
       <replace>panel/assets/</replace>
       <replace>/../</replace>
       <replace>/</replace>
       <replace>\app\</replace>
+      <replace>supervisor</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\wamp64\www\Yii2\alphadin\theme\assets</dir>
@@ -165,16 +1151,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/backend/views/layouts/auth.php" />
-        <option value="$PROJECT_DIR$/app/backend/assets/RegisterAsset.php" />
-        <option value="$PROJECT_DIR$/theme/adminPanel/register_tester.html" />
         <option value="$PROJECT_DIR$/app/backend/views/layouts/register.php" />
         <option value="$PROJECT_DIR$/app/backend/views/site/register.php" />
         <option value="$PROJECT_DIR$/theme/assets/pages/scripts/login-5.min.js" />
         <option value="$PROJECT_DIR$/public/backend/panel/assets/pages/scripts/login-5.min.js" />
         <option value="$PROJECT_DIR$/public/panel/assets/pages/scripts/login-5.min.js" />
         <option value="$PROJECT_DIR$/app/backend/config/main.php" />
-        <option value="$PROJECT_DIR$/app/frontend/config/main.php" />
         <option value="$PROJECT_DIR$/app/frontend/assets/LoginAsset.php" />
         <option value="$PROJECT_DIR$/app/frontend/views/layouts/login.php" />
         <option value="$PROJECT_DIR$/app/frontend/assets/RegisterAsset.php" />
@@ -216,6 +1198,10 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/public/tester/index.php" />
         <option value="$PROJECT_DIR$/public/tester/.gitignore" />
+        <option value="$PROJECT_DIR$/public/web/index.php" />
+        <option value="$PROJECT_DIR$/supervisor/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/app/frontend/config/main.php" />
+        <option value="$PROJECT_DIR$/app/tester/config/main.php" />
       </list>
     </option>
   </component>
@@ -299,10 +1285,11 @@
       <path value="$PROJECT_DIR$/app/vendor/yiisoft/yii2-debug" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -344,6 +1331,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -352,45 +1340,33 @@
               <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
               <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="alphadin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alphadin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tester" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/tester/index.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\Yii2\alphadin\public\tester" />
-      <recent name="C:\wamp64\www\Yii2\alphadin\public" />
-      <recent name="C:\wamp64\www\Yii2\alphadin\app\frontend\assets" />
-      <recent name="C:\wamp64\www\Yii2\alphadin\app\frontend\views\layouts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Yii2\alphadin\supervisor" />
+      <recent name="C:\wamp64\www\Yii2\alphadin\public\supervisor" />
       <recent name="C:\wamp64\www\Yii2\alphadin\public\tester" />
       <recent name="C:\wamp64\www\Yii2\alphadin\tester\views\layouts" />
       <recent name="C:\wamp64\www\Yii2\alphadin\tester\assets" />
-      <recent name="C:\wamp64\www\Yii2\alphadin\tester\commands" />
-      <recent name="C:\wamp64\www\Yii2\alphadin\tester\migrations" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Yii2\alphadin\public" />
+      <recent name="C:\wamp64\www\Yii2\alphadin\public\tester" />
+      <recent name="C:\wamp64\www\Yii2\alphadin\app\frontend\assets" />
+      <recent name="C:\wamp64\www\Yii2\alphadin\app\frontend\views\layouts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -441,7 +1417,14 @@
       <workItem from="1555437992239" duration="1943000" />
       <workItem from="1555514667922" duration="596000" />
       <workItem from="1555652208843" duration="5920000" />
-      <workItem from="1555764810019" duration="1268000" />
+      <workItem from="1555764810019" duration="8360000" />
+      <workItem from="1555956041113" duration="1545000" />
+      <workItem from="1555995264981" duration="2399000" />
+      <workItem from="1556013111618" duration="61000" />
+      <workItem from="1556105669389" duration="263000" />
+      <workItem from="1556105933410" duration="3529000" />
+      <workItem from="1556168640219" duration="5830000" />
+      <workItem from="1556255136636" duration="1160000" />
     </task>
     <task id="LOCAL-00001" summary="r">
       <created>1554976269932</created>
@@ -534,28 +1517,34 @@
       <option name="project" value="LOCAL" />
       <updated>1555657992121</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="gitignor edited">
+      <created>1555827080017</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1555827080017</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60798000" />
+    <option name="totallyTimeSpent" value="82677000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1936" height="1038" extended-state="0" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19247311" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17883995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23131673" sideWeight="0.50215054" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2508056" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.34114888" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.34114888" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25134265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23131673" sideWeight="0.49784946" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -614,77 +1603,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tester/migrations/m190327_134822_create_tester_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester/vendor/yiisoft/yii2/rbac/PhpManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester/migrations/m130524_201442_init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester/migrations/m100310_062328_create_media_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml" />
-    <entry file="file://$PROJECT_DIR$/tester/models/ContactForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester/models/UserOrgin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="187" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester/migrations/m190328_074650_create_type_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester/models/Type.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester/models/TesterType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester/models/Tester.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/old/app/frontend/models/SignupForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
@@ -741,27 +1659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tester/commands/RbacController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/tester/index-test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester/models/SignupForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="48" column="33" lean-forward="false" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tester/views/site/signup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -776,20 +1673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tester/views/layouts/signup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="62" column="50" lean-forward="false" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/old/app/backend/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -801,13 +1684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="22" column="42" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="54" column="6" lean-forward="false" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -873,10 +1749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="1055" column="14" lean-forward="false" selection-start-line="1067" selection-start-column="24" selection-end-line="1067" selection-end-column="56" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -894,20 +1766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tester/assets/LoginAsset.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="31" column="77" lean-forward="false" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/tester/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -915,33 +1773,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tester/views/site/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="974">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tester/views/layouts/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="30" column="56" lean-forward="false" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/theme/adminPanel/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="104" column="44" lean-forward="false" selection-start-line="104" selection-start-column="44" selection-end-line="104" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tester/config/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="56" column="42" lean-forward="true" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="1176">
+          <caret line="56" column="42" lean-forward="false" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -949,14 +1791,167 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/tester/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/tester/index-test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/supervisor/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/supervisor/panel/assets/pages/css/login-rtl.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/supervisor/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supervisor/config/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supervisor/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supervisor/models/Tester.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/app/console/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tester/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1029">
+          <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tester/models/SignupForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="38" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tester/views/site/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="823">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tester/views/layouts/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="30" column="56" lean-forward="false" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tester/assets/LoginAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="31" column="77" lean-forward="false" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tester/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tester/views/layouts/signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tester/commands/RbacController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tester/migrations/m130524_201442_init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tester/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3780">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/frontend/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="56" column="27" lean-forward="false" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tester/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
           <folding />
         </state>
       </provider>
