@@ -20,6 +20,7 @@ class m190327_134822_create_tester_table extends Migration
         $this->createTable('{{%tester}}', [
             'user_id' => $this->integer()->notNull()->unique(),
             'name' => $this->string(),
+            'avatar_id'=>$this->integer(),
             'family' => $this->string(),
             'nationality_code' => $this->integer()->unique(),
             'gender' => $this->smallInteger(),
@@ -46,6 +47,23 @@ class m190327_134822_create_tester_table extends Migration
             'id',
             'CASCADE'
         );
+
+        // creates index for column `avatar_id`
+        $this->createIndex(
+            '{{%idx-tester-avatar_id}}',
+            '{{%tester}}',
+            'avatar_id'
+        );
+
+        // add foreign key for table `{{%media}}`
+        $this->addForeignKey(
+            '{{%fk-tester-avatar_id}}',
+            '{{%tester}}',
+            'avatar_id',
+            '{{%media}}',
+            'id',
+            'RESTRICT'
+        );
     }
 
     /**
@@ -53,6 +71,18 @@ class m190327_134822_create_tester_table extends Migration
      */
     public function safeDown()
     {
+        // drops foreign key for table `{{%media}}`
+        $this->dropForeignKey(
+            '{{%fk-tester-avatar_id}}',
+            '{{%media}}'
+        );
+
+        // drops index for column `avatar_id`
+        $this->dropIndex(
+            '{{%idx-tester-avatar_id}}',
+            '{{%tester}}'
+        );
+
         // drops foreign key for table `{{%user}}`
         $this->dropForeignKey(
             '{{%fk-tester-user_id}}',

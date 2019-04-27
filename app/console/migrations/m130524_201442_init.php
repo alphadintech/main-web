@@ -14,12 +14,11 @@ class m130524_201442_init extends Migration
 
         $this->createTable('{{%user}}', [
             'id' => $this->primaryKey(),
-            'name' => $this->string()->notNull(),
             'auth_key' => $this->string(32)->notNull(),
             'password_hash' => $this->string()->notNull(),
             'password_reset_token' => $this->string()->unique(),
             'email' => $this->string()->notNull()->unique(),
-            'avatar_id'=>$this->integer(),
+
 
             'status' => $this->smallInteger()->notNull()->defaultValue(10),
             'created_at' => $this->integer()->notNull(),
@@ -27,22 +26,7 @@ class m130524_201442_init extends Migration
         ], $tableOptions);
 
 
-        // creates index for column `avatar_id`
-        $this->createIndex(
-            '{{%idx-user-avatar_id}}',
-            '{{%user}}',
-            'avatar_id'
-        );
 
-        // add foreign key for table `{{%media}}`
-        $this->addForeignKey(
-            '{{%fk-user-avatar_id}}',
-            '{{%user}}',
-            'avatar_id',
-            '{{%media}}',
-            'id',
-            'RESTRICT'
-        );
     }
 
     public function down()

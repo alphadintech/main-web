@@ -19,6 +19,7 @@ class m190327_134821_create_supervisor_table extends Migration
         }
         $this->createTable('{{%supervisor}}', [
             'user_id' => $this->integer()->notNull()->unique(),
+            'username' => $this->string()->notNull()->unique(),
 
             'status' => $this->smallInteger()->notNull()->defaultValue(10),
             'updated_at' => $this->integer()->notNull(),
