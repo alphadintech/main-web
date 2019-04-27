@@ -441,7 +441,10 @@ PanelAsset::register($this);
         </div>
     </div>
     <div class="page-content-wrapper">
-        <?= $content ?>
+        <div class="page-content">
+            <?= $content ?>
+
+        </div>
     </div>
     <a href="javascript:;" class="page-quick-sidebar-toggler">
         <i class="icon-login"></i>
