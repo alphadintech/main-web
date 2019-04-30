@@ -27,8 +27,8 @@ class m190316_063939_create_customer_table extends Migration
             'contract_num' => $this->integer(),
 
             'status' => $this->smallInteger()->notNull()->defaultValue(10),
-            'updated_at' => $this->integer()->notNull(),
-            'created_at' => $this->integer()->notNull()
+            'updated_at' => $this->integer(),
+            'created_at' => $this->integer()
         ],$tableOptions);
         $this->addPrimaryKey('user-id_pk','{{%customer}}','user_id');
 

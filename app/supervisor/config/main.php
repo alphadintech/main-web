@@ -14,7 +14,7 @@ return [
     'modules' => [],
     'components' => [
         'request' => [
-            'csrfParam' => '_csrf-supervisor',
+            'csrfParam' => '_csrf-global',
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -23,7 +23,7 @@ return [
         ],
         'session' => [
             // this is the name of the session cookie used for login on the supervisor
-            'name' => 'advanced-supervisor',
+            'name' => $params['session_name'],
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -37,14 +37,22 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'dashboard'=>'site/index'
             ],
         ],
-        */
+        'urlManagerFrontend' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'class' => 'yii\web\UrlManager',
+//            'hostInfo' =>'http://localhost/yii2/test/public/supervisor',
+            'baseUrl' =>  '../',
+
+        ],
+
     ],
     'params' => $params,
 ];

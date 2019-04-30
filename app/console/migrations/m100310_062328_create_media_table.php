@@ -26,8 +26,8 @@ class m100310_062328_create_media_table extends Migration
             'size' => $this->integer(),
 
             'status' => $this->smallInteger()->notNull()->defaultValue(10),
-            'updated_at' => $this->integer()->notNull(),
-            'created_at' => $this->integer()->notNull()
+            'updated_at' => $this->integer(),
+            'created_at' => $this->integer()
         ], $tableOptions);
     }
 

@@ -22,8 +22,8 @@ class m190327_134821_create_supervisor_table extends Migration
             'username' => $this->string()->notNull()->unique(),
 
             'status' => $this->smallInteger()->notNull()->defaultValue(10),
-            'updated_at' => $this->integer()->notNull(),
-            'created_at' => $this->integer()->notNull()
+            'updated_at' => $this->integer(),
+            'created_at' => $this->integer()
         ],$tableOptions);
         $this->addPrimaryKey('user-id_pk','{{%supervisor}}','user_id');
 

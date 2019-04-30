@@ -27,8 +27,8 @@ class m190327_134545_create_phone_table extends Migration
             'phone' => $this->string()->notNull(),
 
             'status' => $this->smallInteger()->notNull()->defaultValue(10),
-            'updated_at' => $this->integer()->notNull(),
-            'created_at' => $this->integer()->notNull()
+            'updated_at' => $this->integer(),
+            'created_at' => $this->integer()
 
         ],$tableOptions);
 

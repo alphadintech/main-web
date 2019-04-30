@@ -43,6 +43,7 @@ return [
                 'login'=>'site/login',
                 'logout'=>'site/logout',
                 'signup-as-tester'=>'site/signup-as-tester',
+                'signup-as-supervisor'=>'site/signup-as-supervisor',
 //                '<controller:\w+>/<id:\d+>' => '<controller>/view',
 //                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
 //                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
@@ -53,9 +54,13 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'class' => 'yii\web\UrlManager',
-//            'hostInfo' =>'http://localhost/yii2/test/public/tester',
             'baseUrl' =>  '../public/tester',
-
+        ],
+        'urlManagerSupervisor' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'class' => 'yii\web\UrlManager',
+            'baseUrl' =>  '../public/supervisor',
         ],
 
     ],

@@ -3,6 +3,7 @@
 namespace frontend\controllers;
 
 use frontend\models\ResendVerificationEmailForm;
+use frontend\models\SupervisorSignupForm;
 use frontend\models\TesterSignupForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -40,7 +41,7 @@ class SiteController extends Controller
                     [
                         'actions' => ['signup-as-supervisor'],
                         'allow' => true,
-                        'roles' => ['admin'],
+                        'roles' => ['?'],
                     ],
                     [
                         'actions' => ['logout'],
@@ -154,13 +155,14 @@ class SiteController extends Controller
      */
     public function actionSignupAsSupervisor()
     {
+//        die("Sad");
         $model = new SupervisorSignupForm();
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
             Yii::$app->session->setFlash('success', 'با تشکر از ثبت نام شما . لطفا ایمیل خودرا برای تایید چک کنید.');
             return $this->goHome();
         }
 
-        return $this->render('signup', [
+        return $this->render('signup_as_supervisor', [
             'model' => $model,
         ]);
     }
@@ -303,7 +305,7 @@ class SiteController extends Controller
             return $this->redirect(Yii::$app->urlManagerTester->createUrl(['dashboard']));
         } else {
             if (Yii::$app->user->can('canBeSupervisor')) {
-                return $this->redirect(['supervisor/site']);
+                return $this->redirect(Yii::$app->urlManagerSupervisor->createUrl(['dashboard']));
             } else {
                 if (Yii::$app->user->can('canBeCustomer')) {
                     return $this->redirect(['customer/site']);

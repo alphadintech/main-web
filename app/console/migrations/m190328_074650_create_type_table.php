@@ -22,8 +22,8 @@ class m190328_074650_create_type_table extends Migration
             'name' => $this->string(),
 
             'status' => $this->smallInteger()->notNull()->defaultValue(10),
-            'updated_at' => $this->integer()->notNull(),
-            'created_at' => $this->integer()->notNull()
+            'updated_at' => $this->integer(),
+            'created_at' => $this->integer()
         ],$tableOptions);
     }
 
