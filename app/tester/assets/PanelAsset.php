@@ -40,7 +40,7 @@ class PanelAsset extends AssetBundle
         "../theme/assets//layouts/global/scripts/quick-sidebar.min.js",
 
         "../tester/js/jquery-ui.min.js",
-        "../tester/js/form-builder.min.js"
+//        "../tester/js/form-builder.min.js"
     ];
     public $depends = [
         'yii\web\YiiAsset',

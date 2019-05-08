@@ -378,66 +378,53 @@ PanelAsset::register($this);
                         <span></span>
                     </div>
                 </li>
-                <li class="sidebar-search-wrapper">
-                    <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
-                    <!-- DOC: Apply "sidebar-search-bordered" class the below search form to have bordered search box -->
-                    <!-- DOC: Apply "sidebar-search-bordered sidebar-search-solid" class the below search form to have bordered & solid search box -->
-                    <form class="sidebar-search  sidebar-search-bordered" action="page_general_search_3.html" method="POST">
-                        <a href="javascript:;" class="remove">
-                            <i class="icon-close"></i>
-                        </a>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search...">
-                            <span class="input-group-btn">
-                                        <a href="javascript:;" class="btn submit">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </span>
-                        </div>
-                    </form>
-                    <!-- END RESPONSIVE QUICK SEARCH FORM -->
-                </li>
-                <li class="nav-item start ">
-                    <a href="javascript:;" class="nav-link nav-toggle">
-                        <i class="icon-home"></i>
-                        <span class="title">Dashboard</span>
-                        <span class="arrow"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li class="nav-item start ">
-                            <a href="dashboard_3.html" class="nav-link ">
-                                <i class="icon-graph"></i>
-                                <span class="title">Dashboard 3</span>
-                                <span class="badge badge-danger">5</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
                 <li class="heading">
-                    <h3 class="uppercase">Layouts</h3>
+                    <h3 class="uppercase">بخش کاربری</h3>
                 </li>
                 <li class="nav-item  active open">
-                    <a href="javascript:;" class="nav-link nav-toggle">
-                        <i class="icon-layers"></i>
-                        <span class="title">Page Layouts</span>
+                    <a href="../tester/dashboard" class="nav-link nav-toggle">
+                        <i class="icon-home"></i>
+                        <span class="title">پیشخوان</span>
                         <span class="selected"></span>
-                        <span class="arrow open"></span>
                     </a>
-                    <ul class="sub-menu">
-                        <li class="nav-item  active open">
-                            <a href="layout_blank_page.html" class="nav-link ">
-                                <span class="title">Blank Page</span>
-                                <span class="selected"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item  ">
-                            <a href="layout_classic_page_head.html" class="nav-link ">
-                                <span class="title">Classic Page Head</span>
-                            </a>
-                        </li>
-                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="../tester/profile" class="nav-link nav-toggle">
+                        <i class="icon-user"></i>
+                        <span class="title">پروفایل</span>
+                        <span class="selected"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../tester/finance" class="nav-link nav-toggle">
+                        <i class="icon-bar-chart"></i>
+                        <span class="title">امور مالی</span>
+                        <span class="selected"></span>
+                    </a>
+                </li>
+                <li class="heading">
+                    <h3 class="uppercase">بخش آزمون</h3>
+                </li>
+                <li class="nav-item">
+                    <a href="../tester/invitation" class="nav-link nav-toggle">
+                        <i class="icon-globe"></i>
+                        <span class="title">دعوتنامه‌ها</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../tester/test" class="nav-link nav-toggle">
+                        <i class="icon-briefcase"></i>
+                        <span class="title">آزمون‌ها</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../tester/school" class="nav-link nav-toggle">
+                        <i class="icon-notebook"></i>
+                        <span class="title">آکادمی</span>
+                    </a>
                 </li>
             </ul>
+
         </div>
     </div>
     <div class="page-content-wrapper">
