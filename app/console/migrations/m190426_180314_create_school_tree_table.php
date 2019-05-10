@@ -20,7 +20,7 @@ class m190426_180314_create_school_tree_table extends Migration
         $this->createTable('{{%school_tree}}', [
             'id' => $this->primaryKey(),
             'parent_id' => $this->integer()->notNull()->defaultValue(0),
-            'type' => $this->string(20),
+            'type' => $this->integer(),
             'title' => $this->string()->notNull(),
             'description' => $this->text(),
             'part_order' => $this->integer()->notNull()->defaultValue(0),

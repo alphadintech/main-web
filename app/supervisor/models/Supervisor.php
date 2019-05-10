@@ -2,6 +2,7 @@
 
 namespace supervisor\models;
 
+use common\models\SchoolTree;
 use common\models\User;
 use Yii;
 use yii\behaviors\TimestampBehavior;
@@ -83,4 +84,5 @@ class Supervisor extends \yii\db\ActiveRecord
     {
         return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
+
 }
