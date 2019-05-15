@@ -36,9 +36,6 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-//        die('s');
-//        $this->layout='panel';
-//print_r(Yii::$app->authManager->getRolesByUser(Yii::$app->user->id));die;
         if(!Yii::$app->user->can('canBeSupervisor')){
             return $this->redirect(Yii::$app->urlManagerFrontend->createUrl(['login']));
         }
