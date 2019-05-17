@@ -14,6 +14,7 @@ class PanelAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all',
+        '../theme/assets/global/css/IRAN-SANS-Family-Typeface/IRAN Sans (Webfonts)/style.css',
         '../theme/assets/global/plugins/font-awesome/css/font-awesome.min.css',
         '../theme/assets/global/plugins/simple-line-icons/simple-line-icons.min.css',
         '../theme/assets/global/plugins/bootstrap/css/bootstrap-rtl.min.css',

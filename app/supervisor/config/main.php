@@ -40,10 +40,6 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [
-                'dashboard'=>'site/index',
-
-            ],
         ],
         'urlManagerFrontend' => [
             'enablePrettyUrl' => true,

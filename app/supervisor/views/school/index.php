@@ -51,13 +51,13 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'columns' => [
 //            ['class' => 'yii\grid\SerialColumn'],
+            'title',
             [
-//                'class' => 'yii\grid\DataColumn',
-                'attribute' => 'parent.title',
-                'label' => 'parent title',
+                'attribute' => 'description',
+                //'format' => ['raw', 'Y-m-d H:i:s'],
                 'format' => 'text',
+                'options' => ['width' => '200']
             ],
-
 
             [
                 'attribute' => 'type',
@@ -69,13 +69,14 @@ $this->params['breadcrumbs'][] = $this->title;
                 'format' => 'text',
 //                'options' => ['width' => '200']
             ],
-            'title',
+
             [
-                'attribute' => 'description',
-                //'format' => ['raw', 'Y-m-d H:i:s'],
+//                'class' => 'yii\grid\DataColumn',
+                'attribute' => 'parent.title',
+                'label' => 'parent title',
                 'format' => 'text',
-                'options' => ['width' => '200']
             ],
+
             //'part_order',
             //'section_order',
 
