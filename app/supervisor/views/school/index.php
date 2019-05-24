@@ -8,7 +8,7 @@ use yii\widgets\Pjax;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'School Trees';
+$this->title = 'جدول تدریس';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="school-tree-index">
@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
         'toggleButton' => [
 
-            'label' => '<i class="glyphicon glyphicon-plus"></i> Add',
+            'label' => '<i class="glyphicon glyphicon-plus"></i> مورد جدید',
 
             'class' => 'btn btn-success'
 
@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
         'closeButton' => [
 
-            'label' => 'Close',
+            'label' => 'بازگشت',
 
             'class' => 'btn btn-danger btn-sm pull-right',
 
