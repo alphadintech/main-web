@@ -36,9 +36,9 @@ class PanelAsset extends AssetBundle
         "../theme/assets/global/plugins/jquery.blockui.min.js",
         "../theme/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js",
         "../theme/assets/global/scripts/app.min.js",
-        "../theme/assets//layouts/layout/scripts/layout.min.js",
-        "../theme/assets//layouts/layout/scripts/demo.min.js",
-        "../theme/assets//layouts/global/scripts/quick-sidebar.min.js",
+        "../theme/assets/layouts/layout/scripts/layout.min.js",
+        "../theme/assets/layouts/layout/scripts/demo.min.js",
+        "../theme/assets/layouts/global/scripts/quick-sidebar.min.js",
         "../theme/assets/global/plugins/jquery.sparkline.min.js",
         "../theme/assets/pages/scripts/profile.min.js",
 

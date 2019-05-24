@@ -2,8 +2,9 @@
 
 namespace tester\models;
 
-use app\models\Media;
+
 use common\models\City;
+use common\models\Media;
 use common\models\User;
 use Yii;
 
@@ -36,7 +37,7 @@ class Tester extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return '((%tester))';
+        return 'tester';
     }
 
     /**
