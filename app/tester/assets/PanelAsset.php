@@ -23,6 +23,7 @@ class PanelAsset extends AssetBundle
         '../theme/assets/layouts/layout/css/layout-rtl.min.css',
         '../theme/assets/layouts/layout/css/themes/darkblue-rtl.min.css',
         '../theme/assets/layouts/layout/css/custom-rtl.min.css',
+        '../theme/assets/pages/css/profile-rtl.min.css',
     ];
     public $js = [
         "../theme/assets/global/plugins/respond.min.js",
@@ -38,8 +39,10 @@ class PanelAsset extends AssetBundle
         "../theme/assets//layouts/layout/scripts/layout.min.js",
         "../theme/assets//layouts/layout/scripts/demo.min.js",
         "../theme/assets//layouts/global/scripts/quick-sidebar.min.js",
+        "../theme/assets/global/plugins/jquery.sparkline.min.js",
+        "../theme/assets/pages/scripts/profile.min.js",
 
-        "../tester/js/jquery-ui.min.js",
+
 //        "../tester/js/form-builder.min.js"
     ];
     public $depends = [

@@ -25,7 +25,7 @@ PanelAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-md">
+<body class="IRANSansLight page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid page-content-white page-sidebar-closed page-md">
 <?php $this->beginBody() ?>
 <div class="page-header navbar navbar-fixed-top">
     <div class="page-header-inner ">
