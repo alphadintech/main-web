@@ -12,10 +12,11 @@ class m190515_134907_add_details_column_to_tester_table extends Migration
      */
     public function safeUp()
     {
-        $this->addColumn('{{%tester}}', 'phone', $this->integer());
-        $this->addColumn('{{%tester}}', 'mobile', $this->integer());
-        $this->addColumn('{{%tester}}', 'postal_code', $this->integer());
+        $this->addColumn('{{%tester}}', 'phone', $this->string());
+        $this->addColumn('{{%tester}}', 'mobile', $this->string());
+        $this->addColumn('{{%tester}}', 'postal_code', $this->string());
         $this->addColumn('{{%tester}}', 'birthday', $this->integer());
+        $this->addColumn('{{%tester}}', 'maried', $this->boolean());
     }
 
     /**
@@ -27,5 +28,6 @@ class m190515_134907_add_details_column_to_tester_table extends Migration
         $this->dropColumn('{{%tester}}', 'mobile');
         $this->dropColumn('{{%tester}}', 'postal_code');
         $this->dropColumn('{{%tester}}', 'birthday');
+        $this->dropColumn('{{%tester}}', 'maried');
     }
 }

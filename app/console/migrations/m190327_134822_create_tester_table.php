@@ -22,7 +22,7 @@ class m190327_134822_create_tester_table extends Migration
             'name' => $this->string(),
             'avatar_id'=>$this->integer(),
             'family' => $this->string(),
-            'nationality_code' => $this->integer()->unique(),
+            'nationality_code' => $this->string()->unique(),
             'gender' => $this->smallInteger(),
 
             'status' => $this->smallInteger()->notNull()->defaultValue(10),

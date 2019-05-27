@@ -13,17 +13,20 @@ class PanelAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all',
+        '../theme/assets/global/css/IRAN-SANS-Family-Typeface/IRAN Sans (Webfonts)/style.css',
         '../theme/assets/global/plugins/font-awesome/css/font-awesome.min.css',
         '../theme/assets/global/plugins/simple-line-icons/simple-line-icons.min.css',
         '../theme/assets/global/plugins/bootstrap/css/bootstrap-rtl.min.css',
         '../theme/assets/global/plugins/bootstrap-switch/css/bootstrap-switch-rtl.min.css',
+        '../theme/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css',
         '../theme/assets/global/css/components-md-rtl.min.css',
         '../theme/assets/global/css/plugins-md-rtl.min.css',
+        '../theme/assets/pages/css/profile-rtl.min.css',
+        '../theme/assets/global/plugins/select2/css/select2.min.css',
+        '../assets/global/plugins/select2/css/select2-bootstrap.min.css',
         '../theme/assets/layouts/layout/css/layout-rtl.min.css',
         '../theme/assets/layouts/layout/css/themes/darkblue-rtl.min.css',
         '../theme/assets/layouts/layout/css/custom-rtl.min.css',
-        '../theme/assets/pages/css/profile-rtl.min.css',
     ];
     public $js = [
         "../theme/assets/global/plugins/respond.min.js",
@@ -35,12 +38,15 @@ class PanelAsset extends AssetBundle
         "../theme/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js",
         "../theme/assets/global/plugins/jquery.blockui.min.js",
         "../theme/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js",
+        "../theme/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js",
+        "../theme/assets/global/plugins/jquery.sparkline.min.js",
+        "../theme/assets/global/plugins/select2/js/select2.full.min.js",
         "../theme/assets/global/scripts/app.min.js",
+        "../theme/assets/pages/scripts/components-select2.js",
+        "../theme/assets/pages/scripts/profile.min.js",
         "../theme/assets/layouts/layout/scripts/layout.min.js",
         "../theme/assets/layouts/layout/scripts/demo.min.js",
         "../theme/assets/layouts/global/scripts/quick-sidebar.min.js",
-        "../theme/assets/global/plugins/jquery.sparkline.min.js",
-        "../theme/assets/pages/scripts/profile.min.js",
 
 
 //        "../tester/js/form-builder.min.js"

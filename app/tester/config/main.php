@@ -14,7 +14,7 @@ return [
     'modules' => [],
     'components' => [
         'request' => [
-            'csrfParam' => '_csrf-global',
+            'csrfParam' => '_csrf-tester',
         ],
         'user' => [
             'identityClass' => 'common\models\User',

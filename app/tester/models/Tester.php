@@ -7,6 +7,8 @@ use common\models\City;
 use common\models\Media;
 use common\models\User;
 use Yii;
+use yii\behaviors\TimestampBehavior;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "tester".
@@ -17,6 +19,7 @@ use Yii;
  * @property string $family
  * @property int $nationality_code
  * @property int $gender
+ * @property int $maried
  * @property int $status
  * @property int $updated_at
  * @property int $created_at
@@ -32,6 +35,9 @@ use Yii;
  */
 class Tester extends \yii\db\ActiveRecord
 {
+    const GENDER_MAN= 1;
+    const GENDER_WOMAN = 2;
+    const GENDER_OTHER = 3;
     /**
      * {@inheritdoc}
      */
@@ -39,16 +45,30 @@ class Tester extends \yii\db\ActiveRecord
     {
         return 'tester';
     }
-
+    /**
+     * @return array
+     */
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => TimestampBehavior::className(),
+                'attributes' => [
+                    ActiveRecord::EVENT_BEFORE_INSERT => ['created_at', 'updated_at'],
+                    ActiveRecord::EVENT_BEFORE_UPDATE => ['updated_at'],
+                ]
+            ],
+        ];
+    }
     /**
      * {@inheritdoc}
      */
     public function rules()
     {
         return [
-            [['user_id', 'updated_at', 'created_at'], 'required'],
-            [['user_id','avatar_id', 'nationality_code', 'gender', 'status', 'updated_at', 'created_at'], 'integer'],
-            [['name', 'family'], 'string', 'max' => 255],
+            [['user_id'], 'required'],
+            [['user_id','avatar_id',  'gender', 'status', 'maried', 'updated_at', 'created_at'], 'integer'],
+            [['name','phone','mobile','nationality_code','postal_code', 'family'], 'string', 'max' => 255],
             [['user_id'], 'unique'],
             [['nationality_code'], 'unique'],
             [['avatar_id'], 'exist', 'skipOnError' => true, 'targetClass' => Media::className(), 'targetAttribute' => ['avatar_id' => 'id']],
@@ -69,6 +89,7 @@ class Tester extends \yii\db\ActiveRecord
             'family' => 'Family',
             'nationality_code' => 'Nationality Code',
             'gender' => 'Gender',
+            'maried' => 'Maried',
             'status' => 'Status',
             'updated_at' => 'Updated At',
             'created_at' => 'Created At',

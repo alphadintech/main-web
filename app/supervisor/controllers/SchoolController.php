@@ -42,8 +42,8 @@ class SchoolController extends Controller
         if ($schoolContentModel->save()) {
             return true;
         }
-        print_r(Yii::$app->user->identity->name);
-        die('sasa');
+//        print_r(Yii::$app->user->identity->name);
+//        die('sasa');
         return $schoolContentModel;
     }
 
