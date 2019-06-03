@@ -18,6 +18,8 @@ class SchoolController extends Controller
     /**
      * {@inheritdoc}
      */
+
+    public $layout = "panel";
     public function behaviors()
     {
         return [
