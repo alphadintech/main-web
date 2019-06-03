@@ -2,6 +2,8 @@
 
 namespace tester\models;
 
+use common\models\Language;
+use common\models\User;
 use Yii;
 
 /**

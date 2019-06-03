@@ -13,6 +13,7 @@ use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
 
 PanelAsset::register($this);
+$this->registerJsFile('../theme/assets/global/plugins/jquery.min.js')
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
