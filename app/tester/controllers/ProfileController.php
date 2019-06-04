@@ -32,7 +32,7 @@ class ProfileController extends Controller
     public function actionIndex()
     {
         if (!Yii::$app->user->can('canBeTester')) {
-            return $this->redirect(Yii::$app->urlManagerFrontend->createUrl(['site/login']));
+            return $this->redirect(Yii::$app->urlManagerFrontend->createUrl(['login']));
         }
         $user = \common\models\User::find()->where(['id' => Yii::$app->user->id])->andWhere(['status' => \common\models\User::STATUS_ACTIVE])->one();
         $testerModel = $this->getTester();
@@ -64,11 +64,10 @@ class ProfileController extends Controller
         }
         // tester model config
         $testerModel->user_id = Yii::$app->user->id;
-        if ($testerModel->load(Yii::$app->request->post())){
-
-            if( $testerModel->save()) {
-            Yii::$app->session->setFlash('success', 'اطلاعات  به روز رسانی شد');
-        }
+        if ($testerModel->load(Yii::$app->request->post())) {
+            if ($testerModel->save()) {
+                Yii::$app->session->setFlash('success', 'اطلاعات  به روز رسانی شد');
+            }
         }
         //state and city
         $stateList = [];
@@ -79,12 +78,12 @@ class ProfileController extends Controller
         foreach ($states as $state) {
             $stateList[$state->id] = $state->name;
         }
-        if($testerModel->city_id!==Null && $testerModel->city_id!=0){
+        if ($testerModel->city_id !== Null && $testerModel->city_id != 0) {
             $citySelected = $testerModel->city_id;
             $stateSelected = $testerModel->city->state->id;
             $cities = City::find()->where(['state_id' => $stateSelected])->all();
-            foreach ($cities  as $city){
-                $cityList[$city->id]=$city->name;
+            foreach ($cities as $city) {
+                $cityList[$city->id] = $city->name;
             }
         }
         // tester bank acount model config
@@ -259,9 +258,7 @@ class ProfileController extends Controller
                 ->where(['state_id' => $id])
                 ->all();
             $results = [];
-            /*
-             * TODO : DO Best Soulotion
-             */
+
             foreach ($raw as $item) {
                 $results[$item['id']] = $item['name'];
             }
