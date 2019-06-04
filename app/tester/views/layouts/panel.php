@@ -5,13 +5,9 @@
 
 
 use tester\assets\PanelAsset;
+use tester\models\Tester;
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\ActiveForm;
-use yii\widgets\Breadcrumbs;
-use common\widgets\Alert;
-
+$tester = Tester::find()->where(['user_id' => Yii::$app->user->id])->one();
 PanelAsset::register($this);
 $this->registerJsFile('../theme/assets/global/plugins/jquery.min.js')
 ?>
@@ -31,7 +27,7 @@ $this->registerJsFile('../theme/assets/global/plugins/jquery.min.js')
 <div class="page-header navbar navbar-fixed-top">
     <div class="page-header-inner ">
         <div class="page-logo">
-            <a href="index.html">
+            <a href="">
                 <img src="../theme/assets/layouts/layout/img/logo.png" alt="logo" class="logo-default" /> </a>
             <div class="menu-toggler sidebar-toggler">
                 <span></span>
@@ -322,8 +318,8 @@ $this->registerJsFile('../theme/assets/global/plugins/jquery.min.js')
                 </li>
                 <li class="dropdown dropdown-user">
                     <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                        <img alt="" class="img-circle" src="../theme/assets/layouts/layout/img/avatar3_small.jpg" />
-                        <span class="username username-hide-on-mobile"> نام </span>
+                        <img alt="" class="img-circle" src="<?= ($tester->avatar_id !== Null && !empty($tester->avatar->url)) ? Yii::$app->urlManagerFrontend->createUrl([$tester->avatar->url]) : 'image/profile-default.jpg'; ?>" />
+                        <span class="username username-hide-on-mobile"> <?= ($tester->name) ? $tester->name . " " . $tester->family : "کاربر آزمونگر" ?> </span>
                         <i class="fa fa-angle-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-default">

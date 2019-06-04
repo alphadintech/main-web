@@ -79,23 +79,7 @@ $this->registerJs($typeJs, View::POS_END, 'my-options');
 
 /** @var Tester $testerModel */
 ?>
-<div class="page-bar">
-    <ul class="page-breadcrumb">
-        <li>
-            <a href="index.html">صفحه اصلی</a>
-            <i class="fa fa-circle"></i>
-        </li>
-        <li>
-            <span>ناحیه کاربری</span>
-        </li>
-    </ul>
-    <div class="page-toolbar">
-        <div class="btn-group pull-right">
-            <button type="submit" class="btn red">خروج از حساب کاربری</button>
-        </div>
-    </div>
-</div>
-<!-- END PAGE BAR -->
+
 <!-- BEGIN PAGE TITLE-->
 <h3 class="page-title"> اطلاعات کاربری
     <small>تکمیل - ویرایش اطلاعات</small>

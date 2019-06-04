@@ -3,13 +3,13 @@
 namespace tester\models;
 
 
+use Yii;
 use common\models\City;
+use common\models\User;
 use common\models\Media;
 use common\models\State;
-use common\models\User;
-use Yii;
-use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
+use yii\behaviors\TimestampBehavior;
 
 /**
  * This is the model class for table "tester".
