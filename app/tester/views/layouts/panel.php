@@ -318,8 +318,8 @@ $this->registerJsFile('../theme/assets/global/plugins/jquery.min.js')
                 </li>
                 <li class="dropdown dropdown-user">
                     <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                        <img alt="" class="img-circle" src="<?= ($tester->avatar_id !== Null && !empty($tester->avatar->url)) ? Yii::$app->urlManagerFrontend->createUrl([$tester->avatar->url]) : 'image/profile-default.jpg'; ?>" />
-                        <span class="username username-hide-on-mobile"> <?= ($tester->name) ? $tester->name . " " . $tester->family : "کاربر آزمونگر" ?> </span>
+                        <img alt="" class="img-circle" src="<?= (isset($tester->avatar_id )&& !empty($tester->avatar->url)) ? Yii::$app->urlManagerFrontend->createUrl([$tester->avatar->url]) : 'image/profile-default.jpg'; ?>" />
+                        <span class="username username-hide-on-mobile"> <?= (isset($tester->name)) ? $tester->name . " " . $tester->family : "کاربر آزمونگر" ?> </span>
                         <i class="fa fa-angle-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-default">
