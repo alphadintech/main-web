@@ -31,7 +31,7 @@ $script = <<<JS
        var intervalFunc = function () {
         $('#uploadtesteravatar-imagefile').html($('#uploadtesteravatar-imagefile').val());
     };
-    $('#avatar-upload').on('click', function () { // use .live() for older versions of jQuery
+    $('#btn1').on('click', function () { // use .live() for older versions of jQuery
         $('#uploadtesteravatar-imagefile').click();
         setInterval(intervalFunc, 1);
         return false;
@@ -108,7 +108,10 @@ $this->registerJs($typeJs, View::POS_END, 'my-options');
                     <ul class="nav">
                         <li class="active">
                             <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ?>
-                            <?= $form->field($modelUploadTesterAvatar, 'imageFile')->fileInput() ?>
+                            <?= $form->field($modelUploadTesterAvatar, 'imageFile')->fileInput([
+                                    'style'=>'display:none'
+                            ]) ?>
+                            <input type="button" id="btn1" >
                             <button>Submit</button>
                             <?php ActiveForm::end() ?>
                             <a id="avatar-upload" href="tester_profile.html">

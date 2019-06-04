@@ -10,7 +10,7 @@ use yii\helpers\Html;
 $tester = Tester::find()->where(['user_id' => Yii::$app->user->id])->one();
 //print_r($tester);die;
 PanelAsset::register($this);
-$this->registerJsFile('../theme/assets/global/plugins/jquery.min.js')
+//$this->registerJsFile('../theme/assets/global/plugins/jquery.min.js')
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
