@@ -1,7 +1,7 @@
 <?php
 
 namespace frontend\models;
-
+use tester\models\Tester;
 use Yii;
 use yii\base\Model;
 use common\models\User;
@@ -61,6 +61,9 @@ class TesterSignupForm extends Model
             $auth = \Yii::$app->authManager;
             $testerRole = $auth->getRole('tester');
             $auth->assign($testerRole, $user->getId());
+            $tester = new Tester();
+            $tester->user_id = $user->id;
+            $tester->save();
             return $user;
         }
 
