@@ -1,17 +1,20 @@
 <?php
 /* @var $this yii\web\View */
 
+use faravaghi\jalaliDatePicker\jalaliDatePicker;
 use kartik\select2\Select2;
 use kartik\date\DatePicker;
 use tester\models\Tester;
 use tester\models\TesterMediaForm;
+
 use yii\helpers\Html;
+use yii\web\View;
 use yii\widgets\ActiveForm;
 use yii\widgets\Pjax;
 
 /** @var \tester\models\TesterMediaForm $testerMediaForm */
+//var_dump($citySelected);die;
 $langRow = "";
-
 $script = <<<JS
         var count = 1;
         $("#language_form").append(getLangRow());
@@ -25,9 +28,54 @@ $script = <<<JS
 JS;
 $this->registerJs($script);
 $script = <<<JS
+       var intervalFunc = function () {
+        $('#uploadtesteravatar-imagefile').html($('#uploadtesteravatar-imagefile').val());
+    };
+    $('#avatar-upload').on('click', function () { // use .live() for older versions of jQuery
+        $('#uploadtesteravatar-imagefile').click();
+        setInterval(intervalFunc, 1);
+        return false;
+    });
+JS;
+$this->registerJs($script);
+$script = <<<JS
        $('.js-example-basic-multiple').select2();
 JS;
 $this->registerJs($script);
+$home = Yii::$app->homeUrl;
+$typeJs = <<<JS
+ function fill(obj) { 
+                var id = $(obj).val(); //extract the id of selected category   
+                var home =  "$home";
+              
+                $.ajax({
+                    method : 'GET',
+                    dataType : 'text',
+                    url :home + 'profile/state?id=' + id,
+                    success : function (response) {
+                        var response = JSON.parse(response);
+                        var myDropDownList = document.getElementById('tester-city');
+                       $('#tester-city').empty();
+                        $.each(response, function(index, value) {
+                          
+                            var option = document.createElement('option');
+                                option.text = value;
+                                option.value = index;
+                               try {
+                                    myDropDownList.options.add(option);
+                                }
+                                catch (e) {
+                                    alert(e);
+                                }
+                        });
+                    }
+                });
+               
+                }
+            
+JS;
+
+$this->registerJs($typeJs, View::POS_END, 'my-options');
 
 /** @var Tester $testerModel */
 ?>
@@ -62,7 +110,8 @@ $this->registerJs($script);
             <div class="portlet light profile-sidebar-portlet ">
                 <!-- SIDEBAR USERPIC -->
                 <div class="profile-userpic">
-                    <img src="image/profile-default.jpg" class="img-responsive" alt=""></div>
+                    <img src="<?= ($testerModel->avatar_id !== Null && !empty($testerModel->avatar->url)) ? Yii::$app->urlManagerFrontend->createUrl([$testerModel->avatar->url]) : 'image/profile-default.jpg'; ?>"
+                         class="img-responsive" alt=""></div>
                 <!-- END SIDEBAR USERPIC -->
                 <!-- SIDEBAR USER TITLE -->
                 <div class="profile-usertitle">
@@ -74,7 +123,11 @@ $this->registerJs($script);
                 <div class="profile-usermenu">
                     <ul class="nav">
                         <li class="active">
-                            <a href="tester_profile.html">
+                            <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ?>
+                            <?= $form->field($modelUploadTesterAvatar, 'imageFile')->fileInput() ?>
+                            <button>Submit</button>
+                            <?php ActiveForm::end() ?>
+                            <a id="avatar-upload" href="tester_profile.html">
                                 <i class="icon-settings"></i> تکمیل - ویرایش </a>
                         </li>
                     </ul>
@@ -137,18 +190,22 @@ $this->registerJs($script);
                                 <div class="form-group">
                                     <label class="col-md-3 control-label">تاریخ تولد</label>
                                     <div class="col-md-9">
-                                        <!--                                    --> <?php
-                                        //                                        echo DatePicker::widget([
-                                        //                                            'model' => $testerModel,
-                                        //                                            'attribute' => 'birthday',
-                                        //                                            'options' => ['placeholder' => 'تاریخ تولد خود را وارد کنید'],
-                                        ////                                            'pluginOptions' => [
-                                        ////                                                'autoclose' => true
-                                        ////                                            ]
-                                        //                                        ]);
-                                        //                                        ?>
-                                        <input type="text" class="form-control"
-                                               placeholder="تاریخ تولد خود را وارد کنید">
+                                        <?php
+                                        echo jalaliDatePicker::widget([
+                                            'model' => $testerModel,
+                                            'attribute' => 'birthday',
+                                            'options' => ['placeholder' => 'تاریخ تولد خود را وارد کنید',
+                                                'format' => 'yyyy/mm/dd',
+                                                'viewformat' => 'yyyy/mm/dd',
+                                                'placement' => 'left',
+                                                'todayBtn'=> 'linked',
+                                                ],
+                                            'htmlOptions' => [
+                                                'class'	=> 'form-control',
+                                                'placeholder'=>"تاریخ تولد خود را وارد کنید"
+                                            ]
+                                        ]);
+                                        ?>
                                     </div>
                                 </div>
 
@@ -237,21 +294,26 @@ $this->registerJs($script);
                                     )->label('کد پستی', ['class' => 'col-md-3 control-label'])
                                 ?>
 
-                                <!---->
-                                <!--                                    <div class="form-group">-->
-                                <!--                                        <label class="col-md-3 control-label">شهر</label>-->
-                                <!--                                        <div class="col-md-9">-->
-                                <!--                                            <input type="text" class="form-control" placeholder="شهر خود را وارد کنید">-->
-                                <!--                                        </div>-->
-                                <!--                                    </div>-->
-                                <!---->
-                                <!--                                    <div class="form-group">-->
-                                <!--                                        <label class="col-md-3 control-label">استان</label>-->
-                                <!--                                        <div class="col-md-9">-->
-                                <!--                                            <input type="text" class="form-control"-->
-                                <!--                                                   placeholder="استان خود را وارد کنید">-->
-                                <!--                                        </div>-->
-                                <!--                                    </div>-->
+                                <?=
+                                $form->field($testerModel, 'state', ['template' => '{label}<div class="col-md-9">{input}</div>{error}'])
+                                    ->dropDownList($stateList, [
+                                        'onchange' => "fill(this)",
+                                        'value'=>$stateSelected
+
+                                    ])
+                                    ->label('استان', ['class' => 'col-md-3 control-label'])
+                                ?>
+                                <?php
+
+                                if(empty($cityList))
+                                    $cityList = [0=>"استان خود را انتخاب کنید"];
+                                echo $form->field($testerModel, 'city_id', ['template' => '{label}<div class="col-md-9">{input}</div>{error}'])
+                                    ->dropDownList($cityList, [
+                                        'id' => "tester-city",
+                                        'value'=>$citySelected
+                                    ])
+                                    ->label('شهر', ['class' => 'col-md-3 control-label']);
+                                ?>
                             </div>
 
                             <div class="form-actions">
@@ -521,7 +583,7 @@ $this->registerJs($script);
                                         <div class="input-group select2-bootstrap-prepend">
                                             <?=
                                             Select2::widget([
-                                                'name' => $testerMediaForm->formName()."[social][]",
+                                                'name' => $testerMediaForm->formName() . "[social][]",
                                                 'value' => $selectedSocial,
                                                 'data' => $socialList,
                                                 'size' => Select2::MEDIUM,

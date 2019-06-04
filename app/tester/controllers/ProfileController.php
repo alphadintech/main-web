@@ -3,10 +3,13 @@
 namespace tester\controllers;
 
 use common\models\BankAcount;
+use common\models\City;
 use common\models\Interest;
 use common\models\Language;
+use common\models\Media;
 use common\models\Social;
 use common\models\Sport;
+use common\models\State;
 use tester\models\Tester;
 use tester\models\TesterInterest;
 use tester\models\TesterJobAndEdu;
@@ -14,8 +17,12 @@ use tester\models\TesterLanguage;
 use tester\models\TesterMediaForm;
 use tester\models\TesterMediaFormSocial;
 use tester\models\TesterSport;
+use tester\models\UploadTesterAvatar;
+
 use Yii;
 use yii\web\Controller;
+use yii\web\UploadedFile;
+use yii\web\User;
 
 class ProfileController extends Controller
 {
@@ -27,6 +34,7 @@ class ProfileController extends Controller
         if (!Yii::$app->user->can('canBeTester')) {
             return $this->redirect(Yii::$app->urlManagerFrontend->createUrl(['site/login']));
         }
+        $user = \common\models\User::find()->where(['id' => Yii::$app->user->id])->andWhere(['status' => \common\models\User::STATUS_ACTIVE])->one();
         $testerModel = $this->getTester();
         $testerBankAcount = $this->getTesterBankAcount();
         $testerJobEdu = $this->getTesterJobEdu();
@@ -56,8 +64,28 @@ class ProfileController extends Controller
         }
         // tester model config
         $testerModel->user_id = Yii::$app->user->id;
-        if ($testerModel->load(Yii::$app->request->post()) && $testerModel->save()) {
+        if ($testerModel->load(Yii::$app->request->post())){
+
+            if( $testerModel->save()) {
             Yii::$app->session->setFlash('success', 'اطلاعات  به روز رسانی شد');
+        }
+        }
+        //state and city
+        $stateList = [];
+        $cityList = [];
+        $stateSelected = 0;
+        $citySelected = 0;
+        $states = State::find()->all();
+        foreach ($states as $state) {
+            $stateList[$state->id] = $state->name;
+        }
+        if($testerModel->city_id!==Null && $testerModel->city_id!=0){
+            $citySelected = $testerModel->city_id;
+            $stateSelected = $testerModel->city->state->id;
+            $cities = City::find()->where(['state_id' => $stateSelected])->all();
+            foreach ($cities  as $city){
+                $cityList[$city->id]=$city->name;
+            }
         }
         // tester bank acount model config
         $testerBankAcount->user_id = Yii::$app->user->id;
@@ -101,7 +129,6 @@ class ProfileController extends Controller
         $sportList = [];
         $selectedSport = [];
 
-
         if (Yii::$app->request->post('sport') !== null) {
             TesterSport::deleteAll(['user_id' => Yii::$app->user->id]);
             $userSport = Yii::$app->request->post('sport');
@@ -144,7 +171,7 @@ class ProfileController extends Controller
         //tester media form model
         $testerMediaForm->user_id = Yii::$app->user->id;
         $selectedSocial = [];
-        $socialList=[];
+        $socialList = [];
         $social = Social::find()->all();
         if ($testerMediaForm->load(Yii::$app->request->post()) && $testerMediaForm->save()) {
             TesterMediaFormSocial::deleteAll(['form_id' => $testerMediaForm->id]);
@@ -166,6 +193,24 @@ class ProfileController extends Controller
         foreach ($social as $item) {
             $socialList [$item->id] = $item->name;
         }
+        // avatar upload model
+        $modelUploadTesterAvatar = new UploadTesterAvatar();
+//print_r($_POST);die;
+        if (Yii::$app->request->post('UploadTesterAvatar')) {
+
+            $modelUploadTesterAvatar->imageFile = UploadedFile::getInstance($modelUploadTesterAvatar, 'imageFile');
+            $url = $modelUploadTesterAvatar->upload();
+            if ($url) {
+                $mediaModel = new Media();
+                $mediaModel->url = $url;
+                $mediaModel->status = Media::STATUS_ACTIVE;
+                if ($mediaModel->save()) {
+                    $testerModel->avatar_id = $mediaModel->id;
+                    $testerModel->save(false);
+                }
+            }
+        }
+
         return $this->render('index', [
             'testerModel' => $testerModel,
             'testerJobEdu' => $testerJobEdu,
@@ -179,6 +224,11 @@ class ProfileController extends Controller
             'socialList' => $socialList,
             'selectedSocial' => $selectedSocial,
             'testerBankAcount' => $testerBankAcount,
+            'modelUploadTesterAvatar' => $modelUploadTesterAvatar,
+            'stateList' => $stateList,
+            'cityList' => $cityList,
+            'citySelected' => $citySelected,
+            'stateSelected' => $stateSelected,
         ]);
     }
 
@@ -200,5 +250,23 @@ class ProfileController extends Controller
     private function getTesterBankAcount()
     {
         return BankAcount::findOne(['user_id' => Yii::$app->user->id]);
+    }
+
+    public function actionState($id)
+    {
+        if (Yii::$app->request->isAjax) {
+            $raw = City::find()
+                ->where(['state_id' => $id])
+                ->all();
+            $results = [];
+            /*
+             * TODO : DO Best Soulotion
+             */
+            foreach ($raw as $item) {
+                $results[$item['id']] = $item['name'];
+            }
+            return json_encode($results);
+        }
+        return false;
     }
 }

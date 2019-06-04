@@ -15,7 +15,7 @@ class m190515_134907_add_details_column_to_tester_table extends Migration
         $this->addColumn('{{%tester}}', 'phone', $this->string());
         $this->addColumn('{{%tester}}', 'mobile', $this->string());
         $this->addColumn('{{%tester}}', 'postal_code', $this->string());
-        $this->addColumn('{{%tester}}', 'birthday', $this->integer());
+        $this->addColumn('{{%tester}}', 'birthday', $this->date());
         $this->addColumn('{{%tester}}', 'maried', $this->boolean());
     }
 

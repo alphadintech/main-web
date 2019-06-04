@@ -5,6 +5,7 @@ namespace tester\models;
 
 use common\models\City;
 use common\models\Media;
+use common\models\State;
 use common\models\User;
 use Yii;
 use yii\behaviors\TimestampBehavior;
@@ -27,17 +28,19 @@ use yii\db\ActiveRecord;
  * @property int $phone
  * @property int $mobile
  * @property int $postal_code
- * @property int $birthday
+ * @property string  $birthday
  *
  * @property Media $avatar
  * @property City $city
+ * @property State $state
  * @property User $user
  */
 class Tester extends \yii\db\ActiveRecord
 {
-    const GENDER_MAN= 1;
+    const GENDER_MAN = 1;
     const GENDER_WOMAN = 2;
     const GENDER_OTHER = 3;
+
     /**
      * {@inheritdoc}
      */
@@ -45,6 +48,7 @@ class Tester extends \yii\db\ActiveRecord
     {
         return 'tester';
     }
+
     /**
      * @return array
      */
@@ -60,6 +64,7 @@ class Tester extends \yii\db\ActiveRecord
             ],
         ];
     }
+
     /**
      * {@inheritdoc}
      */
@@ -67,8 +72,8 @@ class Tester extends \yii\db\ActiveRecord
     {
         return [
             [['user_id'], 'required'],
-            [['user_id','avatar_id',  'gender', 'status', 'maried', 'updated_at', 'created_at'], 'integer'],
-            [['name','phone','mobile','nationality_code','postal_code', 'family'], 'string', 'max' => 255],
+            [['user_id', 'avatar_id', 'gender', 'status', 'maried', 'updated_at', 'created_at'], 'integer'],
+            [['birthday','name', 'phone', 'mobile', 'nationality_code', 'postal_code', 'family'], 'string', 'max' => 255],
             [['user_id'], 'unique'],
             [['nationality_code'], 'unique'],
             [['avatar_id'], 'exist', 'skipOnError' => true, 'targetClass' => Media::className(), 'targetAttribute' => ['avatar_id' => 'id']],
@@ -124,4 +129,17 @@ class Tester extends \yii\db\ActiveRecord
     {
         return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
+
+    /**
+     * @return mixed
+     */
+    public function getState()
+    {
+        $city = $this->getCity();
+        if (isset($city->state_id)) {
+            return $this->hasOne(State::className(), ['id' => $city->state_id]);
+        }
+        return false;
+    }
+
 }
