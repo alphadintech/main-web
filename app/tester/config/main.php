@@ -41,7 +41,7 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                'dashboard'=>'site/index'
+
             ],
         ],
         'urlManagerFrontend' => [

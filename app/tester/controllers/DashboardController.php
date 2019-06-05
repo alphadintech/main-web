@@ -2,9 +2,11 @@
 
 namespace tester\controllers;
 
-class DashboardController extends \yii\web\Controller
+use yii\web\Controller;
+
+class DashboardController extends Controller
 {
-    public $layout = "panel";
+    public $layout = "panel/main";
     public function actionIndex()
     {
         return $this->render('index');
