@@ -1,30 +1,11 @@
 <?php
-
 /* @var $this \yii\web\View */
-/* @var $content string */
 
 
-use tester\assets\PanelAsset;
-use tester\models\Tester;
-use yii\helpers\Html;
-$tester = Tester::find()->where(['user_id' => Yii::$app->user->id])->one();
-//print_r($tester);die;
-PanelAsset::register($this);
+
 //$this->registerJsFile('../theme/assets/global/plugins/jquery.min.js')
 ?>
-<?php $this->beginPage() ?>
-<!DOCTYPE html>
-<html  dir="rtl" lang="<?= Yii::$app->language ?>">
-<head>
-    <meta charset="<?= Yii::$app->charset ?>">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php $this->registerCsrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
-    <?php $this->head() ?>
-</head>
-<body class="IRANSansLight page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid page-content-white page-md">
-<?php $this->beginBody() ?>
+
 <div class="page-header navbar navbar-fixed-top">
     <div class="page-header-inner ">
         <div class="page-logo">
@@ -357,79 +338,3 @@ PanelAsset::register($this);
         </div>
     </div>
 </div>
-
-<div class="clearfix"> </div>
-<div class="page-container">
-    <div class="page-sidebar-wrapper">
-        <div class="page-sidebar navbar-collapse collapse">
-            <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
-                <li class="sidebar-toggler-wrapper hide">
-                    <div class="sidebar-toggler">
-                        <span></span>
-                    </div>
-                </li>
-                <li class="heading">
-                    <h3 class="uppercase">بخش کاربری</h3>
-                </li>
-                <li class="nav-item  active open">
-                    <a href="../tester/dashboard" class="nav-link nav-toggle">
-                        <i class="icon-home"></i>
-                        <span class="title">پیشخوان</span>
-                        <span class="selected"></span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="../tester/finance" class="nav-link nav-toggle">
-                        <i class="icon-bar-chart"></i>
-                        <span class="title">امور مالی</span>
-                        <span class="selected"></span>
-                    </a>
-                </li>
-                <li class="heading">
-                    <h3 class="uppercase">بخش آزمون</h3>
-                </li>
-                <li class="nav-item">
-                    <a href="../tester/invitation" class="nav-link nav-toggle">
-                        <i class="icon-globe"></i>
-                        <span class="title">دعوتنامه‌ها</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="../tester/test" class="nav-link nav-toggle">
-                        <i class="icon-briefcase"></i>
-                        <span class="title">آزمون‌ها</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="../tester/school" class="nav-link nav-toggle">
-                        <i class="icon-notebook"></i>
-                        <span class="title">آکادمی</span>
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-    </div>
-    <div class="page-content-wrapper">
-        <div class="page-content">
-            <?= $content ?>
-
-        </div>
-    </div>
-</div>
-
-</div>
-
-<div class="page-footer">
-    <div class="page-footer-inner"> 2019 &copy;
-        <a href="http://google.com" title="hehe" target="_blank">alphadin</a>
-    </div>
-    <div class="scroll-to-top">
-        <i class="icon-arrow-up"></i>
-    </div>
-</div>
-
-<?php $this->endBody() ?>
-</body>
-</html>
-<?php $this->endPage() ?>

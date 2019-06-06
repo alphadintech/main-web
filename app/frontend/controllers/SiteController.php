@@ -13,47 +13,47 @@ class SiteController extends \yii\web\Controller
 
     public function actionExploratory()
     {
-        return $this->render('Exploratory');
+        return $this->render('exploratory');
     }
 
     public function actionComparison()
     {
-        return $this->render('Comparison');
+        return $this->render('comparison');
     }
 
     public function actionCompetitor()
     {
-        return $this->render('Competitor');
+        return $this->render('competitor');
     }
 
     public function actionRegression()
     {
-        return $this->render('Regression');
+        return $this->render('regression');
     }
 
     public function actionUsability()
     {
-        return $this->render('Usability');
+        return $this->render('usability');
     }
 
     public function actionSurvey()
     {
-        return $this->render('Survey');
+        return $this->render('survey');
     }
 
     public function actionTestcase()
     {
-        return $this->render('Testcase');
+        return $this->render('testcase');
     }
 
     public function actionPrototype()
     {
-        return $this->render('Prototype');
+        return $this->render('prototype');
     }
 
     public function actionCardsorting()
     {
-        return $this->render('Cardsorting');
+        return $this->render('cardsorting');
     }
 
     public function actionLoadtest()
@@ -63,7 +63,7 @@ class SiteController extends \yii\web\Controller
 
     public function actionStructured()
     {
-        return $this->render('Structured');
+        return $this->render('structured');
     }
 
 }

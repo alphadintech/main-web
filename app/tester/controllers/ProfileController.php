@@ -27,7 +27,7 @@ use yii\web\User;
 class ProfileController extends Controller
 {
 //    public $enableCsrfValidation = false;
-    public $layout = "panel";
+    public $layout = "panel/main";
 
     public function actionIndex()
     {
