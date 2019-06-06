@@ -31,11 +31,14 @@ $script = <<<JS
        var intervalFunc = function () {
         $('#uploadtesteravatar-imagefile').html($('#uploadtesteravatar-imagefile').val());
     };
-    $('#btn1').on('click', function () { // use .live() for older versions of jQuery
+    $('#btn-avatar-upload').on('click', function () { // use .live() for older versions of jQuery
         $('#uploadtesteravatar-imagefile').click();
         setInterval(intervalFunc, 1);
         return false;
     });
+    $('#uploadtesteravatar-imagefile').change(function(){
+            $('#w0').submit();
+        });
 JS;
 $this->registerJs($script);
 $script = <<<JS
@@ -94,13 +97,14 @@ $this->registerJs($typeJs, View::POS_END, 'my-options');
             <div class="portlet light profile-sidebar-portlet ">
                 <!-- SIDEBAR USERPIC -->
                 <div class="profile-userpic">
-                    <img src="<?= ($testerModel->avatar_id !== Null && !empty($testerModel->avatar->url)) ? Yii::$app->urlManagerFrontend->createUrl([$testerModel->avatar->url]) : 'image/profile-default.jpg'; ?>"
-                         class="img-responsive" alt=""></div>
+                    <img id="btn-avatar-upload" src="<?=
+                    ($testerModel->avatar_id !== Null && !empty($testerModel->avatar->url)) ? Yii::$app->urlManagerFrontend->createUrl([$testerModel->avatar->url]) : 'image/profile-default.jpg';
+                    ?>" class="img-responsive" alt="">
+                </div>
                 <!-- END SIDEBAR USERPIC -->
                 <!-- SIDEBAR USER TITLE -->
                 <div class="profile-usertitle">
                     <div class="profile-usertitle-name"><?= ($testerModel->name) ? $testerModel->name . " " . $testerModel->family : "کاربر آزمونگر" ?></div>
-
                 </div>
                 <!-- END SIDEBAR USER TITLE -->
                 <!-- SIDEBAR MENU -->
@@ -109,12 +113,10 @@ $this->registerJs($typeJs, View::POS_END, 'my-options');
                         <li class="active">
                             <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ?>
                             <?= $form->field($modelUploadTesterAvatar, 'imageFile')->fileInput([
-                                    'style'=>'display:none'
-                            ]) ?>
-                            <input type="button" id="btn1" >
-                            <button>Submit</button>
+                                'style' => 'display:none'
+                            ]) ->label(false) ?>
                             <?php ActiveForm::end() ?>
-                            <a id="avatar-upload" href="tester_profile.html">
+                            <a id="avatar-upload" href="profile">
                                 <i class="icon-settings"></i> تکمیل - ویرایش </a>
                         </li>
                     </ul>
@@ -185,11 +187,11 @@ $this->registerJs($typeJs, View::POS_END, 'my-options');
                                                 'format' => 'yyyy/mm/dd',
                                                 'viewformat' => 'yyyy/mm/dd',
                                                 'placement' => 'left',
-                                                'todayBtn'=> 'linked',
-                                                ],
+                                                'todayBtn' => 'linked',
+                                            ],
                                             'htmlOptions' => [
-                                                'class'	=> 'form-control',
-                                                'placeholder'=>"تاریخ تولد خود را وارد کنید"
+                                                'class' => 'form-control',
+                                                'placeholder' => "تاریخ تولد خود را وارد کنید"
                                             ]
                                         ]);
                                         ?>
@@ -285,19 +287,19 @@ $this->registerJs($typeJs, View::POS_END, 'my-options');
                                 $form->field($testerModel, 'state', ['template' => '{label}<div class="col-md-9">{input}</div>{error}'])
                                     ->dropDownList($stateList, [
                                         'onchange' => "fill(this)",
-                                        'value'=>$stateSelected
+                                        'value' => $stateSelected
 
                                     ])
                                     ->label('استان', ['class' => 'col-md-3 control-label'])
                                 ?>
                                 <?php
 
-                                if(empty($cityList))
-                                    $cityList = [0=>"استان خود را انتخاب کنید"];
+                                if (empty($cityList))
+                                    $cityList = [0 => "استان خود را انتخاب کنید"];
                                 echo $form->field($testerModel, 'city_id', ['template' => '{label}<div class="col-md-9">{input}</div>{error}'])
                                     ->dropDownList($cityList, [
                                         'id' => "tester-city",
-                                        'value'=>$citySelected
+                                        'value' => $citySelected
                                     ])
                                     ->label('شهر', ['class' => 'col-md-3 control-label']);
                                 ?>
@@ -357,7 +359,8 @@ $this->registerJs($typeJs, View::POS_END, 'my-options');
 
                                 </div>
                             </div>
-                            <?php ActiveForm::end() ?>
+                            <?php ActiveForm::end();
+                            Pjax::end(); ?>
 
                         </div>
                     </div>
