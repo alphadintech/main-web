@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use yii\behaviors\AttributeBehavior;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
 
@@ -18,14 +19,16 @@ use yii\db\ActiveRecord;
  * @property int $updated_at
  * @property int $created_at
  *
+ * @property string $status_lable
  * @property SchoolTree $section
  * @property User $tester
  */
 class SchoolTesterResult extends \yii\db\ActiveRecord
 {
-
-    const STATUS_DELETED = 0;
-    const STATUS_ACTIVE = 10;
+    public $status_lable;
+    const STATUS_UNREAD = 1;
+    const STATUS_READ = 5;
+    const STATUS_PASS = 10;
 
     /**
      * @return array
@@ -40,8 +43,24 @@ class SchoolTesterResult extends \yii\db\ActiveRecord
                     ActiveRecord::EVENT_BEFORE_UPDATE => ['updated_at'],
                 ]
             ],
+            [
+                'class' => AttributeBehavior::className(),
+                'attributes' => [
+                    ActiveRecord::EVENT_AFTER_FIND => 'status_lable'
+                ],
+                'value' => function ($event) {
+                    $lable = [
+                        SchoolTesterResult::STATUS_UNREAD => 'Unread',
+                        SchoolTesterResult::STATUS_READ => 'Read',
+                        SchoolTesterResult::STATUS_PASS => 'Passed',
+                    ];
+                    return  $lable[$this->status];
+
+                },
+            ],
         ];
     }
+
     /**
      * {@inheritdoc}
      */
@@ -56,11 +75,11 @@ class SchoolTesterResult extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            ['status', 'default', 'value' => self::STATUS_ACTIVE],
-            ['status', 'in', 'range' => [self::STATUS_ACTIVE,  self::STATUS_DELETED]],
+            ['status', 'default', 'value' => self::STATUS_UNREAD],
+            ['status', 'in', 'range' => [self::STATUS_UNREAD, self::STATUS_READ, self::STATUS_PASS]],
             [['tester_id', 'section_id'], 'required'],
             [['tester_id', 'section_id', 'time', 'status', 'updated_at', 'created_at'], 'integer'],
-            [['result'], 'string', 'max' => 255],
+            [['result','status_lable'], 'string', 'max' => 255],
             [['section_id'], 'exist', 'skipOnError' => true, 'targetClass' => SchoolTree::className(), 'targetAttribute' => ['section_id' => 'id']],
             [['tester_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['tester_id' => 'id']],
         ];
@@ -78,6 +97,7 @@ class SchoolTesterResult extends \yii\db\ActiveRecord
             'result' => 'Result',
             'time' => 'Time',
             'status' => 'Status',
+            'status_lable' => 'Status Lable',
             'updated_at' => 'Updated At',
             'created_at' => 'Created At',
         ];
@@ -98,4 +118,5 @@ class SchoolTesterResult extends \yii\db\ActiveRecord
     {
         return $this->hasOne(User::className(), ['id' => 'tester_id']);
     }
+
 }
