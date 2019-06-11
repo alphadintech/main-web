@@ -5,16 +5,21 @@
 <h1>school/index</h1>
 <ul>
         <?php foreach ($sections as $section): ?>
-            <a href="<?=Yii::$app->urlManager->createUrl(['school/parts','id'=>$section['id']])?>">
+
                 <li>
+                    <a href="<?=Yii::$app->urlManager->createUrl(['school/parts','id'=>$section['id']])?>">
                     <?= $section['title'] ?>
                     :title
+                    </a>
                     <?= $section['status'] ?>
                     :status
+                    <a href="<?=Yii::$app->urlManager->createUrl(['school/quiz','id'=>$section['id']])?>">
+                      QuizLink
+                    </a>
                     <p> <?= $section['description'] ?></p>
 
                 </li>
-            </a>
+
 <hr>
         <?php endforeach; ?>
 </ul>

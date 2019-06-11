@@ -43,7 +43,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     ?>
     <h1><?= Html::encode($this->title) ?></h1>
-
+   <a href="<?=Yii::$app->urlManager->createUrl(['school/section-list'])?>"> <h2><?= Html::encode('مدیریت کوییز ها') ?></h2></a>
 
     <?php Pjax::begin(); ?>
 

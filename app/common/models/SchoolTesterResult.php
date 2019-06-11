@@ -29,6 +29,7 @@ class SchoolTesterResult extends \yii\db\ActiveRecord
     const STATUS_UNREAD = 1;
     const STATUS_READ = 5;
     const STATUS_PASS = 10;
+    const STATUS_FAILED = 7;
 
     /**
      * @return array
@@ -53,6 +54,7 @@ class SchoolTesterResult extends \yii\db\ActiveRecord
                         SchoolTesterResult::STATUS_UNREAD => 'Unread',
                         SchoolTesterResult::STATUS_READ => 'Read',
                         SchoolTesterResult::STATUS_PASS => 'Passed',
+                        SchoolTesterResult::STATUS_FAILED => 'Failed',
                     ];
                     return  $lable[$this->status];
 
@@ -76,7 +78,7 @@ class SchoolTesterResult extends \yii\db\ActiveRecord
     {
         return [
             ['status', 'default', 'value' => self::STATUS_UNREAD],
-            ['status', 'in', 'range' => [self::STATUS_UNREAD, self::STATUS_READ, self::STATUS_PASS]],
+            ['status', 'in', 'range' => [self::STATUS_UNREAD, self::STATUS_READ, self::STATUS_FAILED, self::STATUS_PASS]],
             [['tester_id', 'section_id'], 'required'],
             [['tester_id', 'section_id', 'time', 'status', 'updated_at', 'created_at'], 'integer'],
             [['result','status_lable'], 'string', 'max' => 255],

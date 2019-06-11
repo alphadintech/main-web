@@ -57,7 +57,6 @@ $typeJs = <<<JS
                         var myDropDownList = document.getElementById('tester-city');
                        $('#tester-city').empty();
                         $.each(response, function(index, value) {
-                          
                             var option = document.createElement('option');
                                 option.text = value;
                                 option.value = index;
@@ -109,9 +108,9 @@ $this->registerJs($typeJs, View::POS_END, 'my-options');
                         <li class="active">
                             <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ?>
                             <?= $form->field($modelUploadTesterAvatar, 'imageFile')->fileInput([
-                                    'style'=>'display:none'
+                                'style' => 'display:none'
                             ]) ?>
-                            <input type="button" id="btn1" >
+                            <input type="button" id="btn1">
                             <button>Submit</button>
                             <?php ActiveForm::end() ?>
                             <a id="avatar-upload" href="tester_profile.html">
@@ -185,11 +184,11 @@ $this->registerJs($typeJs, View::POS_END, 'my-options');
                                                 'format' => 'yyyy/mm/dd',
                                                 'viewformat' => 'yyyy/mm/dd',
                                                 'placement' => 'left',
-                                                'todayBtn'=> 'linked',
-                                                ],
+                                                'todayBtn' => 'linked',
+                                            ],
                                             'htmlOptions' => [
-                                                'class'	=> 'form-control',
-                                                'placeholder'=>"تاریخ تولد خود را وارد کنید"
+                                                'class' => 'form-control',
+                                                'placeholder' => "تاریخ تولد خود را وارد کنید"
                                             ]
                                         ]);
                                         ?>
@@ -285,19 +284,19 @@ $this->registerJs($typeJs, View::POS_END, 'my-options');
                                 $form->field($testerModel, 'state', ['template' => '{label}<div class="col-md-9">{input}</div>{error}'])
                                     ->dropDownList($stateList, [
                                         'onchange' => "fill(this)",
-                                        'value'=>$stateSelected
+                                        'value' => $stateSelected
 
                                     ])
                                     ->label('استان', ['class' => 'col-md-3 control-label'])
                                 ?>
                                 <?php
 
-                                if(empty($cityList))
-                                    $cityList = [0=>"استان خود را انتخاب کنید"];
+                                if (empty($cityList))
+                                    $cityList = [0 => "استان خود را انتخاب کنید"];
                                 echo $form->field($testerModel, 'city_id', ['template' => '{label}<div class="col-md-9">{input}</div>{error}'])
                                     ->dropDownList($cityList, [
                                         'id' => "tester-city",
-                                        'value'=>$citySelected
+                                        'value' => $citySelected
                                     ])
                                     ->label('شهر', ['class' => 'col-md-3 control-label']);
                                 ?>
