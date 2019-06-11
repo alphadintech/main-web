@@ -50,18 +50,24 @@ class SchoolController extends \yii\web\Controller
      */
     public function actionSections($id)
     {
+
         $sections = SchoolTree::find()
             ->where(['type' => SchoolTree::type_section])
             ->andWhere(['parent_id' => $id])
             ->orderBy(['section_order' => SORT_ASC])
             ->asArray()
             ->all();
+        $parent = SchoolTree::find()
+            ->andWhere(['id' => $id])
+            ->one();
+
         foreach ($sections as $index => $section) {
             $status = SchoolTesterResult::find()
 //                ->joinWith('statuslable')
                 ->where(['section_id' => $section['id']])
                 ->andWhere(['tester_id' => Yii::$app->user->id])
                 ->one();
+
             if ($status) {
                 /** @var SchoolTesterResult $status */
                 $sections[$index]['status'] = $status->status_lable;
@@ -70,7 +76,8 @@ class SchoolController extends \yii\web\Controller
             }
         }
         return $this->render('section_list', [
-            'sections' => $sections
+            'sections' => $sections,
+            'parentTitle'=>$parent->title
         ]);
     }
     public function actionParts($id)

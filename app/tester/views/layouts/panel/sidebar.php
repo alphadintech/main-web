@@ -14,15 +14,15 @@
             <li class="heading">
                 <h3 class="uppercase">بخش کاربری</h3>
             </li>
-            <li class="nav-item  <?=(Yii::$app->controller->id == 'dashboard' && Yii::$app->controller->action->id == 'index')?'active':'';?> open">
-                <a href="../tester/dashboard" class="nav-link nav-toggle">
+            <li class="nav-item  <?=(Yii::$app->controller->id == 'dashboard')?'active':'';?>">
+                <a href="<?= Yii::$app->urlManager->createUrl(['dashboard']) ?>" class="nav-link nav-toggle">
                     <i class="icon-home"></i>
                     <span class="title">پیشخوان</span>
                     <span class="selected"></span>
                 </a>
             </li>
-            <li class="nav-item <?=(Yii::$app->controller->id == 'finance' && Yii::$app->controller->action->id == 'index')?'active':'';?>" >
-                <a href="../tester/finance" class="nav-link nav-toggle">
+            <li class="nav-item <?=(Yii::$app->controller->id == 'finance')?'active':'';?>" >
+                <a href="<?= Yii::$app->urlManager->createUrl(['finance']) ?>" class="nav-link nav-toggle">
                     <i class="icon-bar-chart"></i>
                     <span class="title">امور مالی</span>
                     <span class="selected"></span>
@@ -31,20 +31,20 @@
             <li class="heading">
                 <h3 class="uppercase">بخش آزمون</h3>
             </li>
-            <li class="nav-item <?=(Yii::$app->controller->id == 'invitation' && Yii::$app->controller->action->id == 'index')?'active':'';?>">
-                <a href="../tester/invitation" class="nav-link nav-toggle">
+            <li class="nav-item <?=(Yii::$app->controller->id == 'invitation')?'active':'';?>">
+                <a href="<?= Yii::$app->urlManager->createUrl(['invitation']) ?>" class="nav-link nav-toggle">
                     <i class="icon-globe"></i>
                     <span class="title">دعوتنامه‌ها</span>
                 </a>
             </li>
-            <li class="nav-item <?=(Yii::$app->controller->id == 'test' && Yii::$app->controller->action->id == 'index')?'active':'';?>">
-                <a href="../tester/test" class="nav-link nav-toggle">
+            <li class="nav-item <?=(Yii::$app->controller->id == 'test')?'active':'';?>">
+                <a href="<?= Yii::$app->urlManager->createUrl(['test']) ?>" class="nav-link nav-toggle">
                     <i class="icon-briefcase"></i>
                     <span class="title">آزمون‌ها</span>
                 </a>
             </li>
-            <li class="nav-item <?=(Yii::$app->controller->id == 'school' && Yii::$app->controller->action->id == 'index')?'active':'';?>">
-                <a href="../tester/school" class="nav-link nav-toggle">
+            <li class="nav-item <?=(Yii::$app->controller->id == 'school')?'active':'';?>">
+                <a href="<?= Yii::$app->urlManager->createUrl(['school']) ?>" class="nav-link nav-toggle">
                     <i class="icon-notebook"></i>
                     <span class="title">آکادمی</span>
                 </a>
