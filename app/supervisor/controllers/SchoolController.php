@@ -2,7 +2,9 @@
 
 namespace supervisor\controllers;
 
+use common\models\SchoolAnswer;
 use common\models\SchoolContent;
+use common\models\SchoolQuestion;
 use Yii;
 use common\models\SchoolTree;
 use yii\data\ActiveDataProvider;
@@ -19,7 +21,6 @@ class SchoolController extends Controller
      * {@inheritdoc}
      */
 
-    public $layout = "panel";
     public function behaviors()
     {
         return [
@@ -193,12 +194,103 @@ class SchoolController extends Controller
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
+     * @throws \Exception
+     * @throws \Throwable
+     * @throws \yii\db\StaleObjectException
      */
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
+    }
+
+    /**
+     * @return string
+     */
+    public function actionSectionList()
+    {
+        $sections = new ActiveDataProvider([
+            'query' => SchoolTree::find()
+                ->where(['type' => SchoolTree::type_section]),
+            'pagination' => [
+                'pageSize' => 20,
+            ],
+        ]);
+
+
+        return $this->render('section_list', ['sections' => $sections]);
+    }
+
+    public function actionQuizView($id)
+    {
+//        print_r($_POST);die;
+        $model = new SchoolQuestion();
+        $modelAnswers = new SchoolAnswer();
+        if ($model->load(Yii::$app->request->post())) {
+            $model->section_id = $id;
+            $model->save(false);
+            $answers = Yii::$app->request->post('SchoolAnswer')['text'];
+            foreach ($answers as $index => $answer) {
+                $modelAnswer = new SchoolAnswer();
+                $modelAnswer->question_id = $model->id;
+                $modelAnswer->text = $answer;
+                $modelAnswer->save();
+                if ($index == Yii::$app->request->post('answer')) {
+                    $model->answer_id = $modelAnswer->id;
+                    $model->save();
+                }
+            }
+        }
+        $questions = new ActiveDataProvider([
+            'query' => SchoolQuestion::find()->where(['section_id'=>$id]),
+            'pagination' => [
+                'pageSize' => 20,
+            ],
+        ]);
+        return $this->render('quiz_view', ['model' => $model,'questions' => $questions, 'modelAnswer' => $modelAnswers]);
+    }
+
+    public function actionQuestionView($id)
+    {
+//        print_r($_POST);die;
+        /** @var SchoolQuestion $model */
+        $model = SchoolQuestion::find()->where(['id'=>$id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $model->section_id = $id;
+            $model->save(false);
+            $answers = Yii::$app->request->post('SchoolAnswer')['text'];
+            foreach ($answers as $index => $answer) {
+                $modelAnswer = new SchoolAnswer();
+                $modelAnswer->question_id = $model->id;
+                $modelAnswer->text = $answer;
+                $modelAnswer->save();
+                if ($index == Yii::$app->request->post('answer')) {
+                    $model->answer_id = $modelAnswer->id;
+                    $model->save();
+                }
+            }
+        }
+        $answersModel = SchoolAnswer::find()->where(['question_id'=>$id])->all();
+        $i=0;
+        $answers=[];
+        foreach ($answersModel as $item){
+            $answers[$i] = $item->text;
+            if($item->id == $model->answer_id){
+                $currectAnswer = $i;
+            }
+            $i++;
+        }
+
+        return $this->render('question_view', ['model' => $model,'answers' => $answers, 'currectAnswer' => $currectAnswer]);
+    }
+ public function actionQuestionDelete($id)
+    {
+//        print_r($_POST);die;
+        /** @var SchoolQuestion $model */
+        $model = SchoolQuestion::deleteAll(['id'=>$id]);
+
+        return $this->redirect(['school/section-list']);
     }
 
     /**

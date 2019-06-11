@@ -15,7 +15,7 @@ class m190427_172105_add_answer_id_column_to_school_question_table extends Migra
      */
     public function safeUp()
     {
-        $this->addColumn('{{%school_question}}', 'answer_id', $this->integer()->notNull());
+        $this->addColumn('{{%school_question}}', 'answer_id', $this->integer());
 
         // creates index for column `answer_id`
         $this->createIndex(

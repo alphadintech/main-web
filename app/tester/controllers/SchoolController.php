@@ -2,6 +2,7 @@
 
 namespace tester\controllers;
 
+use common\models\SchoolQuestion;
 use common\models\SchoolTesterResult;
 use common\models\SchoolTree;
 use Yii;
@@ -80,6 +81,11 @@ class SchoolController extends \yii\web\Controller
             'parentTitle'=>$parent->title
         ]);
     }
+
+    /**
+     * @param $id
+     * @return string
+     */
     public function actionParts($id)
     {
         $parts = SchoolTree::find()
@@ -91,6 +97,52 @@ class SchoolController extends \yii\web\Controller
             ->all();
         return $this->render('part_list', [
             'parts' => $parts
+        ]);
+    }
+
+    /**
+     * @param $id
+     * @return string
+     */
+    public function actionQuiz($id)
+    {
+//        print_r($_POST);die;
+        $request =Yii::$app->request->post();
+        $questions = SchoolQuestion::find()->where(['section_id'=>$id])
+            ->all();
+        if(isset($request['submit'])){
+            $postAnswers = $request['questions'];
+            $trueAnswers=0;
+            foreach ($postAnswers as $questionId=>$answerId){
+                $question = SchoolQuestion::find()->where(['id'=>$questionId])
+                    ->one();
+                if($question->answer_id == $answerId){
+                    $trueAnswers++;
+                }
+            }
+            $allQ = count($questions);
+
+            $testerResult =SchoolTesterResult::find()->where(['tester_id'=> Yii::$app->user->id])->andWhere(['section_id'=>$id])->one();
+            if(!$testerResult)
+                $testerResult = new SchoolTesterResult();
+            $testerResult->section_id = $id;
+            $testerResult->tester_id= Yii::$app->user->id;
+            $testerResult->result= (string)($trueAnswers/$allQ);
+
+            if(($trueAnswers/$allQ)== 1){
+                $testerResult->status= SchoolTesterResult::STATUS_PASS;
+            }else{
+                $testerResult->status= SchoolTesterResult::STATUS_FAILED;
+            }
+            if(!$testerResult->save()){
+                print_r($testerResult->errors);die;
+            }
+            return $this->redirect(['school/']);
+        }
+
+
+        return $this->render('quiz_form', [
+            'questions' => $questions
         ]);
     }
 
