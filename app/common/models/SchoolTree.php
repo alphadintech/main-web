@@ -9,6 +9,7 @@ use Yii;
  *
  * @property int $id
  * @property int $parent_id
+ * @property int $credit
  * @property string $type
  * @property string $title
  * @property string $description
@@ -21,9 +22,10 @@ use Yii;
  */
 class SchoolTree extends \yii\db\ActiveRecord
 {
-    const type_course =10;
-    const type_section =20;
-    const type_part =30;
+    const type_course = 10;
+    const type_section = 20;
+    const type_part = 30;
+
     /**
      * {@inheritdoc}
      */
@@ -32,13 +34,30 @@ class SchoolTree extends \yii\db\ActiveRecord
         return '{{%school_tree}}';
     }
 
+    public static function getSectionIds($id)
+    {
+        $query = SchoolTree::find()
+            ->select('id')
+            ->where(['parent_id' => $id])
+            ->andWhere(['type' => SchoolTree::type_section])
+            ->all();
+        if ($query) {
+            $r = [];
+            foreach ($query as $item) {
+                $r[] = $item->id;
+            }
+            return $r;
+        }
+        return false;
+    }
+
     /**
      * {@inheritdoc}
      */
     public function rules()
     {
         return [
-            [['parent_id', 'part_order', 'section_order','type'], 'integer'],
+            [['parent_id', 'part_order', 'credit', 'section_order', 'type'], 'integer'],
             [['title'], 'required'],
             [['description'], 'string'],
             [['title'], 'string', 'max' => 255],
@@ -55,6 +74,7 @@ class SchoolTree extends \yii\db\ActiveRecord
             'parent_id' => 'Parent ID',
             'type' => 'Type',
             'title' => 'Title',
+            'credit' => 'Credit Of Section',
             'description' => 'Description',
             'part_order' => 'Part Order',
             'section_order' => 'Section Order',
@@ -66,7 +86,7 @@ class SchoolTree extends \yii\db\ActiveRecord
      */
     public function getSchoolContents()
     {
-        return $this->hasMany(SchoolContent::className(), ['part_id' => 'id']);
+        return $this->hasOne(SchoolContent::className(), ['part_id' => 'id']);
     }
 
     /**
@@ -97,7 +117,7 @@ class SchoolTree extends \yii\db\ActiveRecord
 
     public function lableOfType()
     {
-        switch ($this->type){
+        switch ($this->type) {
             case SchoolTree::type_course :
                 return 'Course';
                 break;
@@ -121,14 +141,15 @@ class SchoolTree extends \yii\db\ActiveRecord
     {
         return $this->hasOne(SchoolTree::className(), ['id' => 'parent_id']);
     }
+
     /**
      * @return \yii\db\ActiveQuery
      */
     public function titleOfParent()
     {
 //        print_r($this->parent_id);die;
-        $p = SchoolTree::find()->where(['id'=>$this->parent_id])->one();
-        if(isset($p->title)){
+        $p = SchoolTree::find()->where(['id' => $this->parent_id])->one();
+        if (isset($p->title)) {
             return $p->title;
         }
         return 'main';

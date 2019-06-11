@@ -84,6 +84,8 @@ $this->registerJs($typeJs, View::POS_END, 'my-options');
 
     <?= $form->field($model, 'section_order')->textInput() ?>
 
+    <?= $form->field($model, 'credit')->textInput() ?>
+
     <?php
 //    print_r($contentModel)
     $condition =(isset($contentModel->body))?['rows' => 6, 'disabled' => false]:['rows' => 6, 'disabled' => true];
