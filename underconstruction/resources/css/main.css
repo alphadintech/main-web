@@ -190,7 +190,6 @@ h3 {
 	font-size: 16px;
 	font-weight: bold;
 }
-
 .green .progressBarFillLeft { background: url(../img/progress_bar_fill_left_green.png); }
 .blue .progressBarFillLeft { background: url(../img/progress_bar_fill_left_blue.png); }
 .yellow .progressBarFillLeft { background: url(../img/progress_bar_fill_left_yellow.png); }

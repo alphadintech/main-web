@@ -59,7 +59,7 @@ class SchoolController extends \yii\web\Controller
             ->asArray()
             ->all();
         $parent = SchoolTree::find()
-            ->andWhere(['id' => $id])
+            ->Where(['id' => $id])
             ->one();
 
         foreach ($sections as $index => $section) {
@@ -95,8 +95,18 @@ class SchoolController extends \yii\web\Controller
             ->orderBy(['part_order' => SORT_ASC])
             ->asArray()
             ->all();
+        $parent = SchoolTree::find()
+            ->where(['id' => $parts[0]["parent_id"]])
+            ->one();
+
+        $parparent = SchoolTree::find()
+            ->where(['id' => $parent["parent_id"]])
+            ->one();
+
         return $this->render('part_list', [
-            'parts' => $parts
+            'parts' => $parts,
+            'parent'=>$parent,
+            'parparent'=>$parparent
         ]);
     }
 
