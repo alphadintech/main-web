@@ -13,7 +13,7 @@
                     <?= $section['title'] ?>
                 </div>
                 <div class="tools">
-                    <a href="javascript:;" class="collapse"> </a>
+                    <a href="javascript:;" class="collapse "> </a>
                 </div>
 
                 <div class="actions">
@@ -28,7 +28,7 @@
                             echo('<a class="btn red-haze btn-outline btn-circle btn-sm" href='.$link.'> تلاش مجدد');
                             break;
                         default:
-                            echo('<a class="btn grey btn-outline btn-circle btn-sm" href='.$link.'> آزمون');
+                            echo('<a class="btn grey-gallery btn-outline btn-circle btn-sm" href='.$link.'> آزمون');
                     }?>
                         </a>
                     </div>

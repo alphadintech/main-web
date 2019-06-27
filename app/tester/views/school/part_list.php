@@ -3,21 +3,27 @@
 
 ?>
 
+<h3> <?= $parparent['title'] ?>,<?= $parent['title'] ?></h3>
+<hr>
 
-<div class="portlet light portlet-fit bordered">
-    <div class="portlet-title">
-        <div class="caption">
-            <?= $parparent['title'] ?>,<?= $parent['title'] ?>
-            <i class="fa fa-pencil"></i>
+<div class="portlet light bordered">
+    <div class="portlet-title  tabbable-line">
+        <div class="actions">
+            <a class="btn btn-circle btn-icon-only btn-default fullscreen" href="javascript:;" data-original-title="" title=""> </a>
         </div>
-        <div class="tools">
-            <a href="javascript:;" class="collapse"> </a>
-        </div>
+        <ul class="nav nav-tabs pull-left">
+
+            <?php foreach ($parts as $index => $part): ?>
+                <li class="<?= ($index == array_key_first($parts)) ? 'active' : '' ?>">
+                    <a data-toggle="tab" href="#<?= $part['id'] ?>"><?= $part['title'] ?></a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
     </div>
     <div class="portlet-body">
 
         <div class="row">
-            <div class="col-md-9 col-sm-9 col-xs-9">
+            <div class="col-md-12 col-sm-12 col-xs-12">
 
 
                 <div class="tab-content">
@@ -30,17 +36,6 @@
 
                     <?php endforeach; ?>
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
-
-                <ul class="nav nav-tabs tabs-right">
-
-                    <?php foreach ($parts as $index => $part): ?>
-                        <li class="<?= ($index == array_key_first($parts)) ? 'active' : '' ?>">
-                            <a data-toggle="tab" href="#<?= $part['id'] ?>"><?= $part['title'] ?></a>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
             </div>
         </div>
     </div>
