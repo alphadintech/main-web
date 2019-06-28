@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	
 	/* EDIT BELOW */
-	var launchDate = new Date("June 27, 2019 10:00:00");
+	var launchDate = new Date("July 08, 2019 10:00:00");
 	var procentageDone = 83;
 	var headerColor = 'green';
 	var progressFillColor = 'green';
