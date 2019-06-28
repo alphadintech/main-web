@@ -19,11 +19,11 @@ return [
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
-            'identityCookie' => ['name' => '_identity-customer', 'httpOnly' => true],
+            'identityCookie' => ['name' => '_identity-user', 'httpOnly' => true],
         ],
         'session' => [
             // this is the name of the session cookie used for login on the customer
-            'name' => 'advanced-customer',
+            'name' => $params['session_name'],
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -35,16 +35,24 @@ return [
             ],
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => 'dashboard/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+
             ],
         ],
-        */
+        'urlManagerFrontend' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'class' => 'yii\web\UrlManager',
+//            'hostInfo' =>'http://localhost/yii2/test/public/customer',
+            'baseUrl' =>  '../',
+
+        ],
+
     ],
     'params' => $params,
 ];
