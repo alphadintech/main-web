@@ -17638,7 +17638,7 @@ body[ng-controller] .modal {
 
 .mt-widget-3 .mt-head .mt-head-date {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     display: block;
     color: #f2f2f2
 }
@@ -17650,7 +17650,7 @@ body[ng-controller] .modal {
 }
 
 .mt-widget-3 .mt-head .mt-head-button > button {
-    width: 90px
+    width: 120px
 }
 
 .mt-widget-3 .mt-body-actions-icons .btn-group {

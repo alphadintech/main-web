@@ -21,32 +21,25 @@
                     <span class="selected"></span>
                 </a>
             </li>
-            <li class="nav-item <?=(Yii::$app->controller->id == 'finance')?'active':'';?>" >
-                <a href="<?= Yii::$app->urlManager->createUrl(['finance']) ?>" class="nav-link nav-toggle">
-                    <i class="icon-bar-chart"></i>
-                    <span class="title">امور مالی</span>
+            <li class="nav-item <?=(Yii::$app->controller->id == 'project')?'active':'';?>" >
+                <a href="<?= Yii::$app->urlManager->createUrl(['project']) ?>" class="nav-link nav-toggle">
+                    <i class="fa fa-folder-open-o"></i>
+                    <span class="title">پروژه ها</span>
                     <span class="selected"></span>
                 </a>
             </li>
-            <li class="heading">
-                <h3 class="uppercase">بخش آزمون</h3>
-            </li>
-            <li class="nav-item <?=(Yii::$app->controller->id == 'invitation')?'active':'';?>">
-                <a href="<?= Yii::$app->urlManager->createUrl(['invitation']) ?>" class="nav-link nav-toggle">
-                    <i class="icon-globe"></i>
-                    <span class="title">دعوتنامه‌ها</span>
+            <li class="nav-item <?=(Yii::$app->controller->id == 'report')?'active':'';?>" >
+                <a href="<?= Yii::$app->urlManager->createUrl(['report']) ?>" class="nav-link nav-toggle">
+                    <i class="fa fa-line-chart"></i>
+                    <span class="title">گزارشات</span>
+                    <span class="selected"></span>
                 </a>
             </li>
-            <li class="nav-item <?=(Yii::$app->controller->id == 'test')?'active':'';?>">
-                <a href="<?= Yii::$app->urlManager->createUrl(['test']) ?>" class="nav-link nav-toggle">
-                    <i class="icon-briefcase"></i>
-                    <span class="title">آزمون‌ها</span>
-                </a>
-            </li>
-            <li class="nav-item <?=(Yii::$app->controller->id == 'school')?'active':'';?>">
-                <a href="<?= Yii::$app->urlManager->createUrl(['school']) ?>" class="nav-link nav-toggle">
-                    <i class="icon-notebook"></i>
-                    <span class="title">آکادمی</span>
+            <li class="nav-item <?=(Yii::$app->controller->id == 'finance')?'active':'';?>" >
+                <a href="<?= Yii::$app->urlManager->createUrl(['finance']) ?>" class="nav-link nav-toggle">
+                    <i class="fa fa-money"></i>
+                    <span class="title">امور مالی</span>
+                    <span class="selected"></span>
                 </a>
             </li>
         </ul>

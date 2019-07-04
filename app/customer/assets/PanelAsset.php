@@ -26,7 +26,7 @@ class PanelAsset extends AssetBundle
         '../theme/assets/global/plugins/select2/css/select2.min.css',
         '../theme/assets/global/plugins/select2/css/select2-bootstrap.min.css',
         '../theme/assets/layouts/layout/css/layout-rtl.min.css',
-        '../theme/assets/layouts/layout/css/themes/darkblue-rtl.min.css',
+        '../theme/assets/layouts/layout/css/themes/light-rtl.min.css',
         '../theme/assets/layouts/layout/css/custom-rtl.min.css',
     ];
     public $js = [
