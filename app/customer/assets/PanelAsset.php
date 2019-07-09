@@ -44,6 +44,8 @@ class PanelAsset extends AssetBundle
         "../theme/assets/global/plugins/jquery.sparkline.min.js",
         "../theme/assets/global/plugins/select2/js/select2.full.min.js",
         "../theme/assets/global/scripts/app.min.js",
+        "http://www.google.com/jsapi",
+        "../theme/assets/pages/scripts/charts-google.js",
         "../theme/assets/pages/scripts/components-select2.js",
         "../theme/assets/pages/scripts/profile.min.js",
         "../theme/assets/layouts/layout/scripts/layout.min.js",
