@@ -10,7 +10,7 @@
     <div class="page-header-inner ">
         <div class="page-logo">
             <a href="">
-                <img src="../theme/assets/layouts/layout/img/logo.png" alt="logo" class="logo-default" /> </a>
+                <img src="../../theme/assets/layouts/layout/img/logo.png" alt="logo" class="logo-default" /> </a>
             <div class="menu-toggler sidebar-toggler">
                 <span></span>
             </div>
@@ -121,71 +121,61 @@
                 <li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
                     <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                         <i class="icon-envelope-open"></i>
-                        <span class="badge badge-default"> 4 </span>
+                        <span class="badge badge-default"> 1 </span>
                     </a>
                     <ul class="dropdown-menu">
                         <li class="external">
-                            <h3>You have
-                                <span class="bold">7 New</span> Messages</h3>
-                            <a href="app_inbox.html">view all</a>
+                            <h3>شما
+                                <span class="bold">1 پیام</span> جدید دارید</h3>
+                            <a href="app_inbox.html">نمایش همه</a>
                         </li>
                         <li>
                             <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
                                 <li>
                                     <a href="#">
                                                 <span class="photo">
-                                                    <img src="../theme/assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <img src="../theme/assets/layouts/layout/img/smalllogo.jpg" class="img-circle" alt=""> </span>
                                         <span class="subject">
-                                                    <span class="from"> Lisa Wong </span>
-                                                    <span class="time">Just Now </span>
+                                                    <span class="from"> آلفادین </span>
+                                                    <span class="time">دیروز</span>
                                                 </span>
-                                        <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                        <span class="message"> کاربر گرامی شرکت تست خوش آمدید .. </span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                                 <span class="photo">
-                                                    <img src="../theme/assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <img src="../theme/assets/layouts/layout/img/smalllogo.jpg" class="img-circle" alt=""> </span>
                                         <span class="subject">
-                                                    <span class="from"> Richard Doe </span>
-                                                    <span class="time">16 mins </span>
+                                                    <span class="from"> آلفادین </span>
+                                                    <span class="time">1 هفته پیش</span>
                                                 </span>
-                                        <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                        <span class="message"> تست عملکرد کلی web برای پروژه مثال 1 تکمیل شد .. </span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                                 <span class="photo">
-                                                    <img src="../theme/assets/layouts/layout/img/avatar1.jpg" class="img-circle" alt=""> </span>
+                                                    <img src="../theme/assets/layouts/layout/img/smalllogo.jpg" class="img-circle" alt=""> </span>
                                         <span class="subject">
-                                                    <span class="from"> Bob Nilson </span>
-                                                    <span class="time">2 hrs </span>
+                                                    <span class="from"> آلفادین </span>
+                                                    <span class="time">1 هفته پیش</span>
                                                 </span>
-                                        <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                        <span class="message"> تست عملکرد کلی android برای پروژه مثال 1 تکمیل شد .. </span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                                 <span class="photo">
-                                                    <img src="../theme/assets/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <img src="../theme/assets/layouts/layout/img/smalllogo.jpg" class="img-circle" alt=""> </span>
                                         <span class="subject">
-                                                    <span class="from"> Lisa Wong </span>
-                                                    <span class="time">40 mins </span>
+                                                    <span class="from"> آلفادین </span>
+                                                    <span class="time">8 روز پیش</span>
                                                 </span>
-                                        <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
+                                        <span class="message"> تست عملکرد کلی iOS برای پروژه مثال 1 تکمیل شد .. </span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                                <span class="photo">
-                                                    <img src="../theme/assets/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
-                                        <span class="subject">
-                                                    <span class="from"> Richard Doe </span>
-                                                    <span class="time">46 mins </span>
-                                                </span>
-                                        <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
-                                    </a>
-                                </li>
+
                             </ul>
                         </li>
                     </ul>
@@ -300,7 +290,7 @@
 <!--                </li>-->
                 <li class="dropdown dropdown-user">
                     <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                        <img alt="" class="img-circle" src="<?= (isset($customer->avatar_id )&& !empty($customer->avatar->url)) ? Yii::$app->urlManagerFrontend->createUrl([$customer->avatar->url]) : 'image/profile-default.jpg'; ?>" />
+                        <img alt="" class="img-circle" src="<?= (isset($customer->avatar_id )&& !empty($customer->avatar->url)) ? Yii::$app->urlManagerFrontend->createUrl([$customer->avatar->url]) : ''; ?>" />
                         <span class="username username-hide-on-mobile"> <?= (isset($custome->name)) ? $customer->name . " " . $customer->family : "کاربر آزمونگر" ?> </span>
                         <i class="fa fa-angle-down"></i>
                     </a>
