@@ -85,7 +85,7 @@ SiteAsset::register($this);
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="logo float-right" href="index.html">
-                    <img src="/sitetheme/images/_smarty/logo_dark.png" alt="">
+                    <img src="sitetheme/images/_smarty/logo_dark.png" alt="">
                 </a>
                 <div class="navbar-collapse collapse float-left nav-main-collapse">
                     <nav class="nav-main">

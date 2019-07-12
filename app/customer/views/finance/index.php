@@ -6,7 +6,6 @@
 
 
 <div class="row">
-
     <div class="col-md-12">
         <!-- BEGIN BORDERED TABLE PORTLET-->
         <div class="portlet light portlet-fit bordered">
