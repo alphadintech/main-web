@@ -323,7 +323,7 @@ SiteAsset::register($this);
         <span class="loader"></span>
     </div>
 </div>
-<script>var plugin_path = '/main-web/public/sitetheme/plugins/';</script>
+<script>var plugin_path = 'public/sitetheme/plugins/';</script>
 <?php $this->endBody() ?>
 </body>
 
