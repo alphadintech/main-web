@@ -84,7 +84,7 @@ SiteAsset::register($this);
                 <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="logo float-right" href="index.html">
+                <a class="logo float-right" href="<?=Yii::$app->homeUrl?>">
                     <img src="sitetheme/images/_smarty/logo_dark.png" alt="">
                 </a>
                 <div class="navbar-collapse collapse float-left nav-main-collapse">
@@ -108,19 +108,19 @@ SiteAsset::register($this);
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown ">
-                                        <a class="dropdown" href="index">صفحه‌اصلی</a>
+                                        <a class="dropdown" href="<?=Yii::$app->homeUrl?>">صفحه‌اصلی</a>
                                     </li>
                                     <li class="dropdown ">
-                                        <a class="dropdown" href="index#solutions">راهکارها</a>
+                                        <a class="dropdown" href="<?=Yii::$app->homeUrl?>#solutions">راهکارها</a>
                                     </li>
                                     <li class="dropdown ">
-                                        <a class="dropdown" href="index#Alphadine&amp;numbers">آلفادین و اعداد</a>
+                                        <a class="dropdown" href="<?=Yii::$app->homeUrl?>#Alphadine&amp;numbers">آلفادین و اعداد</a>
                                     </li>
                                     <li class="dropdown ">
-                                        <a class="dropdown" href="index#aboutus">درباره ما</a>
+                                        <a class="dropdown" href="<?=Yii::$app->homeUrl?>#aboutus">درباره ما</a>
                                     </li>
                                     <li class="dropdown ">
-                                        <a class="dropdown" href="index#footer">تماس با ما</a>
+                                        <a class="dropdown" href="<?=Yii::$app->homeUrl?>#footer">تماس با ما</a>
                                     </li>
 
 
