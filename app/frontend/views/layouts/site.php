@@ -264,7 +264,7 @@ SiteAsset::register($this);
                     <h4 class="letter-spacing-1">با ما در تماس باشید</h4>
                     <p>شماره تلفن خود راوارد کنید و با ما در ارتباط باشید</p>
 
-                    <form class="validate" action="php/newsletter.php" method="post"
+                    <form class="validate" action="" method="post"
                           data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-phone fa-rotate-45"></i></span>
