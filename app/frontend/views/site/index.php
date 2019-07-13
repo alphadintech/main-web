@@ -181,7 +181,7 @@
     <div class="col-6 col-sm-3">
         <i class="fa fa-smile-o fa-4x"></i>
         <h2 class="countTo font-raleway" data-speed="3000">1033</h2>
-        <p>تعداد دیوایس ها</p>
+        <p>تعداد دیوایس</p>
     </div>
 
     <div class="col-6 col-sm-3">
