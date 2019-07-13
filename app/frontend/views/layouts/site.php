@@ -174,12 +174,12 @@ SiteAsset::register($this);
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown">
-                                        <a class="dropdown" href="index-landing-5.html">
+                                        <a class="dropdown" href="<?=Yii::$app->urlManager->createUrl('signup-as-tester')?>">
                                             ثبت نام آزمونگر
                                         </a>
                                     </li>
                                     <li class="dropdown">
-                                        <a class="dropdown" href="index-landing-5.html">
+                                        <a class="dropdown" href="<?=Yii::$app->urlManager->createUrl('login')?>">
                                             ورود آزمونگر
                                         </a>
                                     </li>

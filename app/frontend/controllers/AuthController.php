@@ -31,13 +31,13 @@ class AuthController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout', 'signup-as-tester', 'signup-as-customer', 'signup-as-supervisor'],
+                'only' => ['logout'],
                 'rules' => [
-                    [
-                        'actions' => ['signup-as-tester', 'signup-as-customer'],
-                        'allow' => true,
-                        'roles' => ['?'],
-                    ],
+//                    [
+//                        'actions' => ['signup-as-tester', 'signup-as-customer'],
+//                        'allow' => true,
+//                        'roles' => ['?'],
+//                    ],
                     [
                         'actions' => ['signup-as-supervisor'],
                         'allow' => true,
