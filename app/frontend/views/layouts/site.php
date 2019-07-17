@@ -211,6 +211,7 @@ SiteAsset::register($this);
             </div>
         </header>
     </div>
+    <?= Alert::widget() ?>
     <?= $content ?>
     <footer id="footer">
         <div class="container">
