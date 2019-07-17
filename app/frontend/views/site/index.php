@@ -288,7 +288,7 @@
                     </div>
                     <div class="col-md-10 col-sm-10 col-10">
                         <a href="blog-sidebar-left.html" class="tab-post-link">آناهیتا حشمتی</a>
-                        <small>29 اسفند 1398</small>
+                        <small>11 فروردین 1398</small>
                     </div>
                 </div><!-- /post -->
 
@@ -300,7 +300,7 @@
                     </div>
                     <div class="col-md-10 col-sm-10 col-10">
                         <a href="blog-sidebar-left.html" class="tab-post-link">اشکان رضایی</a>
-                        <small>29 اسفند 1398</small>
+                        <small>29 اردیبهشت 1398</small>
                     </div>
                 </div><!-- /post -->
 
@@ -312,7 +312,7 @@
                     </div>
                     <div class="col-md-10 col-sm-10 col-10">
                         <a href="blog-sidebar-left.html" class="tab-post-link">غزاله محمدی</a>
-                        <small>29 اسفند 1398</small>
+                        <small>10 اردیبهشت 1398</small>
                     </div>
                 </div>
 
