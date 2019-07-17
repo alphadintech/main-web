@@ -12,7 +12,7 @@ class SiteAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        '../theme/assets/global/css/IRAN-SANS-Family-Typeface/IRAN Sans (Webfonts)/style.css',
+        'theme/assets/global/css/IRAN-SANS-Family-Typeface/IRAN Sans (Webfonts)/style.css',
         'sitetheme/plugins/bootstrap/css/bootstrap.min.css',
         'sitetheme/css/essentials.css',
         'sitetheme/css/layout.css',

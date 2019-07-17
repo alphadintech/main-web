@@ -43,7 +43,7 @@ class SiteController extends Controller
         $this->layout='panel';
 //print_r(Yii::$app->authManager->getRolesByUser(Yii::$app->user->id));die;
         if(!Yii::$app->user->can('canBeTester')){
-            return $this->redirect(Yii::$app->urlManagerFrontend->createUrl(['site/login']));
+            return $this->goHome();
         }
         return $this->render('dashboard');
     }
@@ -55,6 +55,9 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         return $this->redirect(Yii::$app->urlManagerFrontend->createUrl(['site/login']));
     }
 
@@ -65,6 +68,9 @@ class SiteController extends Controller
      */
     public function actionLogout()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         return $this->redirect(Yii::$app->urlManagerFrontend->createUrl(['site/logout']));
     }
 }

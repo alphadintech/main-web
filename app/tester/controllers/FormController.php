@@ -34,6 +34,9 @@ class FormController extends Controller
 
     public function actionIndex()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         $this->layout='panel';
         return $this->render('builder');
     }

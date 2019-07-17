@@ -84,7 +84,7 @@ class SiteController extends \yii\web\Controller
         $registerForm= new RegisterForm();
         if($registerForm->load(\Yii::$app->request->post(),'regform')){
             if($registerForm->save()){
-                Yii::$app->session->setFlash('success','اطلاعات شما با موفقیت ثبت شد و در اسرع وقت با شما تماس گرفته می شود.');
+                Yii::$app->session->setFlash('success','اطلاعات شما با موفقیت ثبت شد و به زودی با شما تماس گرفته می شود.');
             }else{
                 Yii::$app->session->setFlash('error','ثبت اطلاعات با مشکل مواجه شده است');
             }

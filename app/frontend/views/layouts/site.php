@@ -85,7 +85,7 @@ SiteAsset::register($this);
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="logo float-right" href="<?=Yii::$app->homeUrl?>">
-                    <img src="sitetheme/images/_smarty/logo_dark.png" alt="">
+                    <img src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/_smarty/logo_dark.png'])?>" alt="">
                 </a>
                 <div class="navbar-collapse collapse float-left nav-main-collapse">
                     <nav class="nav-main">
@@ -216,7 +216,7 @@ SiteAsset::register($this);
             <div class="row">
 
                 <div class="col-md-4 text-right">
-                    <img class="footer-logo" src="~/sitetheme/images/_smarty/logo-footer.png" alt=""/>
+                    <img class="footer-logo" src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/_smarty/logo-footer.png'])?>" alt=""/>
                     <p>با ما در ارتباط باشید</p>
                     <address>
                         <ul class="list-unstyled">
@@ -310,7 +310,7 @@ SiteAsset::register($this);
         <span class="loader"></span>
     </div>
 </div>
-<script>var plugin_path = 'sitetheme/plugins/';</script>
+<script>var plugin_path = 'public/sitetheme/plugins/';</script>
 <?php $this->endBody() ?>
 </body>
 

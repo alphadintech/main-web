@@ -31,8 +31,8 @@ class ProfileController extends Controller
 
     public function actionIndex()
     {
-        if (!Yii::$app->user->can('canBeTester')) {
-            return $this->redirect(Yii::$app->urlManagerFrontend->createUrl(['login']));
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
         }
         $user = \common\models\User::find()->where(['id' => Yii::$app->user->id])->andWhere(['status' => \common\models\User::STATUS_ACTIVE])->one();
         $testerModel = $this->getTester();
@@ -233,6 +233,7 @@ class ProfileController extends Controller
 
     private function getTester()
     {
+
         return Tester::findOne(['user_id' => Yii::$app->user->id]);
     }
 

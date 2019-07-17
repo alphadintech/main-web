@@ -1,4 +1,4 @@
-<section class="h-500" id="slider" style="background:url('sitetheme/images/12-min.jpg')">
+<section class="h-500" id="slider" style="background:url('public/sitetheme/images/12-min.jpg')">
     <div class="overlay dark-6"></div>
 
     <div class="display-table">
