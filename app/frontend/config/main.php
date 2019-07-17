@@ -55,6 +55,7 @@ return [
                 'cardsorting'=>'site/cardsorting',
                 'loadtest'=>'site/loadtest',
                 'structured'=>'site/structured',
+                'testrequest'=>'site/testrequest',
 //                '<controller:\w+>/<id:\d+>' => '<controller>/view',
 //                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
 //                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',

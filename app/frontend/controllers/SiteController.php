@@ -76,4 +76,9 @@ class SiteController extends \yii\web\Controller
         return $this->render('structured');
     }
 
+    public function actionTestrequest()
+    {
+        return $this->render('testrequest');
+    }
+
 }

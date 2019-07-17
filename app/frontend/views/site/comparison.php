@@ -26,7 +26,7 @@
 
                 <div class="card card-default">
                         <div class="card-block">
-                            <a href="index-landing-4.html">
+                            <a href="testrequest">
                                 <h9 class="font-lato fs-18">سفارش تست مقایسه‌ای</h9>
                             </a>
 
