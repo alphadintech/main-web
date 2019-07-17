@@ -9051,9 +9051,9 @@ section.dark-2 div.category-grid .card {
 		background:url('../images/_smarty/world-map.png') no-repeat center;
 	}
 	#footer address .footer-sprite {
-		margin-bottom:20px;
-		padding-left:30px; 
-		background:url('../images/_smarty/footer_sprite.png') no-repeat 0 0;
+		margin-bottom: 20px;
+		padding-right: 30px;
+		background: url(../images/_smarty/footer_sprite.png) no-repeat;
 	}
 		#footer address .footer-sprite:last-child {
 			margin-bottom:0;
@@ -9067,14 +9067,14 @@ section.dark-2 div.category-grid .card {
 		border-bottom:#403E44 1px dashed;
 	}
 	#footer address .footer-sprite.address {
-		background-position:0 0;
+		background-position:100% 0;
 	}
 	#footer address .footer-sprite.phone {
-		background-position:0 -138px;
+		background-position:100% -138px;
 		line-height:30px;
 	}		
 	#footer address .footer-sprite.email {
-		background-position:0 -247px;
+		background-position: 100% -247px;
 	}
 
 

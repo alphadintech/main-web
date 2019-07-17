@@ -215,8 +215,7 @@ SiteAsset::register($this);
 
             <div class="row">
 
-                <div class="col-md-4 text-right">
-                    <img class="footer-logo" src="~/sitetheme/images/_smarty/logo-footer.png" alt=""/>
+                <div class="col-md-6 text-center">
                     <p>با ما در ارتباط باشید</p>
                     <address>
                         <ul class="list-unstyled">
@@ -235,28 +234,7 @@ SiteAsset::register($this);
                     </address>
                 </div>
 
-                <div class="col-md-4 text-right">
-                    <h4 class="letter-spacing-1">فایل های راهنمایی</h4>
-                    <ul class="footer-posts list-unstyled">
-                        <li>
-                            <i class="fas fa-file-pdf"></i>
-                            <h8>شرایط استخدام آزمونگر</h8>
-
-                        </li>
-                        <li>
-                            <i class="fas fa-file-pdf"></i>
-                            <h8>شرایط و نحوه تست پروژه‌ها</h8>
-                        </li>
-                        <li>
-                            <i class="fas fa-file-pdf"></i>
-                            <h8>قوانین و مقررات</h8>
-                        </li>
-                    </ul>
-                    <!-- /Latest Blog Post -->
-
-                </div>
-
-                <div class="col-md-4 text-right">
+                <div class="col-md-6 text-center">
 
                     <!-- Newsletter Form -->
                     <h4 class="letter-spacing-1">با ما در تماس باشید</h4>
@@ -266,24 +244,24 @@ SiteAsset::register($this);
 
                     <!-- Social Icons -->
                     <div class="mt-20">
-                        <a href="https://telegram.me/alphadintech" class="social-icon social-icon-border social-telegram float-left"
+                        <a href="https://telegram.me/alphadintech" class="social-icon social-icon-border social-telegram "
                            data-toggle="tooltip" data-placement="top" title="تلگرام">
 
                             <i class="icon-telegram"></i>
                             <i class="icon-telegram"></i>
                         </a>
 
-                        <a href="https://twitter.com/alphadintech" class="social-icon social-icon-border social-twitter float-left"
+                        <a href="https://twitter.com/alphadintech" class="social-icon social-icon-border social-twitter "
                            data-toggle="tooltip" data-placement="top" title="توییتر">
                             <i class="icon-twitter"></i>
                             <i class="icon-twitter"></i>
                         </a>
-                        <a href="https://www.linkedin.com/company/alphadintech" class="social-icon social-icon-border social-linkedin float-left"
+                        <a href="https://www.linkedin.com/company/alphadintech" class="social-icon social-icon-border social-linkedin "
                            data-toggle="tooltip" data-placement="top" title="لینکدین">
                             <i class="icon-linkedin"></i>
                             <i class="icon-linkedin"></i>
                         </a>
-                        <a href="https://www.instagram.com/alphadintech/" class="social-icon social-icon-border social-instagram float-left"
+                        <a href="https://www.instagram.com/alphadintech/" class="social-icon social-icon-border social-instagram "
                            data-toggle="tooltip" data-placement="top" title="اینستاگرام">
                             <i class="icon-instagram2"></i>
                             <i class="icon-instagram2"></i>

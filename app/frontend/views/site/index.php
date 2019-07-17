@@ -14,7 +14,7 @@
                 </h1>
 
                 <p class="lead font-lato fs-30 wow fadeInUp" data-wow-delay="0.7s">
-                    تعداد <span class="countTo" data-speed="4000">816</span> همکار آزمونگر داریم!
+                    تعداد <span class="countTo" data-speed="4000">258</span> همکار آزمونگر داریم!
                     <span class="theme-color fw-400 font-style-italic">برای ثبت نام کلیک کنید</span>
                 </p>
 
@@ -157,9 +157,8 @@
     <div class="container">
 
         <div class="text-center">
-            <h3><strong>بیش از <span class="countTo fw-400" data-speed="3000">530</span> تست در آلفادین انجام
-                    شده</strong></h3>
-            <h3 class="fs-30">معتبرترین روش کسب درآمد آنلاین</h3>
+            <h3><strong>کاهش هزینه ، افزایش سرعت ، انتخاب جامعه هدف و ....</strong></h3>
+            <h3 class="fs-30">بعضی از مزایای تست جمعیت در برابر روش‌های سنتی است</h3>
 
         </div>
 
@@ -168,25 +167,25 @@
 <section class="row box-gradient box-teal">
     <div class="col-6 col-sm-3">
         <i class="fa fa-child fa-4x"></i>
-        <h2 class="countTo font-raleway" data-speed="3000">120</h2>
-        <p>آزمونگر متخصص</p>
+        <hr>
+        <p>ارتقا کیفیت محصول</p>
     </div>
 
     <div class="col-6 col-sm-3">
         <i class="fa fa-smile-o fa-4x"></i>
-        <h2 class="countTo font-raleway" data-speed="3000">980</h2>
-        <p>تعداد دیوایس</p>
+        <hr>
+        <p>کشف سلیقه کاربران</p>
     </div>
 
     <div class="col-6 col-sm-3">
         <i class="fa fa-heart fa-4x"></i>
-        <h2 class="countTo font-raleway" data-speed="3000">760</h2>
-        <p>تعداد ایرادهای یافته شده</p>
+        <hr>
+        <p>بررسی محبوبیت ایده‌ها</p>
     </div>
 
     <div class="col-6 col-sm-3">
-        <i class="fa fa-female fa-4x"></i>
-        <h2 class="countTo font-raleway" data-speed="3000">360</h2>
-        <p>تعداد ایرادهای QA</p>
+        <i class="fa fa-mobile fa-4x"></i>
+        <hr>
+        <p>تست در دستگاه‌های متفاوت</p>
     </div>
 </section>
