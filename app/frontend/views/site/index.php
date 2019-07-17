@@ -14,11 +14,11 @@
                 </h1>
 
                 <p class="lead font-lato fs-30 wow fadeInUp" data-wow-delay="0.7s">
-                    تعداد <span class="countTo" data-speed="4000">1553</span> همکار آزمونگر داریم!
+                    تعداد <span class="countTo" data-speed="4000">816</span> همکار آزمونگر داریم!
                     <span class="theme-color fw-400 font-style-italic">برای ثبت نام کلیک کنید</span>
                 </p>
 
-                <a class="btn btn-default btn-lg" href="#">ثبت نام آزمونگر</a>
+                <a class="btn btn-default btn-lg" href="signup-as-tester">ثبت نام آزمونگر</a>
 
             </div>
 
@@ -157,7 +157,7 @@
     <div class="container">
 
         <div class="text-center">
-            <h3><strong>بیش از <span class="countTo fw-400" data-speed="3000">8300</span> تست در آلفادین انجام
+            <h3><strong>بیش از <span class="countTo fw-400" data-speed="3000">530</span> تست در آلفادین انجام
                     شده</strong></h3>
             <h3 class="fs-30">معتبرترین روش کسب درآمد آنلاین</h3>
 
@@ -168,152 +168,25 @@
 <section class="row box-gradient box-teal">
     <div class="col-6 col-sm-3">
         <i class="fa fa-child fa-4x"></i>
-        <h2 class="countTo font-raleway" data-speed="3000">8165</h2>
-        <p>آزمونگران متخصص</p>
+        <h2 class="countTo font-raleway" data-speed="3000">120</h2>
+        <p>آزمونگر متخصص</p>
     </div>
 
     <div class="col-6 col-sm-3">
         <i class="fa fa-smile-o fa-4x"></i>
-        <h2 class="countTo font-raleway" data-speed="3000">1033</h2>
+        <h2 class="countTo font-raleway" data-speed="3000">980</h2>
         <p>تعداد دیوایس</p>
     </div>
 
     <div class="col-6 col-sm-3">
         <i class="fa fa-heart fa-4x"></i>
-        <h2 class="countTo font-raleway" data-speed="3000">24567</h2>
+        <h2 class="countTo font-raleway" data-speed="3000">760</h2>
         <p>تعداد ایرادهای یافته شده</p>
     </div>
 
     <div class="col-6 col-sm-3">
         <i class="fa fa-female fa-4x"></i>
-        <h2 class="countTo font-raleway" data-speed="3000">68</h2>
+        <h2 class="countTo font-raleway" data-speed="3000">360</h2>
         <p>تعداد ایرادهای QA</p>
-    </div>
-</section>
-<section id="aboutus">
-    <div class="container">
-
-        <div class="row">
-
-            <!-- toggle -->
-            <div class="col-md-4 col-sm-4 text-right">
-                <h4>گستره فعالیت</h4>
-                <div class="toggle toggle-accordion toggle-transparent toggle-bordered-full">
-
-                    <div class="toggle active">
-                        <label>عملکرد</label>
-                        <div class="toggle-content">
-                            <p>بررسی محصول دیجیتال بر اساس حجم ورودی اطلاعات و میزان پاسخگویی در حالت ها و دستگاههای
-                                مختلف </p>
-                        </div>
-                    </div>
-
-                    <div class="toggle">
-                        <label>کیفیت</label>
-                        <div class="toggle-content">
-                            <p>میزان برآورد هدف محصول</p>
-                        </div>
-                    </div>
-
-                    <div class="toggle">
-                        <label>رابط کاربری</label>
-                        <div class="toggle-content">
-                            <p>بررسی ثبات و یکپارچگی محصول</p>
-                        </div>
-                    </div>
-
-                    <div class="toggle">
-                        <label>تجربه کاربری</label>
-                        <div class="toggle-content">
-                            <p>بررسی نحوه برخورد کاربر با محصول</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4 text-right">
-                <h4>حوزه های فعالیت</h4>
-
-                <label>
-                    <span class="float-right">31%</span>
-                    وبسایت
-                </label>
-                <div class="progress progress-xxs">
-                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
-                         aria-valuemin="0" aria-valuemax="100" style="width: 31%; min-width: 2em;"></div>
-                </div>
-
-                <label>
-                    <span class="float-right">43%</span>
-                    اندروید
-                </label>
-                <div class="progress progress-xxs">
-                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60"
-                         aria-valuemin="0" aria-valuemax="100" style="width: 43%; min-width: 2em;"></div>
-                </div>
-
-                <label>
-                    <span class="float-right">25%</span>
-                    آی او اس
-                </label>
-                <div class="progress progress-xxs">
-                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
-                         aria-valuemin="0" aria-valuemax="100" style="width: 25%; min-width: 2em;"></div>
-                </div>
-
-
-                <label>
-                    <span class="float-right">1%</span>
-                    سایرپروژها
-                </label>
-                <div class="progress progress-xxs">
-                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60"
-                         aria-valuemin="0" aria-valuemax="100" style="width: 1%; min-width: 2em;"></div>
-                </div>
-
-            </div>
-            <div class="col-md-4 col-sm-4 text-right">
-                <h4>فعالترین کاربران</h4>
-
-                <div class="row tab-post"><!-- post -->
-                    <div class="col-md-2 col-sm-2 col-2">
-                        <a href="blog-sidebar-left.html">
-                            <img src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/mockups/300x300/1-min.jpg'])?>" width="50" alt=""/>
-
-                        </a>
-                    </div>
-                    <div class="col-md-10 col-sm-10 col-10">
-                        <a href="blog-sidebar-left.html" class="tab-post-link">آناهیتا حشمتی</a>
-                        <small>11 فروردین 1398</small>
-                    </div>
-                </div><!-- /post -->
-
-                <div class="row tab-post"><!-- post -->
-                    <div class="col-md-2 col-sm-2 col-2">
-                        <a href="blog-sidebar-left.html">
-                            <img src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/mockups/300x300/2-min.jpg'])?>" width="50" alt=""/>
-                        </a>
-                    </div>
-                    <div class="col-md-10 col-sm-10 col-10">
-                        <a href="blog-sidebar-left.html" class="tab-post-link">اشکان رضایی</a>
-                        <small>29 اردیبهشت 1398</small>
-                    </div>
-                </div><!-- /post -->
-
-                <div class="row tab-post"><!-- post -->
-                    <div class="col-md-2 col-sm-2 col-2">
-                        <a href="blog-sidebar-left.html">
-                            <img src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/mockups/300x300/3-min.jpg'])?>" width="50" alt=""/>
-                        </a>
-                    </div>
-                    <div class="col-md-10 col-sm-10 col-10">
-                        <a href="blog-sidebar-left.html" class="tab-post-link">غزاله محمدی</a>
-                        <small>10 اردیبهشت 1398</small>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
     </div>
 </section>

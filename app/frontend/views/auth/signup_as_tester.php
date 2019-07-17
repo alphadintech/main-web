@@ -54,13 +54,7 @@ $this->title = 'Login';
                         <input class="form-control form-control-solid placeholder-no-fix form-group" type="password" autocomplete="off" placeholder="تکرار گذرواژه" name="signup[password_repeat]" required/> </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4">
-                        <label class="rememberme mt-checkbox mt-checkbox-outline">
-                            <input type="checkbox" name="remember" value="1" /><a href="http://google.com">قوانین و مقررات آلفادین</a> را خوانده ام و می پذیرم
-                            <span></span>
-                        </label>
-                    </div>
-                    <div class="col-sm-8 text-right">
+                    <div class="col-sm-12 text-right">
                         <?= Html::submitButton('ثبت نام', ['class' => 'btn blue', 'name' => 'login-button']) ?>
                     </div>
                 </div>

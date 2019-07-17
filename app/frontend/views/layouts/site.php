@@ -117,9 +117,6 @@ SiteAsset::register($this);
                                         <a class="dropdown" href="<?=Yii::$app->homeUrl?>#Alphadine&amp;numbers">آلفادین و اعداد</a>
                                     </li>
                                     <li class="dropdown ">
-                                        <a class="dropdown" href="<?=Yii::$app->homeUrl?>#aboutus">درباره ما</a>
-                                    </li>
-                                    <li class="dropdown ">
                                         <a class="dropdown" href="<?=Yii::$app->homeUrl?>#footer">تماس با ما</a>
                                     </li>
 
@@ -263,42 +260,31 @@ SiteAsset::register($this);
 
                     <!-- Newsletter Form -->
                     <h4 class="letter-spacing-1">با ما در تماس باشید</h4>
-                    <p>شماره تلفن خود راوارد کنید و با ما در ارتباط باشید</p>
+                    <p>ما را در شبکه‌های اجتماعی دنبال کنید</p>
 
-                    <form class="validate" action="" method="post"
-                          data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-phone fa-rotate-45"></i></span>
-                            <input type="email" id="email" name="email" class="form-control required"
-                                   placeholder="شماره خود را وارد کنید">
-                            <span class="input-group-btn">
-										<button class="btn btn-success" type="submit">اشتراک</button>
-									</span>
-                        </div>
-                    </form>
                     <!-- /Newsletter Form -->
 
                     <!-- Social Icons -->
                     <div class="mt-20">
-                        <a href="#" class="social-icon social-icon-border social-telegram float-left"
-                           data-toggle="tooltip" data-placement="top" title="فیسبوک">
+                        <a href="https://telegram.me/alphadintech" class="social-icon social-icon-border social-telegram float-left"
+                           data-toggle="tooltip" data-placement="top" title="تلگرام">
 
                             <i class="icon-telegram"></i>
                             <i class="icon-telegram"></i>
                         </a>
 
-                        <a href="#" class="social-icon social-icon-border social-twitter float-left"
+                        <a href="https://twitter.com/alphadintech" class="social-icon social-icon-border social-twitter float-left"
                            data-toggle="tooltip" data-placement="top" title="توییتر">
                             <i class="icon-twitter"></i>
                             <i class="icon-twitter"></i>
                         </a>
-                        <a href="#" class="social-icon social-icon-border social-linkedin float-left"
-                           data-toggle="tooltip" data-placement="top" title="لینکیدن">
+                        <a href="https://www.linkedin.com/company/alphadintech" class="social-icon social-icon-border social-linkedin float-left"
+                           data-toggle="tooltip" data-placement="top" title="لینکدین">
                             <i class="icon-linkedin"></i>
                             <i class="icon-linkedin"></i>
                         </a>
-                        <a href="#" class="social-icon social-icon-border social-instagram float-left"
-                           data-toggle="tooltip" data-placement="top" title="خبرنامه">
+                        <a href="https://www.instagram.com/alphadintech/" class="social-icon social-icon-border social-instagram float-left"
+                           data-toggle="tooltip" data-placement="top" title="اینستاگرام">
                             <i class="icon-instagram2"></i>
                             <i class="icon-instagram2"></i>
                         </a>
@@ -324,7 +310,7 @@ SiteAsset::register($this);
         <span class="loader"></span>
     </div>
 </div>
-<script>var plugin_path = 'public/sitetheme/plugins/';</script>
+<script>var plugin_path = 'sitetheme/plugins/';</script>
 <?php $this->endBody() ?>
 </body>
 
