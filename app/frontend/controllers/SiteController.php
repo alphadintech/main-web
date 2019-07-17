@@ -2,6 +2,9 @@
 
 namespace frontend\controllers;
 
+use frontend\models\RegisterForm;
+use Yii;
+
 class SiteController extends \yii\web\Controller
 {
 
@@ -78,7 +81,15 @@ class SiteController extends \yii\web\Controller
 
     public function actionTestrequest()
     {
-        return $this->render('testrequest');
+        $registerForm= new RegisterForm();
+        if($registerForm->load(\Yii::$app->request->post(),'regform')){
+            if($registerForm->save()){
+                Yii::$app->session->setFlash('success','اطلاعات شما با موفقیت ثبت شد و در اسرع وقت با شما تماس گرفته می شود.');
+            }else{
+                Yii::$app->session->setFlash('error','ثبت اطلاعات با مشکل مواجه شده است');
+            }
+        }
+        return $this->render('testrequest',['registerForm'=>$registerForm]);
     }
 
 }
