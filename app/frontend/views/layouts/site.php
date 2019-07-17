@@ -175,11 +175,7 @@ SiteAsset::register($this);
                                             ثبت نام آزمونگر
                                         </a>
                                     </li>
-                                    <li class="dropdown">
-                                        <a class="dropdown" href="<?=Yii::$app->urlManager->createUrl('login')?>">
-                                            ورود آزمونگر
-                                        </a>
-                                    </li>
+
 
 
                                 </ul>
