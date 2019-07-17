@@ -103,8 +103,8 @@
             </div>
 -->
             <video width="100%" controls>
-                <source src="sitetheme/video/AlphadinAds.mp4" type="video/mp4">
-                <source src="sitetheme/video/AlphadinAds.ogg" type="video/ogg">
+                <source src="<?=Yii::$app->urlManager->createUrl(['sitetheme/video/AlphadinAds.mp4'])?>" type="video/mp4">
+                <source src="<?=Yii::$app->urlManager->createUrl(['sitetheme/video/AlphadinAds.ogg'])?>" type="video/ogg">
                 مرورگر شما نمایش ویدئو را پشتیبانی نمی‌کند
             </video>
         </div>
@@ -134,16 +134,16 @@
                 <div class="owl-carousel buttons-autohide controlls-over m-0"
                      data-plugin-options='{"items": 1, "autoHeight": true, "navigation": true, "pagination": true, "transitionStyle":"backSlide", "progressBar":"true"}'>
                     <div>
-                        <img class="img-fluid" src="sitetheme/images/mockups/800x553/slider1.jpg" alt="">
+                        <img class="img-fluid" src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/mockups/800x553/slider1.jpg'])?>" alt="">
                     </div>
                     <div>
-                        <img class="img-fluid" src="sitetheme/images/mockups/800x553/slider2.jpg" alt="">
+                        <img class="img-fluid" src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/mockups/800x553/slider2.jpg'])?>" alt="">
                     </div>
                     <div>
-                        <img class="img-fluid" src="sitetheme/images/mockups/800x553/slider3.jpg" alt="">
+                        <img class="img-fluid" src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/mockups/800x553/slider3.jpg'])?>" alt="">
                     </div>
                     <div>
-                        <img class="img-fluid" src="sitetheme/images/mockups/800x553/slider4.jpg" alt="">
+                        <img class="img-fluid" src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/mockups/800x553/slider4.jpg'])?>" alt="">
                     </div>
                 </div>
             </div>
@@ -278,7 +278,7 @@
                 <div class="row tab-post"><!-- post -->
                     <div class="col-md-2 col-sm-2 col-2">
                         <a href="blog-sidebar-left.html">
-                            <img src="sitetheme/images/mockups/300x300/1-min.jpg" width="50" alt=""/>
+                            <img src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/mockups/300x300/1-min.jpg'])?>" width="50" alt=""/>
 
                         </a>
                     </div>
@@ -291,7 +291,7 @@
                 <div class="row tab-post"><!-- post -->
                     <div class="col-md-2 col-sm-2 col-2">
                         <a href="blog-sidebar-left.html">
-                            <img src="sitetheme/images/mockups/300x300/2-min.jpg" width="50" alt=""/>
+                            <img src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/mockups/300x300/2-min.jpg'])?>" width="50" alt=""/>
                         </a>
                     </div>
                     <div class="col-md-10 col-sm-10 col-10">
@@ -303,7 +303,7 @@
                 <div class="row tab-post"><!-- post -->
                     <div class="col-md-2 col-sm-2 col-2">
                         <a href="blog-sidebar-left.html">
-                            <img src="sitetheme/images/mockups/300x300/3-min.jpg" width="50" alt=""/>
+                            <img src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/mockups/300x300/3-min.jpg'])?>" width="50" alt=""/>
                         </a>
                     </div>
                     <div class="col-md-10 col-sm-10 col-10">
