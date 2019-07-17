@@ -60,6 +60,9 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         return $this->render('index');
     }
 
@@ -70,7 +73,7 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
-        if (!Yii::$app->user->isGuest) {
+        if(!Yii::$app->user->can('canBeTester')){
             return $this->goHome();
         }
 
@@ -93,6 +96,9 @@ class SiteController extends Controller
      */
     public function actionLogout()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         Yii::$app->user->logout();
 
         return $this->goHome();

@@ -2,6 +2,8 @@
 
 namespace customer\controllers;
 
+use Yii;
+
 class ReportController extends \yii\web\Controller
 {
     public $layout = "panel/main";
@@ -12,11 +14,17 @@ class ReportController extends \yii\web\Controller
     ];
     public function actionIndex()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         return $this->render('index');
     }
 
     public function actionDetail($id)
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         return $this->render('detail',[
             'title' => $this->titles[$id],
             'id'=>$id
@@ -25,6 +33,9 @@ class ReportController extends \yii\web\Controller
 
     public function actionComments($id)
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         return $this->render('comments',[
             'title' => $this->titles[$id],
             'id'=>$id
@@ -33,6 +44,9 @@ class ReportController extends \yii\web\Controller
 
     public function actionList($id)
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         return $this->render('list',[
             'title' => $this->titles[$id],
             'id'=>$id
@@ -41,6 +55,9 @@ class ReportController extends \yii\web\Controller
 
     public function actionTesters($id)
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         return $this->render('testers',[
             'title' => $this->titles[$id],
             'id'=>$id
@@ -49,6 +66,9 @@ class ReportController extends \yii\web\Controller
 
     public function actionAnalyze($id)
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         return $this->render('analyze',[
             'title' => $this->titles[$id],
             'id'=>$id

@@ -79,6 +79,9 @@ class SchoolController extends Controller
      */
     public function actionIndex()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         $dataProvider = new ActiveDataProvider([
             'query' => SchoolTree::find(),
         ]);
@@ -99,6 +102,9 @@ class SchoolController extends Controller
      */
     public function actionView($id)
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
@@ -111,7 +117,9 @@ class SchoolController extends Controller
      */
     public function actionAddNode()
     {
-
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         $model = new SchoolTree();
 
         if ($model->load(Yii::$app->request->post())) {
@@ -150,6 +158,9 @@ class SchoolController extends Controller
      */
     public function actionUpdate($id)
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         $model = $this->findModel($id);
 
         $schoolContentModel = $this->findContentModel($model->id);
@@ -200,6 +211,9 @@ class SchoolController extends Controller
      */
     public function actionDelete($id)
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
@@ -210,6 +224,9 @@ class SchoolController extends Controller
      */
     public function actionSectionList()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         $sections = new ActiveDataProvider([
             'query' => SchoolTree::find()
                 ->where(['type' => SchoolTree::type_section]),
@@ -224,6 +241,9 @@ class SchoolController extends Controller
 
     public function actionQuizView($id)
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
 //        print_r($_POST);die;
         $model = new SchoolQuestion();
         $modelAnswers = new SchoolAnswer();
@@ -253,6 +273,9 @@ class SchoolController extends Controller
 
     public function actionQuestionView($id)
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
 //        print_r($_POST);die;
         /** @var SchoolQuestion $model */
         $model = SchoolQuestion::find()->where(['id'=>$id]);
@@ -286,6 +309,9 @@ class SchoolController extends Controller
     }
  public function actionQuestionDelete($id)
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
 //        print_r($_POST);die;
         /** @var SchoolQuestion $model */
         $model = SchoolQuestion::deleteAll(['id'=>$id]);

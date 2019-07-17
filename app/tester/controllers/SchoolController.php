@@ -13,6 +13,9 @@ class SchoolController extends \yii\web\Controller
 
     public function actionIndex()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
 
         $courses = SchoolTree::find()
             ->where(['type' => SchoolTree::type_course])
@@ -51,7 +54,9 @@ class SchoolController extends \yii\web\Controller
      */
     public function actionSections($id)
     {
-
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         $sections = SchoolTree::find()
             ->where(['type' => SchoolTree::type_section])
             ->andWhere(['parent_id' => $id])
@@ -88,6 +93,9 @@ class SchoolController extends \yii\web\Controller
      */
     public function actionParts($id)
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         $parts = SchoolTree::find()
             ->joinWith('schoolContents')
             ->where(['type' => SchoolTree::type_part])
@@ -116,6 +124,9 @@ class SchoolController extends \yii\web\Controller
      */
     public function actionQuiz($id)
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
 //        print_r($_POST);die;
         $request =Yii::$app->request->post();
         $questions = SchoolQuestion::find()->where(['section_id'=>$id])

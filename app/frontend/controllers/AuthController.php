@@ -87,6 +87,9 @@ class AuthController extends Controller
      */
     public function actionLogin()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         $this->layout='login';
         if (!Yii::$app->user->isGuest) {
             $this->userGo();
@@ -110,6 +113,9 @@ class AuthController extends Controller
      */
     public function actionLogout()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         Yii::$app->user->logout();
 
         return $this->goHome();
@@ -145,6 +151,7 @@ class AuthController extends Controller
      */
     public function actionAbout()
     {
+
         return $this->render('about');
     }
 
@@ -155,10 +162,12 @@ class AuthController extends Controller
      */
     public function actionSignupAsSupervisor()
     {
-//        die("Sad");
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         $model = new SupervisorSignupForm();
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
-            Yii::$app->session->setFlash('success', 'با تشکر از ثبت نام شما . لطفا ایمیل خودرا برای تایید چک کنید.');
+            Yii::$app->session->setFlash('success', 'با تشکر از ثبت نام شما بعد بررسی با شما تماس گرفته می شود');
             return $this->goHome();
         }
 
@@ -178,7 +187,7 @@ class AuthController extends Controller
         $this->layout = 'signup_as_tester';
         $model = new TesterSignupForm();
         if ($model->load(Yii::$app->request->post(), 'signup') && $model->signup()) {
-            Yii::$app->session->setFlash('success', 'با تشکر از ثبت نام شما . لطفا ایمیل خودرا برای تایید چک کنید.');
+            Yii::$app->session->setFlash('success', 'با تشکر از ثبت نام شما . به زودی با شما تماس گرفته خواهد شد.');
             return $this->goHome();
         }
 
@@ -194,6 +203,9 @@ class AuthController extends Controller
      */
     public function actionSignupAsCustomer()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         $model = new CustomerSignupForm();
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
             Yii::$app->session->setFlash('success', 'با تشکر از ثبت نام شما . لطفا ایمیل خودرا برای تایید چک کنید.');
@@ -212,6 +224,9 @@ class AuthController extends Controller
      */
     public function actionRequestPasswordReset()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         $model = new PasswordResetRequestForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail()) {
@@ -237,6 +252,9 @@ class AuthController extends Controller
      */
     public function actionResetPassword($token)
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         try {
             $model = new ResetPasswordForm($token);
         } catch (InvalidArgumentException $e) {
@@ -263,6 +281,9 @@ class AuthController extends Controller
      */
     public function actionVerifyEmail($token)
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         try {
             $model = new VerifyEmailForm($token);
         } catch (InvalidArgumentException $e) {
@@ -286,6 +307,9 @@ class AuthController extends Controller
      */
     public function actionResendVerificationEmail()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         $model = new ResendVerificationEmailForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail()) {

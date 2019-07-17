@@ -36,6 +36,9 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         if(!Yii::$app->user->can('canBeSupervisor')){
             return $this->redirect(Yii::$app->urlManagerFrontend->createUrl(['login']));
         }
@@ -49,6 +52,9 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         return $this->redirect(Yii::$app->urlManagerFrontend->createUrl(['login']));
     }
 
@@ -59,6 +65,9 @@ class SiteController extends Controller
      */
     public function actionLogout()
     {
+        if(!Yii::$app->user->can('canBeTester')){
+            return $this->goHome();
+        }
         return $this->redirect(Yii::$app->urlManagerFrontend->createUrl(['logout']));
     }
 }
