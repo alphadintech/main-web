@@ -117,9 +117,6 @@ SiteAsset::register($this);
                                         <a class="dropdown" href="<?=Yii::$app->homeUrl?>#Alphadine&amp;numbers">آلفادین و اعداد</a>
                                     </li>
                                     <li class="dropdown ">
-                                        <a class="dropdown" href="<?=Yii::$app->homeUrl?>#aboutus">درباره ما</a>
-                                    </li>
-                                    <li class="dropdown ">
                                         <a class="dropdown" href="<?=Yii::$app->homeUrl?>#footer">تماس با ما</a>
                                     </li>
 
@@ -269,25 +266,25 @@ SiteAsset::register($this);
 
                     <!-- Social Icons -->
                     <div class="mt-20">
-                        <a href="#" class="social-icon social-icon-border social-telegram float-left"
-                           data-toggle="tooltip" data-placement="top" title="فیسبوک">
+                        <a href="https://telegram.me/alphadintech" class="social-icon social-icon-border social-telegram float-left"
+                           data-toggle="tooltip" data-placement="top" title="تلگرام">
 
                             <i class="icon-telegram"></i>
                             <i class="icon-telegram"></i>
                         </a>
 
-                        <a href="#" class="social-icon social-icon-border social-twitter float-left"
+                        <a href="https://twitter.com/alphadintech" class="social-icon social-icon-border social-twitter float-left"
                            data-toggle="tooltip" data-placement="top" title="توییتر">
                             <i class="icon-twitter"></i>
                             <i class="icon-twitter"></i>
                         </a>
-                        <a href="#" class="social-icon social-icon-border social-linkedin float-left"
+                        <a href="https://www.linkedin.com/company/alphadintech" class="social-icon social-icon-border social-linkedin float-left"
                            data-toggle="tooltip" data-placement="top" title="لینکیدن">
                             <i class="icon-linkedin"></i>
                             <i class="icon-linkedin"></i>
                         </a>
-                        <a href="#" class="social-icon social-icon-border social-instagram float-left"
-                           data-toggle="tooltip" data-placement="top" title="خبرنامه">
+                        <a href="https://www.instagram.com/alphadintech/" class="social-icon social-icon-border social-instagram float-left"
+                           data-toggle="tooltip" data-placement="top" title="اینستاگرام">
                             <i class="icon-instagram2"></i>
                             <i class="icon-instagram2"></i>
                         </a>
