@@ -18,7 +18,7 @@
                     <span class="theme-color fw-400 font-style-italic">برای ثبت نام کلیک کنید</span>
                 </p>
 
-                <a class="btn btn-default btn-lg" href="#">ثبت نام آزمونگر</a>
+                <a class="btn btn-default btn-lg" href="signup-as-tester">ثبت نام آزمونگر</a>
 
             </div>
 

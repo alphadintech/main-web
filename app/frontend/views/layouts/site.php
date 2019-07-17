@@ -262,19 +262,8 @@ SiteAsset::register($this);
 
                     <!-- Newsletter Form -->
                     <h4 class="letter-spacing-1">با ما در تماس باشید</h4>
-                    <p>شماره تلفن خود راوارد کنید و با ما در ارتباط باشید</p>
+                    <p>ما را در شبکه‌های اجتماعی دنبال کنید</p>
 
-                    <form class="validate" action="" method="post"
-                          data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-phone fa-rotate-45"></i></span>
-                            <input type="email" id="email" name="email" class="form-control required"
-                                   placeholder="شماره خود را وارد کنید">
-                            <span class="input-group-btn">
-										<button class="btn btn-success" type="submit">اشتراک</button>
-									</span>
-                        </div>
-                    </form>
                     <!-- /Newsletter Form -->
 
                     <!-- Social Icons -->
