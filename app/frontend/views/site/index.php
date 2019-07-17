@@ -30,7 +30,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-6 mb-30">
-                <a href="exploratory">
+                <a href="<?=Yii::$app->urlManager->createUrl(['exploratory'])?>">
                     <div class="text-center">
                         <i class="ico-light ico-lg ico-rounded ico-hover et-circle-compass"></i>
                         <h4>ایرادیابی</h4>
@@ -41,7 +41,7 @@
             </div>
 
             <div class="col-md-4 col-6 mb-30">
-                <a href="comparison">
+                <a href="<?=Yii::$app->urlManager->createUrl(['comparison'])?>">
                     <div class="text-center">
                         <i class="ico-light ico-lg ico-rounded ico-hover et-streetsign"></i>
                         <h4>تحلیل مقایسه‌ای</h4>
@@ -52,7 +52,7 @@
 
 
             <div class="col-md-4 col-6 mb-30">
-                <a href="competitor">
+                <a href="<?=Yii::$app->urlManager->createUrl(['competitor'])?>">
                     <div class="text-center">
                         <i class="ico-light ico-lg ico-rounded ico-hover et-strategy"></i>
                         <h4>تحلیل رقبا</h4>
@@ -67,14 +67,14 @@
             <div class="col-md-4 col-6 mb-30">
                 <div class="text-center">
                     <i class="ico-light ico-lg ico-rounded ico-hover et-bargraph"></i>
-                    <a href="regression"><h4>تست مجدد رفع ایراد</h4></a>
+                    <a href="<?=Yii::$app->urlManager->createUrl(['regression'])?>"><h4>تست مجدد رفع ایراد</h4></a>
                     <h7>رفع شدن ایراد های گزارش شده پس از بارگذاری مجدد بررسی می شود</h7>
                 </div>
             </div>
             <div class="col-md-4 col-6 mb-30">
                 <div class="text-center">
                     <i class="ico-light ico-lg ico-rounded ico-hover et-heart"></i>
-                    <a href="usability"><h4>استفاده پذیری</h4></a>
+                    <a href="<?=Yii::$app->urlManager->createUrl(['usability'])?>"><h4>استفاده پذیری</h4></a>
                     <h7>گسترش پروژه بدون وقفه سود مالی</h7>
                 </div>
             </div>
@@ -83,7 +83,7 @@
             <div class="col-md-4 col-6 mb-30">
                 <div class="text-center">
                     <i class="ico-light ico-lg ico-rounded ico-hover et-profile-female"></i>
-                    <a href="survey"><h4>نظرسنجی</h4></a>
+                    <a href="<?=Yii::$app->urlManager->createUrl(['survey'])?>"><h4>نظرسنجی</h4></a>
                     <h7>هر آزمونگر به طور تخصصی نظر خودش را در خصوص پروژه شما و راهکارهای پیشروی شما بیان خواهد کرد</h7>
                 </div>
             </div>
