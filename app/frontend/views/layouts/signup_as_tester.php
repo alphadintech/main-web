@@ -25,7 +25,7 @@ SignupTesterAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="login">
+<body class="login IRANSansLight ">
 <?php $this->beginBody() ?>
 <div class="user-login-5">
     <?= $content ?>

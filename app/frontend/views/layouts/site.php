@@ -279,7 +279,7 @@ SiteAsset::register($this);
                             <i class="icon-twitter"></i>
                         </a>
                         <a href="https://www.linkedin.com/company/alphadintech" class="social-icon social-icon-border social-linkedin float-left"
-                           data-toggle="tooltip" data-placement="top" title="لینکیدن">
+                           data-toggle="tooltip" data-placement="top" title="لینکدین">
                             <i class="icon-linkedin"></i>
                             <i class="icon-linkedin"></i>
                         </a>
