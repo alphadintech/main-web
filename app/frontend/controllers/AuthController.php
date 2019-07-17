@@ -187,7 +187,7 @@ class AuthController extends Controller
         $this->layout = 'signup_as_tester';
         $model = new TesterSignupForm();
         if ($model->load(Yii::$app->request->post(), 'signup') && $model->signup()) {
-            Yii::$app->session->setFlash('success', 'با تشکر از ثبت نام شما . لطفا ایمیل خودرا برای تایید چک کنید.');
+            Yii::$app->session->setFlash('success', 'با تشکر از ثبت نام شما . به زودی با شما تماس گرفته خواهد شد.');
             return $this->goHome();
         }
 

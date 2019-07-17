@@ -151,6 +151,8 @@
 }
 
 .user-login-5 .alert {
+
+    position: absolute;
     margin-top: -60px
 }
 
