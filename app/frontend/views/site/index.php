@@ -103,8 +103,8 @@
             </div>
 -->
             <video width="100%" controls>
-                <source src="sitetheme/video/AlphadinAds.mp4" type="video/mp4">
-                <source src="sitetheme/video/AlphadinAds.ogg" type="video/ogg">
+                <source src="<?=Yii::$app->urlManager->createUrl(['sitetheme/video/AlphadinAds.mp4'])?>" type="video/mp4">
+                <source src="<?=Yii::$app->urlManager->createUrl(['sitetheme/video/AlphadinAds.ogg'])?>" type="video/ogg">
                 مرورگر شما نمایش ویدئو را پشتیبانی نمی‌کند
             </video>
         </div>
@@ -134,16 +134,16 @@
                 <div class="owl-carousel buttons-autohide controlls-over m-0"
                      data-plugin-options='{"items": 1, "autoHeight": true, "navigation": true, "pagination": true, "transitionStyle":"backSlide", "progressBar":"true"}'>
                     <div>
-                        <img class="img-fluid" src="sitetheme/images/mockups/800x553/slider1.jpg" alt="">
+                        <img class="img-fluid" src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/mockups/800x553/slider1.jpg'])?>" alt="">
                     </div>
                     <div>
-                        <img class="img-fluid" src="sitetheme/images/mockups/800x553/slider2.jpg" alt="">
+                        <img class="img-fluid" src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/mockups/800x553/slider2.jpg'])?>" alt="">
                     </div>
                     <div>
-                        <img class="img-fluid" src="sitetheme/images/mockups/800x553/slider3.jpg" alt="">
+                        <img class="img-fluid" src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/mockups/800x553/slider3.jpg'])?>" alt="">
                     </div>
                     <div>
-                        <img class="img-fluid" src="sitetheme/images/mockups/800x553/slider4.jpg" alt="">
+                        <img class="img-fluid" src="<?=Yii::$app->urlManager->createUrl(['sitetheme/images/mockups/800x553/slider4.jpg'])?>" alt="">
                     </div>
                 </div>
             </div>
